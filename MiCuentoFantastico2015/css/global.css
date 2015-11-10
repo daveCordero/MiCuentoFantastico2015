@@ -37,6 +37,11 @@
 	-khtml-opacity:0.9;
 	opacity:0.9;
 	
+	html {
+	-webkit-tap-highlight-color: rgba(201, 224, 253, 0.8); custom highlight
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); remove highlight completely
+}
+	
 */
 
 /* precarga */
@@ -65,46 +70,32 @@
 }
 
 html {
-	height:100%;
-	min-height:100%;
-	
-	/*-webkit-tap-highlight-color: rgba(201, 224, 253, 0.8);*/
+	/*background-color: #473221;*/
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);/*remove highlight completely*/
 }
 
 body {
-	/*background-color:#F3F0E5;
-	
-	background-attachment:fixed;
-	background-position:center;
+	/*background-color:#F3F0E5;*/
 	background-repeat:no-repeat;
-	background-repeat:repeat;
+	background-attachment:fixed;
+	background-position:bottom;
 	
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/post_bg.jpg', sizingMethod='scale')";*/
-	
-	background-attachment: fixed;
-	background-repeat: repeat;
-	background-position: left bottom;
-	background-size:contain;
-	
-	background-color:#6CDBFF;
 	
 	margin: 0px; /* for IE6 / IE7 */
 	padding:0px;
 	
-	/*overflow:hidden !important;*/
+	overflow:hidden !important;
 	font-size:14px;
 	font-family:'Muli', sans-serif;
 	font-weight:400;
 	
 	color:#333;
 	
-	/*height:100%;
-	min-height:100%;*/
+	height:100% !important;
 }
 
 ::selection {
@@ -235,7 +226,7 @@ a {
 
 #boxes #dialog5 {
 	width:760px;
-	height:430px;
+	height:330px;
 	/*overflow:visible !important;*/
 	
 	margin:-15px 0px 0px 0px;
@@ -283,10 +274,6 @@ a {
 }
 /* fin modal dialogs */
 
-#creditoLogo {
-	width:440px;
-	margin:0px auto;
-}
 #creditosC {
 	display:block;
 	float:none;
@@ -296,9 +283,9 @@ a {
 }
 
 .colorCredito {
-	font-family: 'storybookregular';
+	/*font-family: 'storybookregular';*/
 	font-size:21px;
-	color:#6E3777;
+	color:#FD8E00;
 	margin:20px 0px 10px 0px;
 }
 .colorCredito:before {
@@ -353,12 +340,6 @@ a {
 	background-image:url(../img/enlace_lpt.jpg);
 	width:130px;
 	margin-left:50px;
-}
-#enlaceProd {
-	background-image:url(../img/enlace_prod.jpg);
-	border:none;
-	width:169px;
-	height:83px;
 }
 #enlaceGN {
 	background-image:url(../img/enlace_gn.jpg);
@@ -545,9 +526,6 @@ a {
 	#boxes #dialog5 {
 		height:auto;
 	}
-	#creditoLogo {
-		margin:20px auto 50px auto !important;
-	}
 	#enlaceLPT {
 		margin-left:20px;
 		margin-bottom:20px;
@@ -570,9 +548,6 @@ a {
 }
 
 @media all and (max-width: 500px) {/*pantalla mini*/
-	#creditoLogo {
-		transform:scale(0.7,0.7);
-	}
 	#enlaceLPT {
 		margin-left:-50px;
 	}

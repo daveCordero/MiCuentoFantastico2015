@@ -2,109 +2,34 @@
 /* CSS Document */
 
 body {
-	background-image:url(../img/cuento_01/bg_pag-2-3.jpg);
+	/*background-color: #061E2D;*/
+	background-image:url(../img/bg_Poder.jpg);
 }
 
 .pagination-car {
 	/*background:#999;*/
-	width:75px;
+	width:200px;
 }
 
-#txSlide1-2 {
-	margin:160px 0px 0px 10px;
+.txSlide {
+	width:400px;
 }
 
-#c1f1 {
-	display:block;
-	position:absolute;
-	
-	top:470px;
-	left:130px;
-	
-	width:56px;
-	height:91px;
-}
-#c1f2 {
-	display:block;
-	position:absolute;
-	
-	top:400px;
-	left:280px;
-	
-	width:107px;
-	height:151px;
-}
-#c1f3 {
-	display:block;
-	position:absolute;
-	
-	bottom:0px;
-	left:0px;
-	
-	width:122px;
-	height:56px;
+#txSlide1-1,
+#txSlide1-2,
+#txSlide1-3,
+#txSlide1-4,
+#txSlide1-5,
+#txSlide1-6,
+#txSlide1-7,
+#txSlide1-8,
+#txSlide1-9,
+#txSlide1-10 {
+	/*background:#999;*/
+	margin:150px 0px 0px 520px;
 }
 
-#c1f4 {
-	display:block;
-	position:absolute;
-	
+#instruSlide {
 	top:150px;
-	right:0px;
-	
-	width:210px;
-	height:368px;
-}
-#c1f5 {
-	display:block;
-	position:absolute;
-	
-	top:290px;
-	right:240px;
-	
-	width:187px;
-	height:249px;
-}
-#c1f6 {
-	display:block;
-	position:absolute;
-	
-	bottom:0px;
-	right:100px;
-	
-	width:129px;
-	height:90px;
-}
-
-#c1f7 {
-	display:block;
-	position:absolute;
-	
-	top:310px;
-	left:10px;
-	
-	width:421px;
-	height:282px;
-}
-#c1f8 {
-	display:block;
-	position:absolute;
-	
-	bottom:0px;
-	left:0px;
-	
-	width:421px;
-	height:382px;
-}
-
-#casa {
-	background:url(../img/cuento_01/montana_09.png) no-repeat 0px 130px;
-}
-
-#arrowL, #arrowR {
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-	filter: alpha(opacity=70);
-	-moz-opacity:0.7;
-	-khtml-opacity:0.7;
-	opacity:0.7;
+	left:400px;
 }

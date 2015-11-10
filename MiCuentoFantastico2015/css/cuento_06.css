@@ -2,71 +2,29 @@
 /* CSS Document */
 
 body {
-	background-image:url(../img/cuento_06/bg_pag-22-23.jpg);
+	/*background-color: #492748;*/
+	background-image:url(../img/bg_Volar.jpg);
 }
-
-/*#general {
-	background:url(../img/cuento_06/bg_pag-22-23.png) no-repeat center bottom;
-}*/
 
 .pagination-car {
 	/*background:#999;*/
-	width:90px;
+	width:110px;
 }
 
-#c6f1 {
-	display:block;
-	position:absolute;
-	
-	top:250px;
-	left:7px;
-	
-	width:409px;
-	height:348px;
-	
-	/*z-index:-1;*/
+.txSlide {
+	width:440px;
 }
 
-#c6f2 {
-	display:block;
-	position:absolute;
-	
-	top:180px;
-	left:10px;
-	
-	width:425px;
-	height:303px;
+#txSlide6-1,
+#txSlide6-2,
+#txSlide6-3,
+#txSlide6-4,
+#txSlide6-5,
+#txSlide6-6 {
+	margin:150px 0px 0px 480px;
 }
 
-#c6f3 {
-	display:block;
-	position:absolute;
-	
-	top:240px;
-	left:50px;
-	
-	width:270px;
-	height:282px;
-}
-
-#c6f4 {
-	display:block;
-	position:absolute;
-	
-	top:220px;
-	left:140px;
-	
-	width:186px;
-	height:166px;
-}
-
-#c6f5 {
-	display:block;
-	position:absolute;
-	
-	top:160px;
-	left:170px;
-	
-	width:154px;
-	height:109px;
+#instruSlide {
+	top:450px;
+	left:370px;
 }

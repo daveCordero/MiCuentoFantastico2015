@@ -2,75 +2,25 @@
 /* CSS Document */
 
 body {
-	background-image:url(../img/cuento_02/bg_pag-8-9.jpg);
+	/*background-color: #543530;*/
+	background-image:url(../img/bg_Tamales.jpg);
 }
 
 .pagination-car {
 	/*background:#999;*/
-	width:110px;
+	width:90px;
 }
 
-/*#c2f {
-	display:block;
-	position:absolute;
-	
-	top:px;
-	left:px;
-	
-	width:px;
-	height:px;
-}*/
-
-#c2f1 {
-	display:block;
-	position:absolute;
-	
-	top:150px;
-	left:0px;
-	
-	width:546px;
-	height:542px;
-	
-	z-index:-1;
-}
-#c2f2 {
-	display:block;
-	position:absolute;
-	
-	top:230px;
-	left:130px;
-	
-	width:200px;
-	height:250px;
-}
-#c2f3 {
-	display:block;
-	position:absolute;
-	bottom:0px;
-	left:70px;
-	
-	width:273px;
-	height:454px;
-}
-#c2f4 {
-	display:block;
-	position:absolute;
-	bottom:0px;
-	left:0px;
-	
-	width:489px;
-	height:412px;
-	
-	z-index:-1;
+#txSlide2-1,
+#txSlide2-2,
+#txSlide2-3,
+#txSlide2-4,
+#txSlide2-5 {
+	/*background:#999;*/
+	margin:150px 0px 0px 410px;
 }
 
-#c2f5 {
-	display:block;
-	position:absolute;
-	bottom:0px;
-	left:0px;
-	
-	width:410px;
-	height:295px;
+#instruSlide {
+	top:380px;
+	left:450px;
 }
-

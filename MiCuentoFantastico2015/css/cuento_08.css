@@ -2,7 +2,8 @@
 /* CSS Document */
 
 body {
-	background-image:url(../img/cuento_08/bg_pag-30-31.jpg);
+	/*background-color: #18292A;*/
+	background-image:url(../img/bg_Sura.jpg);
 }
 
 .pagination-car {
@@ -10,69 +11,15 @@ body {
 	width:90px;
 }
 
-#txSlide8-3 {
-	margin:160px 0px 0px 10px;
-}
-
+#txSlide8-1,
+#txSlide8-2,
+#txSlide8-3,
+#txSlide8-4,
 #txSlide8-5 {
-	margin:160px 0px 0px 10px;
+	margin:150px 0px 0px 410px;
 }
 
-#c8f1 {
-	display:block;
-	position:absolute;
-	
-	top:150px;
-	left:80px;
-	
-	width:169px;
-	height:440px;
-}
-
-#c8f2 {
-	display:block;
-	position:absolute;
-	
-	bottom:0px;
-	left:0px;
-	
-	width:521px;
-	height:314px;
-}
-
-#c8f3 {
-	display:block;
-	position:absolute;
-	
-	bottom:0px;
-	right:0px;
-	
-	width:468px;
-	height:308px;
-	
-	z-index:-1;
-}
-
-#c8f4 {
-	display:block;
-	position:absolute;
-	
-	top:270px;
-	left:50px;
-	
-	width:232px;
-	height:179px;
-	
-	z-index:-1;
-}
-
-#c8f5 {
-	display:block;
-	position:absolute;
-	
-	bottom:0px;
-	right:0px;
-	
-	width:445px;
-	height:415px;
+#instruSlide {
+	top:170px;
+	left:500px;
 }

@@ -2,65 +2,25 @@
 /* CSS Document */
 
 body {
-	background-image:url(../img/cuento_04/bg_pag-16-17.jpg);
+	/*background-color: #321420;*/
+	background-image:url(../img/bg_Vocales.jpg);
 }
 
 .pagination-car {
 	/*background:#999;*/
-	width:90px;
+	width:110px;
 }
 
-#c4f1 {
-	display:block;
-	position:absolute;
-	
-	top:160px;
-	left:30px;
-	
-	width:382px;
-	height:426px;
+#txSlide4-1,
+#txSlide4-2,
+#txSlide4-3,
+#txSlide4-4,
+#txSlide4-5,
+#txSlide4-6 {
+	margin:150px 0px 0px 320px;
 }
 
-#c4f2 {
-	display:block;
-	position:absolute;
-	
-	top:130px;
-	left:0px;
-	
-	width:417px;
-	height:434px;
-}
-
-#c4f3 {
-	display:block;
-	position:absolute;
-	
-	top:160px;
-	left:5px;
-	
-	width:411px;
-	height:399px;
-}
-
-#c4f4 {
-	display:block;
-	position:absolute;
-	
-	top:220px;
-	left:0px;
-	
-	width:420px;
-	height:318px;
-}
-
-#c4f5 {
-	display:block;
-	position:absolute;
-	
+#instruSlide {
 	top:240px;
-	left:20px;
-	
-	width:920px;
-	height:294px;
+	left:430px;
 }

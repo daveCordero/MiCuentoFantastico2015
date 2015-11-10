@@ -6,26 +6,31 @@ body {
 }
 
 #titlehomePeq {
-	/*background:url(../img/home/home_title_peq.png) no-repeat 0px 0px;*/
 	background:url(../img/titulo.png) no-repeat 0px 0px;
-	width:198px;
-	height:99px;
-	margin:10px 0px 10px 10px;
+	width: 351px;
+	height: 116px;
+	/*margin:0px 0px 10px 0px;*/
 }
 
 #menuHome {
 	/*background:#999;*/
 	width:580px;
 	height:41px;
-	margin:35px 14px 0px 0px;
+	margin:35px 0px 0px 0px;
 	
-	font-family: 'storybookregular';
+	/*font-family: 'storybookregular';*/
 	font-size:21px;
 }
 #menuHome a {
 	/*background:#CCC;*/
+	float: right;
 	margin-right:12px;
-	color:#6E3777;
+	/*color:#FD8E00;*/
+	/*color:#535C6B;*/
+	color: #FFF;
+}
+#menuHome a:first-child {
+	margin-right:0px !important;
 }
 #menuHome a:hover {
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
@@ -42,7 +47,18 @@ body {
 	/*z-index:1000;*/
 	
 	width:230px;
-	height:240px;
+	height:220px;
+	margin: 10px 10px 0px 0px;
+
+	-webkit-border-radius: 10px;
+	-khtml-border-radius:  10px;
+	-moz-border-radius:    10px;
+	-ms-border-radius:     10px;
+	-o-border-radius:      10px;
+	border-radius:         10px;
+}
+.bthome:last-child {
+	margin-right: 0px !important;
 }
 .bthome:hover {
 	/*margin-top:-10px;*/
@@ -80,7 +96,7 @@ body {
 }
 
 #txLdoc a {
-	background:#6E3777;
+	background:#FD8E00;
 	width:150px;
 	color:#FFF;
 	padding:5px 10px 4px 10px;
@@ -92,7 +108,7 @@ body {
 	border-radius:12px;
 }
 #txLdoc a:hover {
-	background:#FC0;
+	background:#6E3777;
 }
 #txJur {
 	width:90%;
@@ -101,10 +117,10 @@ body {
 .autBlock {
 	/*background:#F0F0F0;*/
 	width:200px;
-	height:150px;
+	height:162px;
 	
 	margin:0px 20px 20px 20px;
-	padding:10px 5px 10px 5px;
+	padding:5px 5px 5px 5px;
 	
 	text-align:center;
 	font-size:12px;
@@ -181,7 +197,7 @@ section {
 }
 #mencionesTabla th div {
 	/*background:#00AFEF;*/
-	background:#6E3777;
+	background:#535C6B;
 	border-left:1px solid #eee;
 	
 	position:absolute;
