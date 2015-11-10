@@ -3,34 +3,36 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="author" content="Libros para Todos Grupo Nación: David Herrera Cordero | 2014" />
+<meta name="author" content="Libros para Todos: David Herrera Cordero | 2015" />
 
 <script language="javascript" type="text/javascript">
 //vars user agent para meta viewport scale
-var isiPhone 	   = navigator.userAgent.toLowerCase().indexOf("iphone");
-var isiPad   	   = navigator.userAgent.toLowerCase().indexOf("ipad");
-var isiPod   	   = navigator.userAgent.toLowerCase().indexOf("ipod");
-var isSafari   	   = navigator.userAgent.toLowerCase().indexOf('safari');
-var android 	   = navigator.userAgent.toLowerCase().indexOf("android");//var android 	   = (navigator.platform.indexOf("android")>=0);
+var isiPhone = navigator.userAgent.toLowerCase().indexOf("iphone");
+var isiPad   = navigator.userAgent.toLowerCase().indexOf("ipad");
+var isiPod   = navigator.userAgent.toLowerCase().indexOf("ipod");
+var isSafari = navigator.userAgent.toLowerCase().indexOf('safari');
+var android  = navigator.userAgent.toLowerCase().indexOf("android");
 //fin vars user agent para meta viewport scale
-/*if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
-	var answerAppiOS = confirm ("¿Desea descargar la aplicación desde la tienda de Apple?");
-	if (answerAppiOS){
-		window.location.href = 'https://itunes.apple.com/es/app/mi-cuento-fantastico-2013/id771829886?mt=8';//alert(navigator.userAgent);
-	}
-	else{
-		//se mantiene en el sitio
-	}
+if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+	//activar cuando se publique en el App Store de Apple
+	// var answerAppiOS = confirm ("¿Desea descargar la aplicación desde la tienda de Apple?");
+	// if (answerAppiOS){
+	// 	window.location.href = 'https://itunes.apple.com/es/app/mi-cuento-fantastico-2013/id771829886?mt=8';//alert(navigator.userAgent);
+	// }
+	// else{
+	// 	//usuario se mantiene en el sitio
+	// }
 }
 if( /android/i.test(navigator.userAgent) ) {
+	activar cuando exista el apk para Android
 	var answerAppAndroid = confirm ("¿Desea descargar la aplicación para su dispositivo?");
 	if (answerAppAndroid){
-		window.location.href = 'https://build.phonegap.com/apps/681992/share';//alert(navigator.userAgent);
+		window.location.href = 'https://build.phonegap.com/apps/1760645/share';//alert(navigator.userAgent);
 	}
 	else{
-		//se mantiene en el sitio
+		//usuario se mantiene en el sitio
 	}
-}*/
+}
 </script>
 
 <!-- apple -->
@@ -42,16 +44,16 @@ if( /android/i.test(navigator.userAgent) ) {
 <link rel="apple-touch-icon" sizes="144×144" href="img/touch-icon-ipad-144.png" />
 <!-- /apple -->
 
-<!-- facebook -- >
-<meta property="fb:app_id"       content="1234567890" />-->
+<!-- facebook - ->
+<meta property="fb:app_id"       content="1234567890" />
 <meta property="og:type"         content="website" />
 <meta property="og:url"          content="http://samples.ogp.me/136756249803614" />
 <meta property="og:title"        content="Mi cuento fantástico 2014" />
-<meta property="og:image"        content="http://librosparatodoscr.com/miCuentoFantastico/2014/img/fb_preview.png" />
+<meta property="og:image"        content="http://librosparatodoscr.com/miCuentoFantastico/2015/img/fb_preview.png" />
 <meta property="cookbook:author" content="https://itunes.apple.com/es/artist/grupo-nacion-gn-s.a./id388776953" />
-<!-- /facebook -->
+< !- - /facebook -->
 
-<title>Mi cuento fantástico 2014 | Libros para Todos | Grupo Nación | Inicio</title>
+<title>Mi cuento fantástico 2015 | Libros para Todos | Inicio</title>
 <link rel="shortcut icon" href="favicon.ico">
 
 
@@ -61,6 +63,13 @@ if( /android/i.test(navigator.userAgent) ) {
 
 <script type="text/javascript" src="js/googleapis/jquery.min.js"></script>
 <script type="text/javascript" src='js/jquery.transit.min.js'></script>
+
+
+<script src="fonts/cufon-yui.js" type="text/javascript"></script>
+<script src="fonts/hobo/Hobo_Std_500.font.js" type="text/javascript"></script>
+<script type="text/javascript">
+	Cufon.replace('#menuHome a'); // Works without a selector engine
+</script>
 
 
 <script language="javascript" type="text/javascript">
@@ -89,7 +98,7 @@ function auIntro() {
 	}
 	else if (android > -1) {
 		//alert('android 16');
-		audioElement.setAttribute('src', 'http://librosparatodoscr.com/miCuentoFantastico/2014/audio/intro.ogg');
+		audioElement.setAttribute('src', 'http://librosparatodoscr.com/miCuentoFantastico/2015/audio/intro.ogg');
 	}
 	else {
 		//audioElement.setAttribute('src', 'audio/intro.ogg');
@@ -153,31 +162,31 @@ $(document).ready(function() {
 		//$("head").append('<meta name="viewport" content="width=1200px, target-densitydpi=device-dpi" />');
 		if ( screen.width > 1100 ) {
 			//alert('> 1100');//device deborah
-			$("head").append('<meta name="viewport" content="initial-scale=1.22, maximum-scale=1.22, minimum-scale=1.22, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+			$("head").append('<meta name="viewport" content="initial-scale=1.2, maximum-scale=1.2, minimum-scale=1.2, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 1100) && (screen.width >= 1000) ) {
 			//alert('< 1100 >= 1000');
-			$("head").append('<meta name="viewport" content="initial-scale=1.17, maximum-scale=1.17, minimum-scale=1.17, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+			$("head").append('<meta name="viewport" content="initial-scale=1.15, maximum-scale=1.15, minimum-scale=1.15, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 1000) && (screen.width >= 900) ) {
 			//alert('< 1000 >= 900');
-			$("head").append('<meta name="viewport" content="initial-scale=1.12, maximum-scale=1.12, minimum-scale=1.12, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+			$("head").append('<meta name="viewport" content="initial-scale=1.1, maximum-scale=1.1, minimum-scale=1.1, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 900) && (screen.width >= 800) ) {
 			//alert('< 900 >= 800');
-			$("head").append('<meta name="viewport" content="initial-scale=1.07, maximum-scale=1.07, minimum-scale=1.07, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+			$("head").append('<meta name="viewport" content="initial-scale=1.05, maximum-scale=1.05, minimum-scale=1.05, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 800) && (screen.width >= 700) ) {
 			//alert('< 800 >= 700');
-			$("head").append('<meta name="viewport" content="initial-scale=1.2, maximum-scale=1.2, minimum-scale=1.2, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+			$("head").append('<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 700) && (screen.width >= 600) ) {
 			//alert('< 700 >= 600');
-			$("head").append('<meta name="viewport" content="initial-scale=1.15, maximum-scale=1.15, minimum-scale=1.15, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+			$("head").append('<meta name="viewport" content="initial-scale=.95, maximum-scale=.95, minimum-scale=.95, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 600) && (screen.width >= 500) ) {
 			//alert('< 600 >= 500');//device lolita
-			$("head").append('<meta name="viewport" content="initial-scale=1.1, maximum-scale=1.1, minimum-scale=1.1, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+			$("head").append('<meta name="viewport" content="initial-scale=.9, maximum-scale=.9, minimum-scale=.9, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 500) && (screen.width >= 400) ) {
 			//alert('< 500 >= 400');
-			$("head").append('<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+			$("head").append('<meta name="viewport" content="initial-scale=.8, maximum-scale=.8, minimum-scale=.8, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 400) && (screen.width >= 300) ) {
 			//alert('< 400 >= 300');
-			$("head").append('<meta name="viewport" content="initial-scale=.8, maximum-scale=.8, minimum-scale=.8, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+			$("head").append('<meta name="viewport" content="initial-scale=.6, maximum-scale=.6, minimum-scale=.6, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		}//if screen.width
 		//alert('screen width' + screen.width);
 		
@@ -198,7 +207,6 @@ $(document).ready(function() {
 		if (window.orientation == 0){
 			//sí scroll y rebote iOS
 			document.ontouchmove = function(e){ return true; }
-			$("body").css({"height":"100%"});
 		}
 		if (window.orientation == 90){
 			//no scroll ni rebote iOS
@@ -250,7 +258,7 @@ $(document).ready(function() {
 		
 		$('#mask').hide();
 		$('.window').hide();
-	});		
+	});
 	
 	//if mask is clicked
 	$('#mask').click(function () {
@@ -295,29 +303,29 @@ $(document).ready(function() {
 	
 	<div id="general">
 		
-		<div id="pantalla01" class="disblock pantallas floatNoneClearBoth marginAuto">
+		<div id="pantalla01" class="disblock floatNoneClearBoth marginAuto pantallas">
 			
 			<div class="disblock floatL" id="titlehomePeq"></div>
 			
 			<div class="disblock floatR" id="menuHome">
-                <a href="#dialog1" name="modal" class="disblock floatL">Autores</a>
-				<a href="#dialog2" name="modal" class="disblock floatL">Reconocimientos<!--Menciones--></a>
+                <a href="#dialog5" name="modal" class="disblock floatL">Créditos</a>
+                <a href="#dialog4" name="modal" class="disblock floatL">Guía</a>
 				<a href="#dialog3" name="modal" class="disblock floatL">Jurado</a>
-				<a href="#dialog4" name="modal" class="disblock floatL">Guía</a>
-				<a href="#dialog5" name="modal" class="disblock floatL">Créditos</a>
+				<a href="#dialog2" name="modal" class="disblock floatL">Menciones</a><!-- Reconocimientos -->
+				<a href="#dialog1" name="modal" class="disblock floatL">Autores</a>
 				<div class="finCols"></div>
 			</div><!--/#menuHome-->
             
 			<div class="finCols"></div>
 			
-			<a class="disInlineblock bthome tran100" id="bthome1" href="javascript:var proxPantalla = 'cuento.html?01'" onClick="transPage();"></a>
-			<a class="disInlineblock bthome tran100" id="bthome2" href="javascript:var proxPantalla = 'cuento.html?02'" onClick="transPage();"></a>
-			<a class="disInlineblock bthome tran100" id="bthome3" href="javascript:var proxPantalla = 'cuento.html?03'" onClick="transPage();"></a>
-			<a class="disInlineblock bthome tran100" id="bthome4" href="javascript:var proxPantalla = 'cuento.html?04'" onClick="transPage();"></a>
-			<a class="disInlineblock bthome tran100" id="bthome5" href="javascript:var proxPantalla = 'cuento.html?05'" onClick="transPage();"></a>
-			<a class="disInlineblock bthome tran100" id="bthome6" href="javascript:var proxPantalla = 'cuento.html?06'" onClick="transPage();"></a>
-			<a class="disInlineblock bthome tran100" id="bthome7" href="javascript:var proxPantalla = 'cuento.html?07'" onClick="transPage();"></a>
-			<a class="disInlineblock bthome tran100" id="bthome8" href="javascript:var proxPantalla = 'cuento.html?08'" onClick="transPage();"></a>
+			<a class="disblock floatL bthome tran100" id="bthome1" href="javascript:var proxPantalla = 'cuento.html?01'" onClick="transPage();"></a>
+			<a class="disblock floatL bthome tran100" id="bthome2" href="javascript:var proxPantalla = 'cuento.html?02'" onClick="transPage();"></a>
+			<a class="disblock floatL bthome tran100" id="bthome3" href="javascript:var proxPantalla = 'cuento.html?03'" onClick="transPage();"></a>
+			<a class="disblock floatL bthome tran100" id="bthome4" href="javascript:var proxPantalla = 'cuento.html?04'" onClick="transPage();"></a>
+			<a class="disblock floatL bthome tran100" id="bthome5" href="javascript:var proxPantalla = 'cuento.html?05'" onClick="transPage();"></a>
+			<a class="disblock floatL bthome tran100" id="bthome6" href="javascript:var proxPantalla = 'cuento.html?06'" onClick="transPage();"></a>
+			<a class="disblock floatL bthome tran100" id="bthome7" href="javascript:var proxPantalla = 'cuento.html?07'" onClick="transPage();"></a>
+			<a class="disblock floatL bthome tran100" id="bthome8" href="javascript:var proxPantalla = 'cuento.html?08'" onClick="transPage();"></a>
 			
 		</div><!-- /#pantalla01 -->
 		
@@ -329,49 +337,49 @@ $(document).ready(function() {
             <div class="disInlineblock autBlock">
 				<img src="img/autor1.jpg" />
 				Cuento:
-				<div class="titleCuento">La montaña encantada</div>
+				<div class="titleCuento">El poder interior <br>&nbsp;</div>
 			</div><!--/.autBlock1-->
             
             <div class="disInlineblock autBlock">
 				<img src="img/autor2.jpg" />
 				Cuento:
-				<div class="titleCuento">La nueva escuela</div>
+				<div class="titleCuento">El amor de mi tía <br>y la tamaleada</div>
 			</div><!--/.autBlock2-->
                 
             <div class="disInlineblock autBlock">
 				<img src="img/autor3.jpg" />
 				Cuento:
-				<div class="titleCuento">Kira</div>
+				<div class="titleCuento">La fábrica de sueños, <br>de cuentos e historias</div>
             </div><!--/.autBlock3-->
                 
             <div class="disInlineblock autBlock">
 				<img src="img/autor4.jpg" />
 				Cuento:
-				<div class="titleCuento">Mis amigos los dragones</div>
+				<div class="titleCuento">Cuando las letras no tenían <br>sonido</div>
             </div><!--/.autBlock4-->
                 
             <div class="disInlineblock autBlock">
 				<img src="img/autor5.jpg" />
 				Cuento:
-                <div class="titleCuento">El conejito que recuperó su alegría</div>
+                <div class="titleCuento">Un extraterrestre <br>en Costa Rica</div>
             </div><!--/.autBlock5-->
                 
             <div class="disInlineblock autBlock">
 				<img src="img/autor6.jpg" />
 				Cuento:
-				<div class="titleCuento">El niño que soñaba con la paz</div>
+				<div class="titleCuento">La niña que soñaba <br>con volar</div>
             </div><!--/.autBlock6-->
                 
             <div class="disInlineblock autBlock">
 				<img src="img/autor7.jpg" />
 				Cuento:
-				<div class="titleCuento">De nuevo Manchas y yo</div>
+				<div class="titleCuento">El genio del celular <br>y el secreto de la felicidad</div>
             </div><!--/.autBlock7-->
                 
             <div class="disInlineblock autBlock">
 				<img src="img/autor8.jpg" />
 				Cuento:
-				<div class="titleCuento">La niña y el mar</div>
+				<div class="titleCuento">Surá, el cazador chorotega <br>&nbsp;</div>
             </div><!--/.autBlock8-->
 			
 			<a href="javascript:void(0)" class="close btCloseCredits"></a>
@@ -381,7 +389,7 @@ $(document).ready(function() {
 		<div id="dialog2" class="window borRadius10"><!--menciones-->
             
             <br />
-            <div class="colorCredito"> Reconocimientos </div><!--Menciones de honor | El concurso <strong>Mi Cuento Fantástico 2014</strong> <br /> otorgó mención honorífica a los siguientes participantes:-->
+            <div class="colorCredito"> Menciones de honor </div><!-- Reconocimientos -->
             
             <section>
                 <div class="container">
@@ -389,7 +397,7 @@ $(document).ready(function() {
                         <thead>
                             <tr class="header">
                                 <th width="33%"><div>Estudiante</div></th>
-                                <th width="33%"><div>Docente</div></th>
+                                <th width="33%"><div>Docente y bibliotecólogo *</div></th>
                                 <th width="34%"><div>Escuela</div></th>
                             </tr>
                         </thead>
@@ -399,171 +407,139 @@ $(document).ready(function() {
                                 <td>&nbsp;<br />&nbsp;</td>
                                 <td>&nbsp;<br />&nbsp;</td>
                             </tr>
+
+                            <!-- 
                             <tr>
-                                <td colspan="3"><strong>Ganador del tercer lugar en tercer grado</strong></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr> -->
+
+                            <tr>
+                                <td>1. Arianna Ledezma Acevedo</td>
+                                <td>Vilma Com Matarrita</td>
+                                <td>Juan Rafael Mora Porras</td>
                             </tr>
                             <tr>
-                                <td>Steven Josué Masís</td>
-                                <td>Karla V. Montoya</td>
-                                <td>San Bosco (San José)</td>
+                                <td>2. Fiorella Méndez Quirós</td>
+                                <td>Luis Diego Sánchez Vargas / Ana Cecilia Pizarro Pizarro</td>
+                                <td>Elías Jiménez Castro</td>
                             </tr>
                             <tr>
-                                <td colspan="3"><strong>Ganador del tercer lugar en cuarto grado</strong></td>
+                                <td>3. Marcela Vega Valerín</td>
+                                <td>Wendy Vargas Jiménez</td>
+                                <td>Pan American School</td>
                             </tr>
                             <tr>
-                                <td>Yorjanny Arrieta</td>
-                                <td>Alberto Brenes</td>
-                                <td>Monseñor Sanabria (Oreamuno, Cartago)</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3"><strong>Ganador del tercer lugar en quinto grado</strong></td>
-                            </tr>
-                            <tr>
-                                <td>Arelis León Urbina</td>
-                                <td>Ana Lorena Rodríguez Arias</td>
-                                <td>La Constancia (San Ramón, Alajuela)</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3"><strong>Ganador del tercer lugar en sexto grado</strong></td>
-                            </tr>
-                            <tr>
-                                <td>Fernán Orlich Rojas</td>
-                                <td>Adriana Díjeres</td>
-                                <td>Saint Anthony</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3"><strong>Menciones de Honor</strong></td>
-                            </tr>
-                            <tr>
-                                <td>1. Leonardo Sibaja Campos</td>
-                                <td>Yanory Bonilla Chacón / Leda Zúñiga García</td>
-                                <td>San Rafael de Naranjo</td>
-                            </tr>
-                            <tr>
-                                <td>2. Andrés Sáenz Alvarez</td>
-                                <td>Ana Cristina Guzmán Camacho / Ingrid Zamora Cascante</td>
-                                <td>Buenaventura Corrales Bermúdez</td>
-                            </tr>
-                            <tr>
-                                <td>3. César Adrián Pérez Calderón</td>
-                                <td>Xenia Barquero Quesada</td>
-                                <td>Aquiares</td>
-                            </tr>
-                            <tr>
-                                <td>4. David E. Brenes Hernández</td>
-                                <td>Lía Mayela Anchía Angulo / Alejandra León Acuña</td>
-                                <td>Franklin Delano Roosevelt</td>
-                            </tr>
-                            <tr>
-                                <td>5. Tiffany Rodríguez Chacón</td>
-                                <td>Eida Ballestero Campos / Esmeralda Zúñiga Vargas</td>
-                                <td>Estado de Israel</td>
-                            </tr>
-                            <tr>
-                                <td>6. Diego Granados Retana</td>
-                                <td>Esteban Ibarra Vargas / Marta Elena Rubí Carballo</td>
-                                <td>Saint Anthony</td>
-                            </tr>
-                            <tr>
-                                <td>7. Astrid F. Aguilar Rodríguez</td>
-                                <td>Jenny M. Valverde Víquez</td>
-                                <td>Morazán</td>
-                            </tr>
-                            <tr>
-                                <td>8. Henry Fallas Salas</td>
-                                <td>Maria Elena Rojas Alvarado / Jennifer Jiménez Talavera</td>
+                                <td>4. Ian Oporta Brenes</td>
+                                <td>Jorleny Sánchez Campos / Jenifer Jiménez Talabera</td>
                                 <td>La Inmaculada</td>
                             </tr>
                             <tr>
-                                <td>9. Katherine Vargas Jiménez</td>
-                                <td>Carolina Méndez Pacheco</td>
-                                <td>La Cueva</td>
+                                <td>5. Estefanía Casanova Castillo</td>
+                                <td>Marjorie Aguilar Alvarez </td>
+                                <td>Centroamérica</td>
                             </tr>
                             <tr>
-                                <td>10. Marieandree Galindo Duarte</td>
-                                <td>Ana Lorena Muñoz Ramírez</td>
-                                <td>Los Angeles</td>
+                                <td>6. María Fernanda Martínez G.</td>
+                                <td>Jennifer Morales Garmendia</td>
+                                <td>Manuela Santamaría Rodríguez</td>
                             </tr>
                             <tr>
-                                <td>11. Didier Urbina Angulo</td>
-                                <td>Thelma Chavarría Chavarría / Nicole Leroy Rodríguez</td>
-                                <td>UP. José Fidel Tristán</td>
+                                <td>7. Paola Sofía Sánchez Paniagua</td>
+                                <td>Kattia Carvajal Román / María Marcela Saborío Alvarez</td>
+                                <td>Bernardo Soto Alfaro</td>
                             </tr>
                             <tr>
-                                <td>12. Ericka Umaña Mora</td>
-                                <td>Susan Cordero Ramírez / Maynor Murillo Murillo</td>
-                                <td>Colegio Nuestra Señora de Sion</td>
+                                <td>8. Ariela Espinoza Sandoval</td>
+                                <td>Silvia Guzmán Fernández / Karina Ramírez Esquivel</td>
+                                <td>República de Guatemala</td>
                             </tr>
                             <tr>
-                                <td>13. Nathalie Moncada Mata</td>
-                                <td>Ana Cristina Guzmán Camacho / Ingrid Zamora Cascante</td>
-                                <td>Buenaventura Corrales Bermúdez</td>
+                                <td>9. Yinell Vega Barquero</td>
+                                <td>Xiomara Barquero Quesada / Mónica Bonilla Zúñiga</td>
+                                <td>Mariano Cortés Cortés</td>
                             </tr>
                             <tr>
-                                <td>14. Alejandro Valenciano Blanco</td>
-                                <td>Nuria Quesada Alfaro</td>
-                                <td>Félix Villalobos</td>
+                                <td>10. Karina Arce Vargas</td>
+                                <td>Esteban Ibarra Vargas </td>
+                                <td>Saint Anthony</td>
                             </tr>
                             <tr>
-                                <td>15. Maria Paz Ramírez Arguedas</td>
-                                <td>Marianella Delgado Solano</td>
-                                <td>Nueva Generación "el Copey"</td>
+                                <td>11. Stephanie García Calvo</td>
+                                <td>María Fernanda Jiménez Aguilar / Maynor Murillo Murillo</td>
+                                <td>Nuestra Señora de Sion</td>
                             </tr>
                             <tr>
-                                <td>16. Melanny Rojas Mora</td>
-                                <td>Iria Calvo Rodríguez / Esmeralda Zúñiga Vargas</td>
-                                <td>Estado de Israel</td>
+                                <td>12. Josué David Cubero Herrera</td>
+                                <td>Jenny Barrantes Duarte / Ana Cecilia Pizarro Pizarro</td>
+                                <td>Elías Jiménez Castro</td>
                             </tr>
                             <tr>
-                                <td>17. Sebastian Hernández Varsi</td>
-                                <td>Ana Infante Meléndez</td>
-                                <td>Colegio Los Angeles</td>
+                                <td>13. Mariana Sequeira Alvarado</td>
+                                <td>Ana María Sánchez Gamboa</td>
+                                <td>Sagrado Corazón</td>
                             </tr>
                             <tr>
-                                <td>18. David Martínez Céspedes</td>
-                                <td>Lidia Ruiz Cisneros / Gloriela Navarro Araya</td>
-                                <td>Ricardo Jiménez Oreamuno</td>
-                            </tr>
-                            <tr>
-                                <td>19. Mariana de Jesús Venegas U.</td>
-                                <td>Julieta Quesada Rojas / Melida Chavarria Mora</td>
-                                <td>IDA Garabito</td>
-                            </tr>
-                            <tr>
-                                <td>20. María Fernanda Cerdas Solís</td>
-                                <td>Adriana Díjeres Duarte / Marta Elena Rubí</td>
-                                <td>Saint Anthony School</td>
-                            </tr>
-                            <tr>
-                                <td>21. Aarón Merino Orozco</td>
-                                <td>Lidiana Araya Jiménez / Damián Padilla Calvo</td>
-                                <td>Cecilia Orlich Figueres</td>
-                            </tr>
-                            <tr>
-                                <td>22. Luis Andrés Pérez Barquero</td>
+                                <td>14. Ashley Núñez Cordero</td>
                                 <td>Susana Muñoz Vargas / Edieth López Arias</td>
                                 <td>Cubujuquí</td>
                             </tr>
                             <tr>
-                                <td>23. Daniela Chacón González</td>
-                                <td>Karla Aguilar Ulloa / José Pérez Abellán</td>
-                                <td>Golden Valley School</td>
+                                <td>15. Yorjanny E. Arrieta Zúñiga</td>
+                                <td>Yorleny Bonilla Solano / Jennifer Bolaños Poveda</td>
+                                <td>Monseñor Sanabria</td>
                             </tr>
                             <tr>
-                                <td>24. Jimena Pacheco Carriols</td>
-                                <td>Yadira Jiménez Díaz / Nora Arguedas Granados</td>
-                                <td>U.P. La Valencia</td>
+                                <td>16. Rebeca Arce Fonseca</td>
+                                <td>Milena Ramírez Rodríguez</td>
+                                <td>Colegio Europeo</td>
                             </tr>
                             <tr>
-                                <td>25. Ashley Chacón Rivera</td>
-                                <td>Ingrid Ugalde Esquivel / Marcia Burke Scott</td>
-                                <td>Excelencia Juan Santamaria</td>
+                                <td>17. Mariano Arguedas Barquero</td>
+                                <td>Ismary Villalobos Chacón / Evelyn Alvarez López</td>
+                                <td>Timoleón Morera Soto</td>
                             </tr>
-                            <!--<tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>-->
+                            <tr>
+                                <td>18. Sophia Prendas Moya</td>
+                                <td>Sarita Espinoza Gutiérrez / Ana Cecilia Pizarro Pizarro</td>
+                                <td>Elías Jiménez Castro</td>
+                            </tr>
+                            <tr>
+                                <td>19. Natalia Cordero Murillo</td>
+                                <td>Tania Chavarría Vargas</td>
+                                <td>Providencia</td>
+                            </tr>
+                            <tr>
+                                <td>20. Jimena Arias Cruz</td>
+                                <td>Cynthia Leandro Peralta / Ana Lorena Alpízar Garita</td>
+                                <td>República de Haití</td>
+                            </tr>
+                            <tr>
+                                <td>21. Isabella Sosto Flores</td>
+                                <td>Isaura Flores Fuentes </td>
+                                <td>Marian Baker</td>
+                            </tr>
+                            <tr>
+                                <td>22. Kristel Quirós Solano</td>
+                                <td>Kathia Jiménez Brenes / Belkis Brenes Zúñiga</td>
+                                <td>Rescate de Ujarrás</td>
+                            </tr>
+                            <tr>
+                                <td>23. Sofía Ramírez Santamaría</td>
+                                <td>María Castro Fernández / Maynor Murillo Murillo</td>
+                                <td>Nuestra Señora de Sion</td>
+                            </tr>
+                            <tr>
+                                <td>24. Daniela Acuña Soto</td>
+                                <td>Adriana Díjeres Duarte</td>
+                                <td>Saint Anthony</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                	<strong>(*)</strong> Unicamente se incluye al bibliotecólogo en aquellos casos en que este participó en el proceso. Algunas de las escuelas no cuentan con biblioteca.
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div><!--/.container-->
@@ -577,7 +553,7 @@ $(document).ready(function() {
 			
             <div class="colorCredito"> Jurado </div>
             <div id="txJur" class="disblock floatNoneClearBoth">
-				Gilberto Alfaro &bull; Jenny Bogantes &bull; María Elena Fonseca &bull; Ana María Hernández &bull; Floria Jiménez &bull; María de los Ángeles Jiménez &bull; Yanancy Noguera &bull; Marcela Segares
+				Gilberto Alfaro &bull; Jenny Bogantes &bull; María Elena Fonseca &bull; Nelson Heymans &bull; Floria Jiménez &bull; María de los Ángeles Jiménez &bull; Yanancy Noguera
 			</div><!--/#txJur-->
 			<a href="javascript:void(0)" class="close btCloseCredits"></a>
 			
@@ -592,19 +568,19 @@ $(document).ready(function() {
 				<br /><br />
                 <script type="text/javascript">
 					if(isiPhone > -1) {
-						$("#txLdoc").append('Para descargar la guía del docente copie la siguiente dirección y péguela en su navegador web <br /> <span style="font-size:21px;">http://librosparatodoscr.com/miCuentoFantastico/2013/guia/guia.pdf</span>');
+						$("#txLdoc").append('Para descargar la guía del docente copie la siguiente dirección y péguela en su navegador web <br /><br /> <span style="font-size:21px;">http://librosparatodoscr.com/miCuentoFantastico/2015/guia/guia.pdf</span>');
 					}
 					else if(isiPod > -1) {
-						$("#txLdoc").append('Para descargar la guía del docente copie la siguiente dirección y péguela en su navegador web <br /> <span style="font-size:21px;">http://librosparatodoscr.com/miCuentoFantastico/2013/guia/guia.pdf</span>');
+						$("#txLdoc").append('Para descargar la guía del docente copie la siguiente dirección y péguela en su navegador web <br /><br /> <span style="font-size:21px;">http://librosparatodoscr.com/miCuentoFantastico/2015/guia/guia.pdf</span>');
 					}
 					else if(isiPad > -1) {
-						$("#txLdoc").append('Para descargar la guía del docente copie la siguiente dirección y péguela en su navegador web <br /> <span style="font-size:21px;">http://librosparatodoscr.com/miCuentoFantastico/2013/guia/guia.pdf</span>');
+						$("#txLdoc").append('Para descargar la guía del docente copie la siguiente dirección y péguela en su navegador web <br /><br /> <span style="font-size:21px;">http://librosparatodoscr.com/miCuentoFantastico/2015/guia/guia.pdf</span>');
 					}
 					else if (android > -1) {
-						$("#txLdoc").append('Para descargar la guía del docente copie la siguiente dirección y péguela en su navegador web <br /> <span style="font-size:21px;">http://librosparatodoscr.com/miCuentoFantastico/2013/guia/guia.pdf</span>');
+						$("#txLdoc").append('Para descargar la guía del docente copie la siguiente dirección y péguela en su navegador web <br /><br /> <span style="font-size:21px;">http://librosparatodoscr.com/miCuentoFantastico/2015/guia/guia.pdf</span>');
 					}
 					else {
-						$("#txLdoc").append('Descargue la guía del docente <a href="http://librosparatodoscr.com/miCuentoFantastico/2014/guia/guia.pdf" class="disblock floatNoneClearBoth marginAuto" target="_blank">pulsando aquí » </a>');
+						$("#txLdoc").append('Descargue la guía del docente <br /><br /> <a href="http://librosparatodoscr.com/miCuentoFantastico/2015/guia/guia.pdf" class="disblock floatNoneClearBoth marginAuto" target="_blank">pulsando aquí » </a>');
 					}
 				</script>
 			</div><!-- /#txLdoc -->
@@ -613,38 +589,11 @@ $(document).ready(function() {
 		</div><!--/#dialog4-->
         
         <div id="dialog5" class="window borRadius10"><!--creditos-->
-        	
-            <div id="creditoLogo"></div>
-            
-            <script type="text/javascript">
-				if(isiPhone > -1) {
-					$("#creditoLogo").append('<div id="enlaceLPT" class="disblock floatL enlaceLogo"></div> <div id="enlaceProd" class="disblock floatL"></div> <div id="enlaceGN" class="disblock floatL enlaceLogo"></div>');
-				}
-				else if(isiPod > -1) {
-					$("#creditoLogo").append('<div id="enlaceLPT" class="disblock floatL enlaceLogo"></div> <div id="enlaceProd" class="disblock floatL"></div> <div id="enlaceGN" class="disblock floatL enlaceLogo"></div>');
-				}
-				else if(isiPad > -1) {
-					$("#creditoLogo").append('<div id="enlaceLPT" class="disblock floatL enlaceLogo"></div> <div id="enlaceProd" class="disblock floatL"></div> <div id="enlaceGN" class="disblock floatL enlaceLogo"></div>');
-				}
-				else if (android > -1) {
-					$("#creditoLogo").append('<div id="enlaceLPT" class="disblock floatL enlaceLogo"></div> <div id="enlaceProd" class="disblock floatL"></div> <div id="enlaceGN" class="disblock floatL enlaceLogo"></div>');
-				}
-				else {
-					$("#creditoLogo").append('<a href="http://librosparatodoscr.com/" id="enlaceLPT" class="disblock floatL enlaceLogo" target="_blank"></a> <div id="enlaceProd" class="disblock floatL"></div> <a href="http://www.gruponacion.co.cr" id="enlaceGN" class="disblock floatL enlaceLogo" target="_blank"></a>');
-				}
-			</script>
-			
-			<div class="finCols"></div>
             
             <div id="creditosC">
             	<div class="colorCredito"> Créditos </div>
-                <strong>Edición</strong> Grupo Nación GN S.A. &bull; <strong>Producción Editorial </strong> Libros para Todos &bull; <strong>Ilustraciones</strong> Ruth Angulo de Casa Garabato, con colaboración de Raúl Angulo &bull; <strong>Retoque</strong> Producción Fotográfica &bull; <strong>Edición</strong> Equipo ADA &bull; <strong>Impresión</strong> GN Impresos de Grupo Nación.
+                <strong>Edición</strong> Grupo Nación GN S.A. &bull; <strong>Producción Editorial </strong> Libros para Todos &bull; <strong>Ilustraciones</strong> Eduardo González Vargas &bull; <strong>Retoque</strong> Producción Fotográfica &bull; <strong>Edición</strong> Equipo ADA &bull; <strong>Impresión</strong> GN Impresos 2015.
                 <br /><br />
-                <!--
-                <strong>ISBN: 978-9968-693-12-7</strong>
-                <br />
-                Libros para Todos de Grupo Nación
-                <br /><br />-->
                 Quedan reservados todos lo derechos sobre la presente edición.
                 <br />
                 Se prohíbe su reproducción sin el permiso previo y por escrito de Grupo Nación GN S.A. y la  Asociación Amigos del Aprendizaje (ADA).
@@ -666,7 +615,7 @@ $(document).ready(function() {
 					<img src="img/home/logo_nacion.png"    alt="Periódico La Nación" />
 					<img src="img/home/logo_teletica.png"  alt="Teletica" />
 					<img src="img/home/logo_monge.png"     alt="Importadora Monge" />
-					<img src="img/home/logo_adn.png"       alt="ADN radio" />
+					<img src="img/home/logo_strachan.png"  alt="Strachan Foundation" />
 					<img src="img/home/logo_totto.png"     alt="Tiendas Totto" />
                 </div><!--/.patrocinadores-->
 			</div><!-- fin creditosC -->
@@ -693,8 +642,7 @@ $(document).ready(function() {
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-57001030-1', 'auto');
-  ga('require', 'displayfeatures');
+  ga('create', 'UA-69812432-1', 'auto');
   ga('send', 'pageview');
 
 </script>
