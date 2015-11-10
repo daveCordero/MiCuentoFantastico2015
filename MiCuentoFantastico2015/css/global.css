@@ -1,0 +1,588 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* miscelaneos
+
+	-webkit-transition: all 100ms ease-in-out;
+	-moz-transition: all 100ms ease-in-out;
+	-ms-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	
+	-moz-box-shadow:     inset  0px 0px 50px rgba(113,0,48,1);
+	-webkit-box-shadow:  inset  0px 0px 50px rgba(113,0,48,1);
+	box-shadow:          inset  0px 0px 50px rgba(113,0,48,1);
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=1);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=1)";
+	
+	-moz-box-shadow:     0px 0px 50px rgba(0,0,0,0.5);
+	-webkit-box-shadow:  0px 0px 50px rgba(0,0,0,0.5);
+	box-shadow:          0px 0px 50px rgba(0,0,0,0.5);
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=1);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=1)";
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	
+	-webkit-transition: background-position .5s ease;
+	   -moz-transition: background-position .5s ease;
+	     -o-transition: background-position .5s ease;
+	        transition: background-position .5s ease;
+			
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+	-moz-opacity:0.9;
+	-khtml-opacity:0.9;
+	opacity:0.9;
+	
+*/
+
+/* precarga */
+#pre-load-web {width:100%;position:absolute;background:#FFF;left:0px;top:0px;z-index:100000} /*#DBDED9*/
+/*aqui centramos la imagen si coloco margin left -30 es por que la imagen mide 60 */
+#pre-load-web #imagen-load{left:50%;margin-left:-30px;position:absolute}
+/* fin precarga */
+
+@font-face {
+	font-family: 'Muli';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Muli'), url(../fonts/muli/minRpKQdEvXRRS8oAbAtWvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+@font-face{
+	font-family: 'storybookregular';
+    src: url('../fonts/storyboo/storyboo_2-webfont.eot');
+    src: url('../fonts/storyboo/storyboo_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/storyboo/storyboo_2-webfont.woff2') format('woff2'),
+         url('../fonts/storyboo/storyboo_2-webfont.woff') format('woff'),
+         url('../fonts/storyboo/storyboo_2-webfont.ttf') format('truetype'),
+         url('../fonts/storyboo/storyboo_2-webfont.svg#storybookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	height:100%;
+	min-height:100%;
+	
+	/*-webkit-tap-highlight-color: rgba(201, 224, 253, 0.8);*/
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);/*remove highlight completely*/
+}
+
+body {
+	/*background-color:#F3F0E5;
+	
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-repeat:repeat;
+	
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/post_bg.jpg', sizingMethod='scale')";*/
+	
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-position: left bottom;
+	background-size:contain;
+	
+	background-color:#6CDBFF;
+	
+	margin: 0px; /* for IE6 / IE7 */
+	padding:0px;
+	
+	/*overflow:hidden !important;*/
+	font-size:14px;
+	font-family:'Muli', sans-serif;
+	font-weight:400;
+	
+	color:#333;
+	
+	/*height:100%;
+	min-height:100%;*/
+}
+
+::selection {
+	background: #FFF; /* Safari */
+	color:#999;
+}
+::-moz-selection {
+	background: #FFF; /* Firefox */
+	color:#999;
+}
+
+#contenido {
+	/*background-color:#333 !important;*/
+	background-repeat:no-repeat;
+	background-position:center;
+	
+	display:block;
+	position:absolute;
+	/*overflow:hidden !important;*/
+	
+	top:0px;
+	left:0px;
+	
+	width:100%;
+	height:auto;
+	min-height:100%;
+}
+
+#general { /* contiene objetos evita scroll */
+	/*background:#FFF;*/
+	background-repeat:no-repeat;
+	
+	display:block;
+	
+	position:absolute;
+	left:0;
+	top:50%;
+	
+	width:100%;
+	height:600px;
+	margin:-300px 0px 0px 0px;
+	
+	padding:0px;
+}
+
+.pantallas {
+	/*background:#666;*/
+	position:relative;
+	width:960px;
+	height:600px;
+	text-align:center;
+}
+
+a {
+	text-decoration:none;
+}
+
+.finCols {
+	float:none;
+	clear:both;
+}
+
+/* modal dialogs */
+#mask {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:9000;
+	background-color:#000;
+	display:none;
+}
+
+#boxes .window {
+	background:#FFF;
+	
+	position:fixed;
+	left:0;
+	top:0;
+	display:none;
+	z-index:999999;
+	padding:20px;
+	
+	/*overflow: scroll !important;*/
+	-webkit-overflow-scrolling: touch;
+	
+	font-size:14px !important;
+	text-align:center;
+	
+	overflow:visible !important;
+}
+
+#boxes #dialog1 {
+	width:760px;
+	height:550px;
+	
+	/*overflow:visible !important;*/
+	
+	margin:-5px 0px 0px 0px;
+	padding:20px 5px 20px 5px;
+}
+#boxes #dialog2 {
+	width:700px;
+	/*height:483px;*/
+	height:auto;
+	
+	/*overflow:visible !important;*/
+	
+	margin:0px;
+	padding:0px 0px 20px 0px !important;
+}
+#boxes #dialog3 {
+	width:500px;
+	height:auto;
+	/*overflow:visible !important;*/
+}
+#boxes #dialog3 img {
+	display:block;
+	float:none;
+	clear:both;
+	margin:20px auto 20px auto;
+}
+
+#boxes #dialog4 {
+	width:400px;
+	height:auto !important;
+	/*overflow:visible !important;*/
+}
+
+#boxes #dialog5 {
+	width:760px;
+	height:430px;
+	/*overflow:visible !important;*/
+	
+	margin:-15px 0px 0px 0px;
+	padding:10px;
+	
+	font-size:12px;
+}
+#boxes #dialog6 {/*autor*/
+	width:400px;
+	height:315px;
+	/*overflow:visible !important;*/
+	
+	margin:0px;
+}
+#boxes #dialog7 {/*audio*/
+	width:400px;
+	height:80px;
+	/*overflow:visible !important;*/
+	
+	margin:-50px 0px 0px 0px;
+	padding:10px 20px 20px 20px;
+	
+	text-align:justify;
+}
+#boxes #dialog8 {/*zoom*/
+	width:900px;
+	height:500px;
+	
+	margin:auto !important;
+	padding:0px;
+	
+	text-align:justify;
+	font-size:24px !important;
+}
+#boxes #dialog9 {/*interstitial*/
+	background-color:transparent;
+	
+	width:380px;
+	height:440px;
+	
+	margin:auto !important;
+	padding:0px;
+	
+	text-align:center;
+}
+/* fin modal dialogs */
+
+#creditoLogo {
+	width:440px;
+	margin:0px auto;
+}
+#creditosC {
+	display:block;
+	float:none;
+	clear:both;
+	padding:0px 0px 5px 0px;
+	margin:20px 10px 10px 10px;
+}
+
+.colorCredito {
+	font-family: 'storybookregular';
+	font-size:21px;
+	color:#6E3777;
+	margin:20px 0px 10px 0px;
+}
+.colorCredito:before {
+	content:url(../img/hojaL.jpg);
+}
+.colorCredito:after {
+	content:url(../img/hojaR.jpg);
+}
+
+.btCloseCredits {
+	/*background:#6F0;*/
+	background-color:transparent;
+	background:url(../img/ico_mor_x.png) no-repeat;
+	background-position:0px 0px;
+	display:block;
+	position:absolute;
+	top:-28px;
+	right:-28px;
+	width:59px;
+	height:59px;
+}
+.btCloseCredits:hover {
+	/*background:#6F0;*/
+	background:url(../img/ico_mor_x.png) no-repeat;
+	background-position:-59px 0px;
+}
+
+#logoCreditos {
+	/*background:#6C0;*/
+	display:block;
+	float:none;
+	clear:both;
+	margin:0px auto 0px auto;
+}
+
+.enlaceLogo {
+	/*background-color:#CCC;*/
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	border:none;
+	height:83px;
+}
+.enlaceLogo:hover {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity:0.8;
+	opacity:0.8;
+}
+
+#enlaceLPT {
+	background-image:url(../img/enlace_lpt.jpg);
+	width:130px;
+	margin-left:50px;
+}
+#enlaceProd {
+	background-image:url(../img/enlace_prod.jpg);
+	border:none;
+	width:169px;
+	height:83px;
+}
+#enlaceGN {
+	background-image:url(../img/enlace_gn.jpg);
+	width:85px;
+}
+
+.disblock {
+	display:block;
+}
+
+.disNone {
+	display:none;
+}
+
+.disInlineblock {
+	display:inline-block;
+	/*display:inline;*/
+}
+
+.posAbsolute {
+	position:absolute;
+}
+
+.posFix {
+	position:fixed;
+}
+
+.floatNoneClearBoth {
+	float:none;
+	clear:both;
+}
+
+.floatL {
+	float:left;
+}
+
+.floatR {
+	float:right;
+}
+
+.marginAuto {
+	margin:0px auto 0px auto;
+}
+
+.noMarginR {
+	margin-right:0px !important;
+}
+
+.tran100 {
+	-webkit-transition: all 100ms ease-in-out;
+	-moz-transition: 	all 100ms ease-in-out;
+	-ms-transition: 	all 100ms ease-in-out;
+	-o-transition: 		all 100ms ease-in-out;
+}
+
+.tranBg {
+	-webkit-transition: background-image .1s ease;
+	   -moz-transition: background-image .1s ease;
+	     -o-transition: background-image .1s ease;
+	        transition: background-image .1s ease;
+}
+
+.top50 {
+	top:50%;
+}
+
+.left50 {
+	left:50%;
+}
+
+.bgNoRepTL {
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+
+.borRadius10 {
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-khtml-border-radius:10px;
+	border-radius:10px;
+}
+
+.borRadius15 {
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	-khtml-border-radius:15px;
+	border-radius:15px;
+}
+
+.borRadius20 {
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	-khtml-border-radius:20px;
+	border-radius:20px;
+}
+
+.borRadius50Por {
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-khtml-border-radius:50%;
+	border-radius:50%;
+}
+
+.borNone {
+	border:none;
+}
+
+.alpha60hover:hover {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	-moz-opacity:0.6;
+	-khtml-opacity:0.6;
+	opacity:0.6;
+}
+
+.txtAlignC {
+	text-align:center;
+}
+
+#btTopMorHome {
+	/*background-color:#333;*/
+	background-image:url(../img/ico_mor_home.png);
+	width:59px;
+	height:59px;
+}
+
+/*@media all and (max-width: 800px) and (min-width: 481px) {/*pantalla pequeña* /
+	
+}*/
+
+@media all and (max-width: 900px) {/*pantalla moviles*/
+	body {
+		/*overflow-y:scroll !important;*/
+	}
+	
+	#general { /* contiene objetos evita scroll */
+		/*background:#FFF;*/
+		display:block;
+		position:absolute;
+		top:0;
+		width:100%;
+		height:auto;
+		margin:0px;
+		
+		/*overflow-y:scroll !important;*/
+	}
+	
+	.pantallas {
+		/*background:#666;*/
+		width:100%;
+		height:auto;
+	}
+	
+	#boxes .window {
+		/*position:relative;
+		margin-left:auto;
+		margin-right:auto;*/
+		width:80% !important;
+		height:auto;
+		padding:0px !important;
+	}
+	#boxes #dialog1 {
+		height:auto;
+		
+		top:auto !important;
+		left:auto !important;
+		position:relative !important;
+		float:none !important;
+		clear:both !important;
+		margin:40px auto 40px auto !important;
+		padding:0px 0px 20px 0px !important;
+	}
+	/*#boxes #dialog2 {
+		height:80%;
+		text-align:center;
+	}*/
+	#boxes #dialog3 {
+		height:auto;
+	}
+	#boxes #dialog4 {
+		height:auto !important;
+		padding-bottom:20px !important;
+	}
+	#boxes #dialog5 {
+		height:auto;
+	}
+	#creditoLogo {
+		margin:20px auto 50px auto !important;
+	}
+	#enlaceLPT {
+		margin-left:20px;
+		margin-bottom:20px;
+	}
+}
+
+@media all and (max-width: 520px) {/*pantalla moviles*/
+	#enlaceLPT {
+		margin-left:10px;
+	}
+	#enlaceLPT, #enlaceProd, enlaceGN {
+		margin-bottom:0px !important;
+	}
+	#creditosC {
+		margin:0px 10px 10px 10px !important;
+	}
+	.colorCredito {
+		margin:0px 0px 10px 0px;
+	}
+}
+
+@media all and (max-width: 500px) {/*pantalla mini*/
+	#creditoLogo {
+		transform:scale(0.7,0.7);
+	}
+	#enlaceLPT {
+		margin-left:-50px;
+	}
+	#enlaceLPT, #enlaceProd, enlaceGN {
+		margin-bottom:0px !important;
+	}
+	#creditosC {
+		margin:0px 10px 10px 10px !important;
+	}
+	.colorCredito {
+		margin:0px 0px 10px 0px;
+	}
+}

@@ -1,0 +1,730 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="author" content="David Herrera Cordero | Libros para Todos Grupo Nación" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<script language="javascript" type="text/javascript">
+//vars user agent para meta viewport scale
+var isiPhone 	   = navigator.userAgent.toLowerCase().indexOf('iphone');
+var isiPad   	   = navigator.userAgent.toLowerCase().indexOf('ipad');
+var isiPod   	   = navigator.userAgent.toLowerCase().indexOf('ipod');
+var isSafari   	   = navigator.userAgent.toLowerCase().indexOf('safari');
+var android 	   = navigator.userAgent.toLowerCase().indexOf('android');
+//fin vars user agent para meta viewport scale
+</script>
+
+<!-- apple -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="apple-touch-icon" sizes="57×57"   href="img/touch-icon-iphone-114.png" />
+<link rel="apple-touch-icon" sizes="114×114" href="img/touch-icon-iphone-114.png" />
+<link rel="apple-touch-icon" sizes="72×72"   href="img/touch-icon-ipad-144.png" />
+<link rel="apple-touch-icon" sizes="144×144" href="img/touch-icon-ipad-144.png" />
+<!-- /apple -->
+
+<!-- facebook -- >
+<meta property="fb:app_id"       content="1234567890" />-->
+<meta property="og:type"         content="website" />
+<meta property="og:url"          content="http://samples.ogp.me/136756249803614" />
+<meta property="og:title"        content="Mi cuento fantástico 2014" />
+<meta property="og:image"        content="http://librosparatodoscr.com/miCuentoFantastico/2014/img/fb_preview.png" />
+<meta property="cookbook:author" content="https://itunes.apple.com/es/artist/grupo-nacion-gn-s.a./id388776953" />
+<!-- /facebook -->
+
+<title>Mi cuento fantástico 2014 | Libros para Todos | Grupo Nación | Cuento</title>
+<link rel="shortcut icon" href="favicon.ico">
+
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/cuentos.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/googleapis/jquery.min.js"></script>
+<script type="text/javascript" src='js/jquery.transit.min.js'></script>
+
+<!-- Swiper -->
+<link rel="stylesheet" href="css/idangerous.swiper.css">
+<link rel="stylesheet" href="css/swiper-cuentos.css?v=1.8">
+<script type="text/javascript" src="js/swiper/idangerous.swiper-1.8.min.js"></script>
+<script type="text/javascript" src="js/swiper/idangerous.swiper.scrollbar-1.0.js"></script>
+<script type="text/javascript" src="js/swiper/swiper-cuentos.js?v=1.8"></script>
+<!-- fin Swiper -->
+
+<script language="javascript" type="text/javascript">
+
+$(window).load(function(){
+	$("#pre-load-web").fadeOut(1000,function(){
+	    $(this).remove();//eliminamos la capa de precarga
+	    //$("body").css({"overflow-y":"auto"});//permitimos scroll
+	});
+});
+
+function transPage(){
+	$('#contenido').transition( { y: 700 }, 300, 'out' );
+	var timertransPage = setTimeout(function() {
+		window.location.href = proxPantalla;
+		clearTimeout(timertransPage);
+	}, 200);
+}
+
+function interStitialMobile() {
+	
+	if( isiPhone > -1 || isiPod > -1 || isiPad > -1 || android > -1 ) {
+		$('#interStitialBtn').click();
+	}//fin if( isiPhone
+	
+}//fin function interStitialMobile
+
+var cuento = location.search.substr(1);//alert(cuento);
+
+function cuentosZoom() {
+	
+	switch(cuento) {
+		
+		case '01'://La montaña encantada
+			$('#zoomContainer').append('<div class="disBlock floatNoneClearBoth titleZoom">La montaña encantada</div><div class="containerZoomtx">Hace mucho tiempo vivió una familia con cinco hijos. Pese a su pobreza, ellos eran felices. Conforme crecieron, los hijos querían descubrir qué había fuera de esas montañas. Es así como empieza  esta fascinante historia. <br /><br /> El hijo mayor dijo a su padre: —¡Estoy cansado de vivir aquí, quiero ver qué hay más allá de estas montañas! Las luces que veo en la noche parecen ser muy interesantes—. El padre guardó silencio. <br /><br /> A los  días, los cuatro  hijos mayores decidieron abandonar su hogar. El padre trató de persuadirlos, hablándoles de los peligros que podían enfrentar; aun así, ellos partieron, dejando a su madre envuelta en llanto. <br /><br /> Caminaron varios días a través de la montaña, llegaron a su ansiada ciudad. Era como lo habían imaginado, un lugar fascinante. En la ciudad cada quien tomó su camino, empezando así su nueva vida. <br /><br /> El mayor, atraído por la melodiosa voz de una hermosa joven de la ciudad, decidió entrar al lugar. La sorpresa fue que era una ilusión, el lugar era habitado por monstruos que escupían fuego y tenían cuatro brazos, estos se dedicaban a capturar hombres para obligarlos a trabajar casi sin alimento y dándoles muchos maltratos. <br /><br /> El segundo hermano soñaba con ser domador de dragones. Este conoció a un habitante de aquella ciudad que le ofreció el trabajo soñado; sin hacer muchas preguntas decidió irse con él, este lo llevó a un pueblo lejano y lo obligó a cuidar cerdos sin pago a cambio. <br /><br /> El tercero de ellos no consiguió trabajar, se dedicó a vagar por las calles pidiendo limosnas y sin un lugar donde dormir. El cuarto hermano fue encarcelado por un delito que no cometió. <br /><br /> Los cuatro hermanos, después  de vivir  estas desgracias, recordaban las palabras de su padre y se decían —¡Si tan solo pudiéramos volver!— <br /><br /> El hermano menor dijo a su padre: — Tuve un sueño donde mis hermanos estaban sufriendo, déjame ir a rescatarlos y traerlos a casa. Su padre dijo que no, le daba miedo que se enfrentara a esos peligros, pero el hijo logró convencerlo. <br /><br /> Emprendió el viaje al mundo desconocido. El joven tenía un corazón bondadoso, entonces la montaña decidió revelarle su secreto y le mostró la gran riqueza que había en ella, el oro y las piedras preciosas en el fondo de sus ríos cristalinos. <br /><br /> Él escuchó una voz que le dijo: — Como tienes un corazón bondadoso, toma lo necesario. <br /><br /> El joven recogió una barra de oro y tres piedras preciosas y las llevó con él a la ciudad. Ya en la ciudad preguntó por sus hermanos. Se dio cuenta del paradero del mayor y pidió al monstruo que lo liberara; este pidió paga por él, entonces el joven le entregó una de las piedras preciosas y el monstruo lo liberó. <br /><br /> Juntos buscaron a sus otros  hermanos, al encontrar al segundo pagaron con una piedra preciosa y lo liberaron. Al hallar al tercer hermano, que estaba encarcelado, tuvieron que pagar con la barra de oro para su liberación. <br /><br /> No encontraban al hermano que vagaba, alguien les dijo que una pobre anciana lo llevó a su casa porque lo encontró enfermo. Llegaron donde aquella pobre mujer y ahí lo encontraron. Agradecidos le dieron la última piedra preciosa, que era la más linda y valiosa. <br /><br /> Juntos por fin emprendieron su viaje de regreso a casa, pidieron perdón a sus padres y vivieron felices al amparo de aquella maravillosa montaña.<br /><br /></div>');
+		break;
+		
+		case '02'://La nueva escuela
+				$('#zoomContainer').append('<div class="disBlock floatNoneClearBoth titleZoom">La nueva escuela</div><div class="containerZoomtx">Rebeca se levantó y vio por su ventana el sol brillante y los pájaros que cantaban, las rosas de su vecina expedían un aroma delicioso, el rocío todavía las bañaba y pensó: con permiso de la vecina cortaré algunas rosas rojas para llevarle a mi nueva maestra. Imaginaba cómo sería ella, bonita, alegre, buena, inteligente... Es difícil llegar a una nueva escuela. <br /><br /> La pequeña Rebeca era una niña con cabello rubio como el sol, piel blanca y sus bellos ojitos azules veían a través de los cristales de unos anteojos color morado que ella misma había elegido, debía usarlos siempre por un grave problema de visión que padecía. Vivía con su mamá en una pequeña casa, se querían mucho, era una niña muy obediente y llena de alegría. Se bañó esperando el delicioso pinto con huevos que preparaba su mamá. <br /><br /> Al finalizar el desayuno sintió que su estómago estaba tan lleno que quizás no podía caminar, aunque pudo, de la emoción y los nervios. Ella iba asustada por que no conocía a nadie en esta nueva escuela. <br /><br /> Al entrar se sorprendió al ver lo grande que era el lugar, miraba jardines con hermosas flores coloridas, muchos niños jugando, sonriendo, correteando y algunos con la cara nerviosa como la de Rebeca. <br /><br /> Entró al salón. Al ver que nadie le hablaba se sintió triste, ella quería tener muchas amigas, como en su otra escuela, pero sentía que la miraban como algo extraño; sin embargo, en medio de tantos niños encontró a Lucía y desde ese momento fue su única amiga. Ya sentada en su salón observó a su nueva maestra, tenía el pelo un poco canoso, ella y Lucía le inspiraban confianza. <br /><br /> Pronto empezó a notar que esto era diferente al jardín de niños, ahora debía permanecer en un solo lugar, no podía comer dentro del salón o hablar en clase, llegó a pensar en presentar una queja a la directora por imponer semejantes reglas. Pasaron unos días y conforme Rebeca iba conociendo su escuela, más le gustaba. Podría pasar horas ojeando libros en la biblioteca o inventando nuevos juegos con los compañeros que gracias a Lucía se habían acercado a ella, le encantaban las riquísimas tortillas que hacía doña Karla, la señora del comedor, pero más que nada le emocionaba que pronto aprendería a leer y escribir. <br /><br /> Todo iba muy bien hasta que conoció a Sofía, una niña que tenía cara de buena persona, unos ojitos negros y cristalinos, cabello corto rizado, un poquito más alta que las demás niñas del grupo. De pronto resultó que hacía hasta lo imposible para hacer que Rebeca quedara en ridículo,  la empujaba de forma que quedaba tendida en el suelo mientras ella soltaba una carcajada de triunfo como si lo que había hecho fuera gracioso; a menudo le decía frases groseras, como gorda, fea y tonta, pero lo que más le dolía era que le puso el apodo de “cuatro ojos”. <br /><br /> Rebeca no comprendía porqué le estaba sucediendo esto, ella no sabía lo que era el maltrato, siempre la habían tratado con mucho amor y respeto. Un día, cansada de los abusos por parte de Sofía intentó defenderse, pero fue un fracaso, se dio cuenta que no era la solución porque los ataques de su compañera empeoraron, ahora no la dejaba participar en los juegos de los recreos y cuando tenía alguna oportunidad destruía sus útiles escolares. <br /><br /> Rebeca no sabía si contarle a la maestra porque le daba miedo ser más atacada. Su vida ya no era la misma, llegaba a casa triste y cuando la mamá le preguntaba qué le pasaba no decía nada; estaba a tal  punto que no quería ir más a la escuela, no deseaba levantarse de su camita, sentía solo ganas de pasar encerrada en su cuarto y no salir ni para comer. <br /><br /> Un martes llegaron unos doctores a realizar exámenes de la vista para todos los estudiantes, los resultados sorprendieron ya que le dijeron a Rebeca una noticia que la animó mucho, su vista estaba mejorando. También sorprendieron a Sofía pero de otra manera, porque resultó tener serias dificultades y le indicaron a la mamá que debía ponerle anteojos de inmediato o sino tendrían que hacerle una operación. Ese día Rebeca decidió contarle a la  mamá lo que tanto sufrió durante los últimos meses, había una niña que la molestaba y su nombre era Sofía. Entonces se dio una larga conversación entre ellas y la docente. <br /><br /> A la semana siguiente Sofía entró al aula con sus nuevos lentes, lo que resultaba extraño porque nadie estaba acostumbrado a verla así. Rebeca decidió acercarse y decirle que se veía muy bonita que diera un poco de tiempo a que los demás  se acostumbraran a mirarla. <br /><br /> La maestra realizó un taller de convivencia en el aula, en el que se trató lo que es el “bullying” y las consecuencias que trae, además del derecho de vivir libre y felizmente la etapa escolar sin importar las diferencias que tenga cada compañero. Fue así como Sofía comprendió y pidió perdón a quien más hizo daño, y Rebeca volvió a sonreír como antes.<br /><br /></div>');
+		break;
+		
+		case '03'://Kira
+			$('#zoomContainer').append('<div class="disBlock floatNoneClearBoth titleZoom">Kira</div><div class="containerZoomtx">El Sol ha vuelto a asomarse en la granja para otro día de verano. <br /><br /> —¡Otro día de verano! ¡Yupi!— grita Kira, mientras corre, saltando, fuera de su casita, como buena cachorrita; sacudiéndose el polvo de la paja. <br /><br /> — ¡Ya amaneció! ¡Quíquiriquí!—, un viejo gallo vuelve a soltar su tonada, por décima vez en la mañana. <br /><br /> Kira tiene cosas que ver en esta hermosa mañana y corre a la casa de papá para que le brinde desayuno. Papá le prepara la comida y le dice: —Kira, quédate jugando cerca de la casa, no te metas en problemas; yo voy a la cuadra y no regreso tarde. <br /><br /> Mamá, desde la cocina, le dice a papá: — Yo la cuido para que no haga destrozos en la casa—. A Kira le gusta morder y sacudir todo lo que pueda. <br /><br /> — ¡Bueno! ¡Me voy!—, dice papá, mientras coge la bolsa con el almuerzo y emprende su viaje. <br /><br /> Kira corre a la sala y se echa en la alfombra, pero unos golpes en la puerta la sorprenden. Con sus patas delanteras sobre la puerta, ladra a lo que esté golpeando.  Mamá llega y hace que Kira regrese a la cocina para ir a abrir. <br /><br /> — ¡Qué aburrido!–, dice Kira. De repente observa que la puerta de la cocina está entreabierta. Sale al patio y, curiosa por saber qué rumbo tomó papá, aprovecha su nariz de buen rastreador y se va a buscarlo; después de todo, debe aprender las labores de la granja y “para luego es tarde”. <br /><br /> Sigue el rastro a través de la finca, alejándose de la granja. Luego de andar un rato, ve un pequeño grillo cantando en la hoja de un helecho. — ¡Qué bicho tan raro y chillón!–, dice Kira. —¿Para qué hace tanta bulla?—. El grillo da un salto y se pierde en el monte. Kira quiere seguirlo, pero el grillo es tan pequeño que no puede ver dónde se metió; así que sigue el rastro de papá. <br /><br /> Unos metros adelante, ve unas lapas armando una fiesta porque encontraron un almendro para disfrutar. Kira, que desconoce lo que las lapas hacen, quiere saber y ladrando pregunta: —¿Qué hacen?, ¿qué juegan?—. Pero las lapas no le prestan atención y, sintiéndose apartada de la celebración, prefiere seguir el rastro de papá. <br /><br /> En el monte encuentra unas florecitas violeta que huelen muy rico y, oliendo todas las que puede, descubre una mariposa que agita sus alas. — ¡Qué lindos colores! ¿Qué será?—. Hipnotizada, deja el tiempo correr con aquella mariposa que atrapa sus grandes ojos azules. La mariposa vuela semejando un destello de colores que flota en el aire y Kira corre para alcanzarla, pero la mariposa vuela cada vez más alto y se aleja sin que la pueda atrapar.  Una vez más se da a la tarea de seguir el rastro que por un momento pierde; pero, tras unas vueltas por el potrero, lo vuelve a encontrar y sigue  la ruta buscando a papá. <br /><br /> Kira empieza a sentir que el sol la quema, pero no hay un árbol que le pueda dar sombra; siente el cansancio de tan larga búsqueda. Con la lengua colgándole, sigue, cada vez más cansada, la ruta que la nariz le indica; pero no parece llevar a ninguna parte. En lo alto de la colina corre una brisa fresca que la invita a echarse y decide quedarse un rato más. —¡Qué rico!—, dice Kira, pero, refrescada, debe seguir; está lejos de casa y no ha encontrado aún a papá. <br /><br /> A lo lejos corren unos caballos y Kira cree que también pueden ir por donde él va; así que decide correr tras la manada y averiguar, pero al llegar a la siguiente colina descubre que los caballos ya no están y sólo puede ver una nube tratando alzar vuelo. <br /><br /> Kira descubre que ha perdido el rastro, ya no sabe cómo volver a encontrarlo. Comprende que una cachorrita no es sabuesa y tiene mucho que aprender, pero ¿cómo saber qué hacer, si poco aprendió el tiempo que pudo estar en la granja? Es ahora cuando más necesita la habilidad de un sabueso, pero ya es tarde y lamentarse nada traerá, así que continúa el camino, triste, perdida, cansada y con sed. <br /><br /> Siente que el sol le pega en el lomo y se echa a llorar. Pero la brisa vuelve a aparecer con un detalle especial: parece llamarla “Kiiiiiiiira” una y otra vez, con una voz que a veces suena a mamá y otras veces suena a papá; así que Kira sigue la voz de la brisa. <br /><br /> Corre y ladra, ladra cada vez más, mientras corre tras la brisa que poco a poco se aleja, dejándola atrás. Aunque el hambre y el cansancio ya no le dan fuerzas para seguir, paso a paso va, entre la hierba de una colina desde donde puede ubicar algunos árboles cerca de un arroyo. <br /><br /> —¡Qué alegría! ¡Agua! La puedo oler y escuchar–, dice Kira. Tomando nuevas fuerzas, corre el trecho que necesita para llegar. <br /><br /> Bajo la frescura de la sombra, se detiene un largo rato a beber en el arroyo y a descansar; deja de tener la lengua como un yoyo y se duerme. Poco después, la misma brisa parece volverla a llamar; Kira abre los ojos y ve algo raro que la está mirando fijamente mientras se acerca callada. <br /><br /> Kira se levanta y ve que es una culebra que se prepara para atacar.   Pero Kira  no sabe qué es una pitón y la mira con asombro porque es muy larga y con una cabeza grande. Siente que la pitón le clava los ojos sobre los suyos, algo le dice que la cosa va mal, siente miedo, pero no sabe qué hacer. ¿Debe correr?, ¿debe ladrar? Mientras a Kira le entra la duda, la pitón se arrolla como un resorte; sabe que Kira no comprende el problema en que está. Kira no sabe si correr o quedarse, mientras la pitón abre su gran boca para tragársela de un bocado. <br /><br /> Sin embargo, al momento en que la pitón va a tragarse a Kira, un trueno, algo como un rayo, golpea la cabeza de la culebra. Kira, aterrada, corre lejos del arroyo. <br /><br /> —¿Qué era eso? ¿Un rayo sin lluvia?—, no creo que sea eso.  Pero escucha la voz de papá que, alegre y asustado, enojado y angustiado, le dice: — ¡Kira, tonta! ¿Qué haces aquí?, ¿cómo te saliste de casa?, ¿cómo llegaste a la quebrada? <br /><br /> Pero Kira sólo sabe ladrar de alegría, meneando la cola, jugando con la mano de papá que acaricia sus largas orejas. Papá alza a Kira y le dice: —Zaguata majadera, de ahora en adelante te voy a tener amarrada, aunque me llores y me ladres, porque de esta no te salvas. <br /><br /> Kira oye a papá con voz de enojo, pero poco le importa la regañada y le chupa la cara con la lengua. Colina arriba hay un caballo esperando a los dos para reanudar el viaje.  Como la alegría de Kira no se puede contener, papá, incómodo con una perra que no para de moverse, llega a la cuadra; después de ponerle una carreta al caballo, mete a Kira y se la lleva. <br /><br /> Mientras los hermanos de papá continúan las tareas de la cuadra, Kira tiene un viaje directo a casa en el viejo carretón de carga. Aunque papá va molesto, al mismo tiempo va satisfecho porque el único cachorro que le quedó no se lo ha llevado el arroyo, como a los hermanos de Kira.  Esta vez el amo y el animal quedan juntos y alegres con una gran historia para contar.<br /><br /></div>');
+		break;
+		
+		case '04'://Mis amigos los dragones
+			$('#zoomContainer').append('<div class="disBlock floatNoneClearBoth titleZoom">Mis amigos los dragones</div><div class="containerZoomtx">¡Hola! Me llamo Marcela, tengo el pelo lacio y negro, uso lentes y soy la guardiana de los dragones. Lo sé, suena increíble, pero es verdad. Esto pasó unos tres años atrás, cuando yo tenía siete. Para ese entonces yo no creía en dragones, pensaba que eran mitos. Pero pasó algo que cambió mi vida, ¡les contaré mi historia! Antes, ¡casi se me olvida contarles de mis padres! Mi mamá se llama Claudia, también usa lentes y tiene el pelo negro y lacio como yo, tiene talento para hacer manualidades; mi papá se llama William, el solía tener el pelo negro pero ahora se le está tornando un poco gris y le gusta mucho dibujar y pintar. <br /><br /> Bueno, sin más preámbulos, ahora sí, les contaré mi historia…. La casa de mis padres está cercana al bosque y un día ellos me pidieron que fuera a juntar leña, yo muy obedientemente fui a buscarla. Me adentré en el bosque que me parecía muy profundo, el follaje de los árboles era tan espeso que realmente se tornaba oscuro como la noche y tan silencioso como el andar de las nubes. Vi una mariposa muy hermosa y la perseguí para tomarle una foto, me dejé llevar y, cuando ya no la vi más, observé algo mucho más que increíble e interesante entre un grupo de rocas al pie de lo que parecía una colina… ¡Un nido de dragones! <br /><br /> Me asusté mucho y sentí el impulso de salir corriendo pero no pude, estaba fría. En ese momento, uno de ellos me tomó por la espalda, tenía mucho miedo de que me comiera, cerré los ojos por unos instantes pero no sentí nada, así que los volví a abrir sumamente temerosa y entonces me percaté de que no quería lastimarme. Luego, mirando detenidamente, distinguí que no era uno, sino que había cientos de ellos. Uno era color azul como el cielo, con espinas en la cabeza y me miraba fijamente con sus ojos color esmeralda, yo lo llamé Azulejo; otro era rojo con naranja, un naranja como el atardecer y a ese lo llamé Fuego; en fin, había muchos con distintos colores que inspiraban igual cantidad de nombres en mi cabeza. Pero hubo uno que me llamó más la atención, era de color rojo intenso como las rosas, con detalles verde claro, a él yo lo llamé Tormenta de Fuego. Resulta que ese es el rey de los dragones, era mi preferido. <br /><br /> — Yo me llamo Marcela y no les haré daño–, les dije. Ellos confiaron en mí y me invitaron a participar de los juegos que hacían, pero en eso aparecieron otros dragones y todos los demás retrocedieron. <br /><br /> Esos otros dragones eran feroces y parecía que eran malos, es muy difícil describirlos, yo los llamo Dragones Malignos. Empezaron a atacarnos sin razón alguna, así que corrí a esconderme detrás de una roca para observar lo que ocurría: los dragones adultos se unieron a la batalla y los más pequeños fueron a refugiarse en sus nidos; los Dragones Malignos eran muy ágiles y rápidos, pero mis dragones no se quedaban atrás y lograron ahuyentarlos porque eran más. Me puse feliz porque los Dragones Malignos se habían ido, pero todos los dragones se veían preocupados y entonces entendí que posiblemente regresarían. Se me ocurrió una idea: uniría fuerzas con los dragones. <br /><br /> Les conté mi idea y, aunque no pensé que me fueran a entender, sí lo hicieron y parecían contentos con ello, entonces emprendimos la planificación de nuestra estrategia de defensa. Nos dividimos en grupos, el primero protegería al rey, el segundo atacaría con fuego desde el aire y el tercero defendería los nidos. Estábamos entrenando, cuando escuché a los otros dragones acercarse y grité: — ¡Ahí vienen, todos a sus puestos! <br /><br /> Todos nos escondimos y esperamos, yo me monté en el rey y esperé a que aparecieran y cuando aterrizaron grité: ¡¡¡Al ataqueeee…!!! Esa fue la señal para que alzaran vuelo e iniciaran el ataque desde el aire. <br /><br /> Algunos Dragones Malignos huyeron desconcertados, pero otros comenzaron su contraataque lanzando bolas de fuego desde el suelo. Tratamos de esquivar el ataque y entonces miré un dragón que había sido derribado, cuando volví a ver al frente divisé una bola de fuego que no pudimos esquivar y caímos… perdí el conocimiento por unos instantes y, cuando desperté, solo tenía unos rasguños y el rey ya no estaba conmigo. <br /><br /> Me levanté y corrí a buscarlo pero entré a un lugar que no tenía salida y un Dragón Maligno me acorraló.  No sabía qué hacer y entonces, justo cuando pensé que moriría, mi amigo el Tormenta de Fuego apareció y atacó al Dragón Maligno, venciéndolo. Me monté de nuevo en él y volamos de regreso al campo donde se libraba la batalla y nos dimos cuenta de que habíamos ganado. <br /><br /> Todos estaban felices y festejamos. Gracias a que les ayudé a planificar una estrategia me nombraron su guardiana y, desde entonces, paso las tardes con mis amigos los dragones.<br /><br /></div>');
+		break;
+		
+		case '05'://El conejito que recuperó su alegría
+			$('#zoomContainer').append('<div class="disBlock floatNoneClearBoth titleZoom">El conejito que recuperó su alegría</div><div class="containerZoomtx">En un lugarcito escondido en el bosque, cobijado por el cielo azul y el calor del sol, vivían Doña Coneja y sus hijitos. Parecían motitas de algodón, tenían los ojos de rubí, la naricita rosada y pequeñita como un botón. Relucían en ellos sus inmensos  dientes de leche, cuidados con esmero por su mamita. Todos eran igualitos, pero muy diferentes en su manera de ser. Algunos obedientes, juguetones y cariñosos; otros muy serios. <br /><br /> Entre todos destacaba Tipi. Era el más inquieto y desobediente de todos y, lo que es peor, maltrataba a sus hermanitos. La pobre mamá escuchaba quejas todo el día. <br /><br /> Por fin llegó el día esperado, los conejitos iniciarían su primer grado. Una bella coneja chocolate sería la maestra y los esperaba con gran ilusión. Todos perfumados, llenos de besitos y cargados de abrazos, ingresaron a la escuelita; aunque pequeñita, era un paraíso soñado. Flores y mariposas danzaban con el viento y un perfume suave inundaba el salón de clases. <br /><br /> Ese día, la maestra les enseñó muchos juegos y canciones, también les explicó las normas de la convivencia diaria, con el fin de que todos fueran felices y las sonrisas  fueran el mejor adorno de la escuela  por siempre. <br /><br /> Tipi decidió no hacer caso. Durante las lecciones cogía sin permiso los materiales de los compañeritos, rompía las hojitas que le daba la niña y saltaba por todos los rincones interrumpiendo. Lo peor se daba en los recreos, hacía zancadillas, se burlaba de todos y los golpeaba con intención. De nada valían las llamadas de atención de la maestra y de Doña Coneja. <br /><br /> Así fueron pasando los días, hasta que Tipi se quedó sin amigos. Observaba reír a los demás, pero su corazón estaba triste y endurecido; no podía sonreír. Siempre solo, a veces lloraba bajo su camita. <br /><br /> Un día como tantos, murió la tarde, y la luna de plata brilló en lo más alto. Era noche de fiesta, de compartir como amigos. Bailes y cantos provocaban los violines de los alegres grillos. Tipi estaba de mal humor, como siempre, le molestaba la bulla y las risas de los demás. Con musgo seco tapó sus orejotas y trataba de dormir. Como no pudo, salió furioso y gritó: “¡Odio que estén tan felices!” Esa noche, los habitantes de ese bosque lo vieron por última vez. <br /><br /> Caminando y caminando, asustado con los ruidos de la noche y escondiéndose de los animales hambrientos, Tipi llegó a otro bosque. Cansado y triste, se acomodó en una cueva abandonada en el tronco de un enorme árbol de ceiba. Pensaba que él había nacido sin risas. O quizás, algún duendecillo travieso había robado su felicidad. Agotado, suspiró y se durmió profundamente por dos días. <br /><br /> Por fin despertó con el ruido de una bandada de pájaros que visitó el árbol y que había decidido quedarse a vivir ahí. Al día siguiente, su agujero se vistió de luz y él se fue asomando a conocer el nuevo bosque. <br /><br /> Una comadreja jugaba con sus hijitos, le recordó su hogar y lloró. Al poco rato observó cómo miles de ratones subían y bajaban de los árboles, se perseguían y cantaban. Pudo ver mariposas parecidas a las de su escuela, conversando con las flores. Todos los animalitos gozaban de la vida y Tipi se preguntaba una vez más, “¿dónde estará mi sonrisa?” <br /><br /> Uno de los pájaros resbaló y cayó al suelo, descubrió dos ojitos brillantes que lo miraban desde un agujero en el tronco del árbol y preguntó: <br /><br /> —Oye, ¿quién eres? <br /><br /> —Soy un conejo que no sabe sonreír. <br /><br /> —¿Por qué dices eso? <br /><br /> —No sabes nada, sigue tu camino. <br /><br /> —Vamos, sal de ahí. No te niegues tu propia felicidad. Prepárate para la noche de la Luna llena, hoy todos compartiremos y danzaremos sin cesar. <br /><br /> —No. Eso no se hizo para mí. No pierdas tu tiempo. <br /><br /> El pájaro volvió a su rama, preocupado. En la tarde, el bosque se llenó de movimiento. El cielo se vistió de fuego y fue dando paso a la luz plateada, y el claro del bosque se iluminó. Los grillos con sus canciones hacían palpitar los corazones enamorados, las miradas se cruzaban y se sentía la felicidad del nacimiento del amor. De pronto aparecieron ardillas bailarinas que hacían reír a todos, menos a Tipi, que se sentía furioso con la dicha de los demás. Nuevamente lloró e inundó su cueva con agua salada. <br /><br /> De nuevo, la luz del sol hizo que Tipi abriera sus vidriosos ojitos tristes,  aún más rojos de tanto llorar. El viejo pájaro no había dormido bien, pensó todo el tiempo en ese amiguito encerrado en su dolor. Luego de realizar los quehaceres en su nido, se vistió de sonrisa y se acercó al viejo árbol: <br /><br /> — Oye, amigo, me gustaría conversar contigo. <br /><br /> — No molestes, déjame en paz, no me interesas para nada. Sigue tu camino. <br /><br /> —Déjame contarte lo bien que la pasamos ayer los habitantes de este bosque maravilloso. Nos divertimos, cantamos y bailamos; te lo perdiste, todos nos reíamos en coro. ¿Nos escuchaste? <br /><br /> — ¡Risas, risas, risas, eso es perder el tiempo! Mi boca no las conoce; nací sin ellas. No quiero conversar con nadie. No pierdas tu tiempo. <br /><br /> —Decídete a salir, podemos ser amigos. Ser feliz es una decisión que puedes tomar en cualquier momento. <br /><br /> —Yo no tengo corazón; por eso, no tengo risas. Aquí tengo lo que ocupo para vivir, aquí no puedo molestar a nadie. Es la mejor decisión. <br /><br /> Y así, cinco, seis, siete……cien veces pasó el pajarito y más veces lloró el conejito su desdicha. Lo peor era que el pájaro ya tampoco sonreía, y sus amigos, preocupados, lo llamaron para preguntarle el motivo. Las risas de muchos estaban desapareciendo. <br /><br /> Un búho muy blanco, al que todos respetaban por su sabiduría, le preguntó: <br /><br /> —¿Qué te pasa amigo pájaro?, ¿a qué se debe tu tristeza? Nos estás contagiando. <br /><br /> —Es cierto, estoy preocupado por el conejito que vive en la cueva del viejo árbol. No conoce su sonrisa, afirma que nació sin ella. No se deja ayudar. Ya he empleado una lluvia de consejos. No puedo ayudarlo yo solo. <br /><br /> —Eso es mi amigo, tú no puedes solo. ¡Esa es la clave! “La unión hace la fuerza”. <br /><br /> Y ese día, en el claro del bosque, el búho propuso un plan para sacar al animalito de su encierro y ayudarle entre todos a despertar su alma, enseñarle lo lindo de compartir con los demás y conquistar la sonrisa perdida. <br /><br /> La fiesta del bosque cambió de lugar, todos caminaron hasta el frente de la cueva de Tipi. Parecía que había abandonado el lugar, no se escuchaba ningún ruido en su cueva. Una valiente arañita se deslizó por las paredes hasta llegar a ver el conejito, casi ahogado en una laguna de lágrimas. <br /><br /> Entre todos lo sacaron y le brindaron mil atenciones para salvarle la vida, hasta que se abrieron sus ojitos y cada uno de los habitantes del bosque le manifestó su cariño. Lo invitaron a disfrutar con ellos, pero él les dijo: —No sé hacerlo, nací sin risas. Eso no es para mí—. Medio muerto, se lo llevaron a descansar a la cueva de Pinta la comadreja. <br /><br /> Al día siguiente, el viejo pájaro lo invitó a recorrer el bosque, que estaba radiante y más verde que nunca. ¡Qué alegría sintió el emplumado! Tipi aceptó la invitación y, sin dejar de conversar y saludar, caminaron por mucho rato. En ese momento, el conejito descubrió los colores, la luz y el calor, se maravilló del color del cielo, del concierto y de la gracia de las ardillitas. “Hoy ha nacido mi sonrisa”, expresaba el conejito, quien por todo se reía ruidosamente. <br /><br /> En ese instante se acordó de su escuelita y de su hogar, de su forma de ser tan equivocada, de tantas sonrisas que se robó. Aprovechó  la fiesta nocturna para ofrecer a todos un hermoso discurso de amor y amistad, pero a la vez, se despidió de todos. En otro bosque no lo habían olvidado y esperaban con ansias su regreso.<br /><br /></div>');
+		break;
+		
+		case '06'://El niño que soñaba con la paz
+			$('#zoomContainer').append('<div class="disBlock floatNoneClearBoth titleZoom">El niño que soñaba con la paz</div><div class="containerZoomtx">En un lejano país de Medio Oriente, de esos que siempre están en guerra, vivía un niño llamado Yasir; tenía 10 años, vivía en compañía de sus padres y sus dos hermanos. En sus ojos se reflejaba el miedo y la tristeza. A su alrededor solo podía ver el cielo negro, tanques de guerra, armas, soldados, injusticia y destrucción. Constantemente él y su familia tenían que huir y esconderse para no ser alcanzados por la muerte. Veía cómo niños entre los 12 y 15 años eran obligados a usar armas y ser soldados. Él no quería eso para él y sus hermanitos menores. <br /><br /> Un día, en uno de esos viajes, Yasir y su familia se fueron a un lugar lejano, donde no los pudieran encontrar. Cuando llegaron a un sitio seguro, él y sus hermanos se fueron a jugar y encontraron un ave herida, la llevaron adonde estaban sus padres para curarla y alimentarla. <br /><br /> Al día siguiente estaba Yasir cuidando la golondrina, cuando esta despertó y le preguntó: — ¿Niño, quién eres tú?, ¿por qué me atrapaste?, ¿qué te he hecho yo, para que me encerraras en esta prisión?— <br /><br /> Yasir muy asustado le dijo — ¡Yo no te quiero hacer daño! Te encontramos mal herida y quisimos ayudarte. Espérame para traerte algo de comer—. <br /><br /> Cuando la golondrina estaba recuperada, el niño le dijo: —¿Quién eres? Nunca había visto un ave como tú por aquí. <br /><br /> — Soy una golondrina, vengo de un país lejano—, le contestó. <br /><br /> —¿Qué haces por aquí?, ¿tú también estas huyendo de la guerra?—, le dijo Yasir. <br /><br /> La golondrina le contestó —¡No! Yo soy de un lugar donde no hay guerra, ni soldados, ni ejército—. <br /><br /> Yasir no podía creer que había un lugar así y le pidió a la golondrina que le siguiera contando sobre ese sitio, que por su imaginación nunca hubiera pensado que existiera. <br /><br /> La golondrina, emocionada de poder contarle al niño de donde venía, siguió relatando su historia: —Donde yo vivo el cielo es tan grande y azul que no tiene fin, su paisaje es tan bello, lleno de montañas y flores de muchos colores que parecen un arco iris, los animales corren y vuelan libres, su mar es tan azul como el mismo cielo que parecen uno solo. Las personas son buenas, se ayudan entre ellas. Los niños corren felices porque van para la escuela, al salir juegan en el parque y se divierten—. <br /><br /> Yasir escuchaba atento a la golondrina, se imaginaba cada lugar que ella le mencionaba. La golondrina siguió contando sobre ese lugar tan especial… <br /><br /> — En el país de donde vengo hay personas valientes y trabajadoras. Se respira un aire limpio de paz y tranquilidad. En el campo solo se escucha el cantar del río que recorre grandes distancias, mis hermanos los pajaritos cantan alegremente y anuncian la venida de la lluvia que llegará para refrescar y bañar los cultivos. Al caer la tarde, el Sol nos da un bello espectáculo, despidiéndose, anunciando que pronto llegará la noche y esta trae consigo un destello de estrellas y una Luna hermosa. Las luciérnagas iluminan el paisaje como lucecitas de navidad, los grillos entonan y dan vida a la noche. Un paraíso único del que nunca debí salir. <br /><br /> Yasir, muy emocionado y convencido de lo que la golondrina le había contado, se fue a dormir. En sus sueños solo podía ver a su familia y a su gente en ese lugar tan maravilloso, siendo libres, viviendo en  paz y libres del maltrato. Se veía a él y a sus hermanitos corriendo rápidamente porque se les hacía tarde para ir a la escuela, donde pronto aprenderían a leer y escribir, jugando, saltando y corriendo con sus amiguitos. Donde las bombas eran hermosos globos de muchos colores que bajaban del cielo, las balas eran mariposas de colores, los tanques de guerra eran el carrito de los helados,  los soldados eran maestros y maestras que día a día les enseñarían cosas nuevas. Los rifles eran los lápices y cuadernos que llevarían a la escuela. <br /><br /> También veía a su padre salir a trabajar sin miedo y seguro de que su familia estaría bien. Esa noche Yasir soñó el más bello de los sueños. Donde por primera vez sus ojitos se iluminaron y se llenaron de brillo. En el que su familia estaba segura. Un sueño del que no quería despertarse jamás. <br /><br /> Al día siguiente Yasir despertó feliz y corrió a buscar la golondrina, pero ya se había marchado. Se entristeció al no encontrarla, pero agradeció por todo lo que le había dicho, porque en su corazón tenía la firme esperanza de que algún día su familia y él vivirían en un lugar así. Desde ese momento, Yasir soñó cada noche con la paz para su país y con ese lugar tan especial que su amiga la golondrina le había contado.<br /><br /></div>');
+		break;
+		
+		case '07'://De nuevo Manchas y yo
+			$('#zoomContainer').append('<div class="disBlock floatNoneClearBoth titleZoom">De nuevo <br /> Manchas y yo</div><div class="containerZoomtx">Mi amigo y yo conocemos hasta el último rincón de las calles, y es que, de no ser así, no seríamos lo que somos ni tendríamos lo que tenemos. El barrio se ha vuelto cada día más hostil, pero nada en esta vida es más que un reflejo de nuestros corazones. Algunos piensan que tengo mucho que aprender en la escuela, y es cierto, no he ido últimamente. Manchas, mi amigo, sabe que lo intento, pero siempre hay algo que lo impide. <br /><br /> Siempre he sido un poco inquieto, pero no es mi intención hacer daño. Si Manchas ha tenido que defenderme, es cuando los vecinos no comprenden que solo busco la comida que les haya sobrado, no pretendo robar… a veces me pregunto por qué terminamos juntos, si es poco lo que yo puedo ofrecerle, pero mi imagen en el reflejo de sus ojos agradecidos me responde esas curiosidades del destino. Lo que hago en las calles no me queda claro, imagino que tampoco a Manchas, pero vagamos juntos mientras nuestros pies aguantan el calor del asfalto, luego nos resguardamos. <br /><br /> Doña Matilde nos ayuda cuando puede, es muy dulce la señora y creo que es de esos ángeles que se quedaron perdidos aquí en la Tierra, que además no debieran irse, porque cuando no encontramos nada, aparece doña Matilde, como enviada del cielo. Está un poco enferma la viejita, quisiera tener la forma de ayudarla. <br /><br /> Hoy nos hemos encontrado con un circo que pasaba por la ciudad, ¡son tan graciosos!, tiene colores brillantes y los trapecios son lo mejor que haya visto. Esperamos a que llegue la tarde y nos escabullimos por las carpas. Pero en ese momento termina mi emoción, al ver un grupo de animales encadenados, esperando a que inicie la función. <br /><br /> — ¡Mira, Manchas! —le dije—. Esta gente tiene a los pobres animales trabajando sin parar y se ven enfermos. <br /><br /> En ese instante no supe qué hacer, me acerqué para acariciar a un elefante que yacía tristemente en una esquina, qué dolor, tan grande puede ser la crueldad humana. Al ver los ojos suplicantes de los animales, no pude evitarlo: empecé a abrir las puertas y a sacar todos los que pudiera. Manchas ladraba sin parar, mientras los trabajadores del circo corrían de un lugar a otro. – ¡Corrrrre! —dije a Manchas—, no te dejes atrapar. <br /><br /> En ese momento me toman del brazo y una sombra cubre mi cara. —Muévete, niño,  debes acompañarnos—. Ahora sí que estoy en problemas. De nuevo solamente quería hacer algo bueno, es que no puedo pensar las cosas. Me lastima ver otros seres sufrir, pero ahora las víctimas serán los dueños de ese circo, la misma historia que con los dueños de la basura. Y podríamos tratar de escurrirnos por un rincón de las oficinas, mientras se descuidan, pero sería peor aún, puedo ver que Manchas se encuentra muy preocupado, no quiero provocar otro problema. <br /><br /> Cierro los ojos y pido ayuda, todo da vuelta y encuentro frente a mí a doña Matilde. Siempre sonriente, me tiende la mano y me acurruca entre sus brazos. —¿Qué me ha pasado?—, le pregunto. Me contesta con otra sonrisa. <br /><br /> Miro hacia los lados buscando el lugar donde está Manchas, quien me mueve la cola feliz. Sin dudarlo me dispongo a caminar junto a ellos, andamos por todo el lugar y tengo una sensación extraña. Una persona se acerca y, mientras habla con doña Matilde, observo sus ojos, escucho unas voces en su interior y la historia de su vida pasa frente a mí, veo sus tristezas, sus alegrías, todos los momentos felices y dificultades. <br /><br /> Observo a doña Matilde y un mundo de bondad se aparece en su interior. Camino unos pasos y una señora trabaja presurosa en su oficina, cuando veo sus ojos descubro mucho sufrimiento, tanto como el mío, pero luego un gran esfuerzo y cambio en su vida, ¿qué hizo para superar sus problemas? Una vez más la receta: estudiar, estudiar, estudiar…. <br /><br /> Doña Matilde y Manchas me esperan en la puerta. Salimos y le pido ayuda a doña Matilde para entrar a la escuela, se muestra muy contenta por mi actitud, sé que esto cambiará la vida de todos. Espero que estudiando mi suerte mejore, Manchas también está muy feliz con mi decisión. Él y yo saldremos de las calles, me he dado cuenta de que no se necesita tener una infancia perfecta para ser un adulto de bien.<br /><br /></div>');
+		break;
+		
+		case '08'://La niña y el mar
+			$('#zoomContainer').append('<div class="disBlock floatNoneClearBoth titleZoom">La niña y el mar</div><div class="containerZoomtx">Había una vez una niña, llamada Ambar, que vivía con sus abuelitos en una casita muy humilde ubicada en la playa. Todos los días despertaba con el sonar de las olas y los rayos del sol que pegaban en su cara. Se levantaba muy temprano, desayunaba con sus abuelitos y se iba a la playa. Le gustaba sentarse a escuchar el sonido de las olas y de las aves y contemplar el inmenso mar; podía pasar horas y horas, como si el tiempo se detuviera y sólo existieran ella y el mar. <br /><br /> De repente se escuchó a lo lejos una voz que decía: — Ambar, Ambar, ya está el almuerzo—. Pero Ambar seguía observando al mar. De pronto sintió en su hombro una mano…era su abuelita Luz. —¿Todavía sigues triste? —le preguntó— ¡Algún día regresarán! Tomó a la niña de la mano y se dirigieron a la casa. <br /><br /> Su abuelito Francisco, a quien Ambar le decía “Coco”, esperaba ansioso la hora de almorzar con su nieta. Él había sufrido un accidente, usaba muletas, porque en el mar un tiburón le había arrancado una pierna. Como había sido capitán de un barco y ya no podía salir a navegar, se entretenía contándole a su nieta las historias de cuando viajaba por los mares. Así pasaban las horas entre risas y nostalgias de su abuelo por un viaje en altamar. <br /><br /> Ambar y sus abuelos se dedicaban a reciclar latas y botellas que la gente dejaba tiradas sobre la arena cuando visitaban la playa. A la niña le gustaba ese trabajo, ya que le encantaba caminar descalza por la playa. Cierto día, se encontró a unos niños que andaban con unas camisetas que decían: “Ayudamos al medio ambiente reciclando”. Se emocionó tanto que se acercó a ellos para preguntarles de dónde eran y qué hacían. <br /><br /> Los niños, muy amablemente, le contaron que ellos iban a las playas a recolectar basura y a enseñarle a la gente que vive cerca, la importancia de mantener las playas limpias. También le explicaron que las playas más bonitas ganaban un premio de color azul. Al escuchar esto, Ambar salió corriendo a contarles a sus abuelos. Entró a su casa tan rápido que su abuelo gritó: —Niña ¿qué te pasa? <br /><br /> —¡Abuelito!, ¡abuelita! Vengan que les tengo que contar algo. <br /><br /> Los abuelos llegaron hasta donde estaba la niña y la escucharon con atención. Ella les habló de los niños que conoció, lo que le dijeron sobre reciclar y que, si seguían manteniendo la playa limpia, un día llegaría alguien y pondría una bandera azul cerca de su casa… tal vez eso ayudaría a que sus padres regresaran. <br /><br /> Los padres de Ambar habían salido a un viaje en altamar, hacía ya mucho tiempo, y no habían regresado. Por eso ella se sentaba todos los días mirando hacia el mar. Pensaba que, como el mar era tan grande, sus padres se habían perdido y que, tal vez, con la bandera podrían ubicarse y llegar a tierra firme. <br /><br /> Todos los días salía a la playa a recoger latas y botellas. Para motivar a las personas a no botar basura, Ambar les contaba el motivo por el que quería que la playa estuviera limpia. La gente, al escuchar su historia, poco a poco se fue concientizando, hasta que llegó el día en que la playa estuvo totalmente limpia. Muy contenta Ambar se fue a descansar. <br /><br /> A la mañana siguiente, al salir de su casa, vio una gran bandera azul muy cerca. Estaba tan emocionada que llamó a sus abuelitos para que la vieran; todos estaban muy felices. Todos los días Ambar esperaba que regresaran sus padres. Pasaron varias semanas. Un día, mientras miraba al mar, vio a lo lejos un barco y corrió a decírselo a sus abuelos. <br /><br /> Todos alzaron sus brazos y gritaron: —¡Por aquí!, ¡por aquí!— El barco se acercó lentamente y se escuchó una dulce voz: —¡Ambar! Somos papá y mamá—. La niña, Coco y Luz corrieron a la playa y todos se abrazaron. Sus padres les contaron porqué tardaron tanto en volver. <br /><br /> Resulta que la gente no sólo tira basura en la arena, sino también en los mares; había tanta basura que el barco se había quedado atrapado en una montaña de basura. Ellos la recogieron, la echaron en bolsas y así pudieron escapar. La familia continuó unida cuidando la playa y fueron muy felices. <br /><br /> Moraleja: no hay que botar basura; tenemos que reciclar para que nuestro ambiente esté limpio y podamos disfrutar de todas las cosas que nos ofrece la naturaleza. Además, todo lo que nos proponemos se puede cumplir si nos esforzamos por conseguirlo.<br /><br /></div>');
+		break;
+		
+	}//fin switch
+	
+	if( isiPhone > -1 || isiPod > -1 || isiPad > -1 || android > -1 ) {
+		//
+	} else {
+		$('#zoomContainer').append('<a href="javascript:hideCuentosZoom()" class="close disblock posAbsolute" id="zoomOutBtn"></a>');
+	}//fin if( isiPhone
+	
+}//fin function cuentosZoom
+
+function showCuentosZoom() {
+	document.ontouchmove = function(e){ return true; }//sí scroll y rebote iOS
+	$("#zoomContainer").css({"display":"block"});
+	$("#contenido").css({"display":"none"});
+}//fin showCuentosZoom()
+
+
+function hideCuentosZoom() {
+	document.ontouchmove = function(e){ e.preventDefault(); }//no scroll ni rebote iOS
+	$("#contenido").css({"display":"block"});
+	$("#zoomContainer").css({"display":"none"});
+}//fin showCuentosZoom()
+
+
+var audioFormato = '';
+//if iOS or MacOS
+if(isiPhone > -1 || isiPod > -1 || isiPad > -1 || isSafari > -1 ) {
+	audioFormato = 'mp3';
+/*} else if (android > -1) {
+	audioFormato = 'ogg';*/
+} else {
+	audioFormato = 'ogg';
+}//fin if iOS or MacOS
+
+var urlAbsoluta = 'http://librosparatodoscr.com/miCuentoFantastico/2014/';
+
+function stopAudio() {
+	var audioPlayer = document.getElementById('playerCuento');
+	//var oldSrc = audioPlayer.src;// just to remember the old source
+	/*ply.src = "";// to stop the player you have to replace the source with nothing
+	ply.src.pause();
+	ply.currentTime = 0;*/
+	audioPlayer.pause();
+	audioPlayer.currentTime = 0;
+}
+
+$(document).ready(function() {
+	
+	// precarga
+	//eliminamos el scroll de la pagina
+	$("body").css({"overflow-y":"hidden"});
+	//guardamos en una variable el alto del que tiene tu browser que no es lo mismo que del DOM
+	var alto=$(document).height();//var alto=$(window).height();
+	//agregamos en el body un div que sera que ocupe toda la pantalla y se muestra encima de todo
+	$("body").append("<div id='pre-load-web'><div id='imagen-load'><img src='img/preload35.gif' /></div>");
+	//le damos el alto
+	$("#pre-load-web").css({height:alto+"px"});
+	//esta sera la capa que esta dento de la capa que muestra un gif
+	$("#imagen-load").css({"margin-top":(alto/2)-30+"px"});
+	// fin precarga
+	
+	//alert('hola');
+	
+	//define meta viewport scale
+	if(isiPhone > -1) {
+		//alert('iphone 32');
+		$("head").append('<meta name="viewport" content="user-scalable=no, initial-scale=0.55, maximum-scale=0.55" />');
+		window.scrollTo(0, 0);//hide url bar mobiles //no funciona al 100% en android
+		//window.scrollTo(0, 2);
+	}
+	else if(isiPod > -1) {
+		//alert('ipod');
+		$("head").append('<meta name="viewport" content="user-scalable=yes, initial-scale=0.55, maximum-scale=0.55" />');
+		window.scrollTo(0, 0);//hide url bar mobiles //no funciona al 100% en android
+	}
+	else if(isiPad > -1) {
+		//alert('ipad');
+		$("head").append('<meta name="viewport" content="height=580px, user-scalable=no, initial-scale=1.05, maximum-scale=1.05, minimum-scale=1.05" />');
+		/*$("head").append('<meta name="viewport" content="height=678px, user-scalable=no, user-scalable=no, initial-scale=1.06, maximum-scale=1.06, minimum-scale=1.06" />');*/
+		$("head").append('<style type="text/css" media="screen"> #general { height:666px; margin:-380px 0px 0px 0px; padding:80px 0px 0px 0px; } .pantallas { height:630px; } <style/>');
+	}
+	else if (android > -1) {
+		//alert('android 16');
+		
+		//$("head").append('<meta name="viewport" content="width=1200px, target-densitydpi=device-dpi" />');
+		if ( screen.width > 1100 ) {
+			//alert('> 1100');//device deborah
+			$("head").append('<meta name="viewport" content="initial-scale=1.22, maximum-scale=1.22, minimum-scale=1.22, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+		} else if ( (screen.width < 1100) && (screen.width >= 1000) ) {
+			//alert('< 1100 >= 1000');
+			$("head").append('<meta name="viewport" content="initial-scale=1.17, maximum-scale=1.17, minimum-scale=1.17, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+		} else if ( (screen.width < 1000) && (screen.width >= 900) ) {
+			//alert('< 1000 >= 900');
+			$("head").append('<meta name="viewport" content="initial-scale=1.12, maximum-scale=1.12, minimum-scale=1.12, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+		} else if ( (screen.width < 900) && (screen.width >= 800) ) {
+			//alert('< 900 >= 800');
+			$("head").append('<meta name="viewport" content="initial-scale=1.07, maximum-scale=1.07, minimum-scale=1.07, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+		} else if ( (screen.width < 800) && (screen.width >= 700) ) {
+			//alert('< 800 >= 700');
+			$("head").append('<meta name="viewport" content="initial-scale=1.2, maximum-scale=1.2, minimum-scale=1.2, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+		} else if ( (screen.width < 700) && (screen.width >= 600) ) {
+			//alert('< 700 >= 600');
+			$("head").append('<meta name="viewport" content="initial-scale=1.15, maximum-scale=1.15, minimum-scale=1.15, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+		} else if ( (screen.width < 600) && (screen.width >= 500) ) {
+			//alert('< 600 >= 500');//device lolita
+			$("head").append('<meta name="viewport" content="initial-scale=1.1, maximum-scale=1.1, minimum-scale=1.1, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+		} else if ( (screen.width < 500) && (screen.width >= 400) ) {
+			//alert('< 500 >= 400');
+			$("head").append('<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+		} else if ( (screen.width < 400) && (screen.width >= 300) ) {
+			//alert('< 400 >= 300');
+			$("head").append('<meta name="viewport" content="initial-scale=.8, maximum-scale=.8, minimum-scale=.8, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
+		}//if screen.width
+		//alert('screen width' + screen.width);
+		
+	}
+	else {
+		$("head").append('<meta name="viewport" content="height=600px, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />');
+		window.scrollTo(0, 0);//hide url bar mobiles //no funciona muy bien con android
+	}
+	//fin define meta viewport scale
+	
+	//alert('cuento: ' + cuento);
+	switch(cuento) {//selecciona css / ejecuta animaciones
+		
+		case '01'://La montaña encantada
+			$('head').append('<link href="css/cuento_01.css" rel="stylesheet" type="text/css" />');
+		break;
+		
+		case '02'://La nueva escuela
+			$('head').append('<link href="css/cuento_02.css" rel="stylesheet" type="text/css" />');
+		break;
+		
+		case '03'://Kira
+			$('head').append('<link href="css/cuento_03.css" rel="stylesheet" type="text/css" />');
+		break;
+		
+		case '04'://Mis amigos los dragones
+			$('head').append('<link href="css/cuento_04.css" rel="stylesheet" type="text/css" />');
+		break;
+		
+		case '05'://El conejito que recuperó su alegría
+			$('head').append('<link href="css/cuento_05.css" rel="stylesheet" type="text/css" />');
+		break;
+		
+		case '06'://El niño que soñaba con la paz
+			$('head').append('<link href="css/cuento_06.css" rel="stylesheet" type="text/css" />');
+		break;
+		
+		case '07'://De nuevo Manchas y yo
+			$('head').append('<link href="css/cuento_07.css" rel="stylesheet" type="text/css" />');
+		break;
+		
+		case '08'://La niña y el mar
+			$('head').append('<link href="css/cuento_08.css" rel="stylesheet" type="text/css" />');
+		break;
+		
+	}//fin switch cuento
+	
+	
+	//Listen for orientation changes
+	window.addEventListener("orientationchange", function() {
+		//alert(window.orientation); //Announce the new orientation number
+		/*chrome no funciona en esta orientacion
+		if (window.orientation == 180){
+			//
+		}*/
+		if (window.orientation == 0){
+			document.ontouchmove = function(e){ return true; }//sí scroll y rebote iOS
+			$("#zoomContainer").css({"display":"block"});
+			$("#contenido").css({"display":"none"});
+		}
+		if (window.orientation == 90){
+			document.ontouchmove = function(e){ e.preventDefault(); }//no scroll ni rebote iOS
+			$("#contenido").css({"display":"block"});
+			$("#zoomContainer").css({"display":"none"});
+		}
+		if (window.orientation == -90){
+			document.ontouchmove = function(e){ e.preventDefault(); }//sí scroll y rebote iOS
+			$("#contenido").css({"display":"block"});
+			$("#zoomContainer").css({"display":"none"});
+		}
+	}, false);
+	
+
+	/* modal dialogs */
+	//select all the a tag with name equal to modal
+	$('a[name=modal]').click(function(e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		
+		//Get the A tag
+		var id = $(this).attr('href');
+	
+		//Get the screen height and width
+		var maskHeight = $(document).height();//var maskHeight = $(window).height();
+		var maskWidth = $(window).width();
+	
+		//Set heigth and width to mask to fill up the whole screen
+		$('#mask').css({'width':maskWidth,'height':maskHeight});
+		
+		//transition effect		
+		$('#mask').fadeIn(300);	
+		$('#mask').fadeTo("slow",0.8);	
+	
+		//Get the window height and width
+		var winH = $(window).height();
+		var winW = $(window).width();
+              
+		//Set the popup window to center
+		$(id).css('top',  winH/2-$(id).height()/2);
+		$(id).css('left', winW/2-$(id).width()/2);
+	
+		//transition effect
+		$(id).fadeIn(300); 
+	
+	});
+	
+	//if close button is clicked
+	$('.window .close').click(function (e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		
+		$('#mask').hide();
+		$('.window').hide();
+	});
+	
+	//if mask is clicked
+	$('#mask').click(function () {
+		$(this).hide();
+		$('.window').hide();
+		stopAudio();
+	});			
+
+	$(window).resize(function () {
+	 
+ 		var box = $('#boxes .window');
+ 
+        //Get the screen height and width
+        var maskHeight = $(document).height();
+        var maskWidth = $(window).width();
+		
+		//Set height and width to mask to fill up the whole screen
+		$('#mask').css({'width':maskWidth,'height':maskHeight});
+		
+        //Get the window height and width
+        var winH = $(window).height();
+        var winW = $(window).width();
+
+        //Set the popup window to center
+        box.css('top',  winH/2 - box.height()/2);
+        box.css('left', winW/2 - box.width()/2);
+	 
+	});
+	/* fin modal dialogs */
+	
+	cuentosZoom();//inserta contenido a #zoomContainer
+	
+}); // fin document ready
+
+</script>
+
+
+</head>
+<body onload="javascript:interStitialMobile()">
+
+
+<div id="contenido">
+	
+	<div id="general">
+		
+		<div id="pantalla01" class="disblock pantallas floatNoneClearBoth marginAuto">
+			
+			<div class="disblock posAbsolute btnsTop">
+				<a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorHome"  href="javascript:var proxPantalla = 'index.html'" onclick="transPage();"></a>
+				<a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorAutor" href="#dialog6" name="modal"></a>
+				<a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorAudio" href="#dialog7" name="modal"></a>
+                <script type="text/javascript" language="javascript">
+					if( isiPhone > -1 || isiPod > -1 || isiPad > -1 || android > -1 ) {
+						//
+					} else {
+						$('.btnsTop').append('<a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorZoom"  href="javascript:showCuentosZoom()"></a>');
+					}//fin if( isiPhone
+				</script>
+			</div><!--/.btnsTop-->
+			
+			<div class="disblock posAbsolute instruSlide" id="instruSlide"></div>
+			
+			<div class="disblock posAbsolute left50" id="tituloCuento"></div>
+            
+            <div class="disblock posAbsolute" id="creditoCuento"></div>
+            
+			<div class="swiper-container swiper-car">
+				<div class="pagination-car"></div>
+				<div class="swiper-wrapper" id="swipers">
+					
+					<script type="text/javascript" language="javascript">
+						
+						switch(cuento) {
+							
+							case '01'://La montaña encantada
+								$('#tituloCuento').append("La montaña encantada");
+								
+								$('#creditoCuento').append("<span>Autor:</span> Ever Daniel Jiménez Mesén • <span>Escuela:</span> Ramón Bedoya Monge (Puriscal, San José) <br /> <span>Docente:</span> Javier Francisco Retana Quirós • <span>Bibliotecólogo:</span> Grace Rojas Fernández");
+								
+								$("#swipers").append("<div class='swiper-slide' id='casa'> <div id='arrowR'></div> <img src='img/cuento_01/montana_01.png' id='c1f1' /><img src='img/cuento_01/montana_02.png' id='c1f2' /><img src='img/cuento_01/montana_05.png' id='c1f3' /><div class='txSlide' id='txSlide1-1'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_01/montana_04.png' id='c1f4' /><img src='img/cuento_01/montana_03.png' id='c1f5' /><img src='img/cuento_01/montana_06.png' id='c1f6' /><div class='txSlide' id='txSlide1-2'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_01/montana_07.png' id='c1f7' /><div class='txSlide' id='txSlide1-3'></div></div> <div class='swiper-slide'> <div id='arrowL'></div> <img src='img/cuento_01/montana_08.png' id='c1f8' /><div class='txSlide' id='txSlide1-4'></div></div>");
+								
+								$('#txSlide1-1').append("Hace mucho tiempo vivió una familia con cinco hijos. Pese a su pobreza, ellos eran felices. Conforme crecieron, los hijos querían descubrir qué había fuera de esas montañas. Es así como empieza  esta fascinante historia. <br /><br /> El hijo mayor dijo a su padre: —¡Estoy cansado de vivir aquí, quiero ver qué hay más allá de estas montañas! Las luces que veo en la noche parecen ser muy interesantes—. El padre guardó silencio. <br /><br /> A los  días, los cuatro  hijos mayores decidieron abandonar su hogar. El padre trató de persuadirlos, hablándoles de los peligros que podían enfrentar; aun así, ellos partieron, dejando a su madre envuelta en llanto. <br /><br /> Caminaron varios días a través de la montaña, llegaron a su ansiada ciudad. Era como lo habían imaginado, un lugar fascinante. En la ciudad cada quien tomó su camino, empezando así su nueva vida.");
+								
+								$('#txSlide1-2').append("El mayor, atraído por la melodiosa voz de una hermosa joven de la ciudad, decidió entrar al lugar. La sorpresa fue que era una ilusión, el lugar era habitado por monstruos que escupían fuego y tenían cuatro brazos, estos se dedicaban a capturar hombres para obligarlos a trabajar casi sin alimento y dándoles muchos maltratos. <br /><br /> El segundo hermano soñaba con ser domador de dragones. Este conoció a un habitante de aquella ciudad que le ofreció el trabajo soñado; sin hacer muchas preguntas decidió irse con él, este lo llevó a un pueblo lejano y lo obligó a cuidar cerdos sin pago a cambio. <br /><br /> El tercero de ellos no consiguió trabajar, se dedicó a vagar por las calles pidiendo limosnas y sin un lugar donde dormir. El cuarto hermano fue encarcelado por un delito que no cometió. <br /><br /> Los cuatro hermanos, después  de vivir  estas desgracias, recordaban las palabras de su padre y se decían —¡Si tan solo pudiéramos volver!—");
+								
+								$('#txSlide1-3').append("El hermano menor dijo a su padre: — Tuve un sueño donde mis hermanos estaban sufriendo, déjame ir a rescatarlos y traerlos a casa. Su padre dijo que no, le daba miedo que se enfrentara a esos peligros, pero el hijo logró convencerlo. <br /><br /> Emprendió el viaje al mundo desconocido. El joven tenía un corazón bondadoso, entonces la montaña decidió revelarle su secreto y le mostró la gran riqueza que había en ella, el oro y las piedras preciosas en el fondo de sus ríos cristalinos. <br /><br /> Él escuchó una voz que le dijo: — Como tienes un corazón bondadoso, toma lo necesario. <br /><br /> El joven recogió una barra de oro y tres piedras preciosas y las llevó con él a la ciudad. Ya en la ciudad preguntó por sus hermanos. Se dio cuenta del paradero del mayor y pidió al monstruo que lo liberara; este pidió paga por él, entonces el joven le entregó una de las piedras preciosas y el monstruo lo liberó.");
+								
+								$('#txSlide1-4').append("Juntos buscaron a sus otros  hermanos, al encontrar al segundo pagaron con una piedra preciosa y lo liberaron. Al hallar al tercer hermano, que estaba encarcelado, tuvieron que pagar con la barra de oro para su liberación. <br /><br /> No encontraban al hermano que vagaba, alguien les dijo que una pobre anciana lo llevó a su casa porque lo encontró enfermo. Llegaron donde aquella pobre mujer y ahí lo encontraron. Agradecidos le dieron la última piedra preciosa, que era la más linda y valiosa. <br /><br /> Juntos por fin emprendieron su viaje de regreso a casa, pidieron perdón a sus padres y vivieron felices al amparo de aquella maravillosa montaña.");
+							break;
+							
+							case '02'://La nueva escuela
+								$('#tituloCuento').append("La nueva escuela");
+								
+								$('#creditoCuento').append("<span>Autor:</span> Shiany María Vargas Arroyo • <span>Escuela:</span> Presbítero José del Olmo (Naranjo, Alajuela) <br /> <span>Docente:</span> Marilyn Rojas Barrientos");
+								
+								$("#swipers").append("<div class='swiper-slide'> <div id='arrowR'></div> <img src='img/cuento_02/escuela_01.png' id='c2f1' /><div class='txSlide' id='txSlide2-1'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_02/escuela_03.png' id='c2f2' /><div class='txSlide' id='txSlide2-2'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_02/escuela_04.png' id='c2f3' /><div class='txSlide' id='txSlide2-3'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_02/escuela_02.png' id='c2f4' /><div class='txSlide' id='txSlide2-4'></div></div> <div class='swiper-slide'> <div id='arrowL'></div> <img src='img/cuento_02/escuela_05.png' id='c2f5' /><div class='txSlide' id='txSlide2-5'></div></div>");
+								
+								$('#txSlide2-1').append("Rebeca se levantó y vio por su ventana el sol brillante y los pájaros que cantaban, las rosas de su vecina expedían un aroma delicioso, el rocío todavía las bañaba y pensó: con permiso de la vecina cortaré algunas rosas rojas para llevarle a mi nueva maestra. Imaginaba cómo sería ella, bonita, alegre, buena, inteligente... Es difícil llegar a una nueva escuela. <br /><br /> La pequeña Rebeca era una niña con cabello rubio como el sol, piel blanca y sus bellos ojitos azules veían a través de los cristales de unos anteojos color morado que ella misma había elegido, debía usarlos siempre por un grave problema de visión que padecía. Vivía con su mamá en una pequeña casa, se querían mucho, era una niña muy obediente y llena de alegría. Se bañó esperando el delicioso pinto con huevos que preparaba su mamá. <br /><br /> Al finalizar el desayuno sintió que su estómago estaba tan lleno que quizás no podía caminar, aunque pudo, de la emoción y los nervios. Ella iba asustada por que no conocía a nadie en esta nueva escuela.");
+								
+								$('#txSlide2-2').append("Al entrar se sorprendió al ver lo grande que era el lugar, miraba jardines con hermosas flores coloridas, muchos niños jugando, sonriendo, correteando y algunos con la cara nerviosa como la de Rebeca. <br /><br /> Entró al salón. Al ver que nadie le hablaba se sintió triste, ella quería tener muchas amigas, como en su otra escuela, pero sentía que la miraban como algo extraño; sin embargo, en medio de tantos niños encontró a Lucía y desde ese momento fue su única amiga. Ya sentada en su salón observó a su nueva maestra, tenía el pelo un poco canoso, ella y Lucía le inspiraban confianza. <br /><br /> Pronto empezó a notar que esto era diferente al jardín de niños, ahora debía permanecer en un solo lugar, no podía comer dentro del salón o hablar en clase, llegó a pensar en presentar una queja a la directora por imponer semejantes reglas. Pasaron unos días y conforme Rebeca iba conociendo su escuela, más le gustaba.");
+								
+								$('#txSlide2-3').append("Podría pasar horas ojeando libros en la biblioteca o inventando nuevos juegos con los compañeros que gracias a Lucía se habían acercado a ella, le encantaban las riquísimas tortillas que hacía doña Karla, la señora del comedor, pero más que nada le emocionaba que pronto aprendería a leer y escribir. <br /><br /> Todo iba muy bien hasta que conoció a Sofía, una niña que tenía cara de buena persona, unos ojitos negros y cristalinos, cabello corto rizado, un poquito más alta que las demás niñas del grupo. De pronto resultó que hacía hasta lo imposible para hacer que Rebeca quedara en ridículo,  la empujaba de forma que quedaba tendida en el suelo mientras ella soltaba una carcajada de triunfo como si lo que había hecho fuera gracioso; a menudo le decía frases groseras, como gorda, fea y tonta, pero lo que más le dolía era que le puso el apodo de “cuatro ojos”. <br /><br /> Rebeca no comprendía porqué le estaba sucediendo esto, ella no sabía lo que era el maltrato, siempre la habían tratado con mucho amor y respeto.");
+								
+								$('#txSlide2-4').append("Un día, cansada de los abusos por parte de Sofía intentó defenderse, pero fue un fracaso, se dio cuenta que no era la solución porque los ataques de su compañera empeoraron, ahora no la dejaba participar en los juegos de los recreos y cuando tenía alguna oportunidad destruía sus útiles escolares. <br /><br /> Rebeca no sabía si contarle a la maestra porque le daba miedo ser más atacada. Su vida ya no era la misma, llegaba a casa triste y cuando la mamá le preguntaba qué le pasaba no decía nada; estaba a tal  punto que no quería ir más a la escuela, no deseaba levantarse de su camita, sentía solo ganas de pasar encerrada en su cuarto y no salir ni para comer. <br /><br /> Un martes llegaron unos doctores a realizar exámenes de la vista para todos los estudiantes, los resultados sorprendieron ya que le dijeron a Rebeca una noticia que la animó mucho, su vista estaba mejorando. También sorprendieron a Sofía pero de otra manera, porque resultó tener serias dificultades y le indicaron a la mamá que debía ponerle anteojos de inmediato o sino tendrían que hacerle una operación.");
+								
+								$('#txSlide2-5').append("Ese día Rebeca decidió contarle a la  mamá lo que tanto sufrió durante los últimos meses, había una niña que la molestaba y su nombre era Sofía. Entonces se dio una larga conversación entre ellas y la docente. <br /><br /> A la semana siguiente Sofía entró al aula con sus nuevos lentes, lo que resultaba extraño porque nadie estaba acostumbrado a verla así. Rebeca decidió acercarse y decirle que se veía muy bonita que diera un poco de tiempo a que los demás se acostumbraran a mirarla. <br /><br /> La maestra realizó un taller de convivencia en el aula, en el que se trató lo que es el “bullying” y las consecuencias que trae, además del derecho de vivir libre y felizmente la etapa escolar sin importar las diferencias que tenga cada compañero. Fue así como Sofía comprendió y pidió perdón a quien más hizo daño, y Rebeca volvió a sonreír como antes.");
+							break;
+							
+							case '03'://Kira
+								$('#tituloCuento').append("Kira");
+								
+								$('#creditoCuento').append("<span>Autor:</span> Reichel Calderón Álvarez • <span>Escuela:</span> Concepción de Alajuelita (San José) <br /> <span>Docente:</span> Elieth María Corrales Zúñiga • <span>Bibliotecólogo:</span> Luis Felipe Saravia Ortiz");
+								
+								$("#swipers").append("<div class='swiper-slide'> <div id='arrowR'></div> <img src='img/cuento_03/kira_01.png' id='c3f1' /><div class='txSlide' id='txSlide3-1'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_03/kira_02.png' id='c3f2' /><div class='txSlide' id='txSlide3-2'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_03/kira_03.png' id='c3f3' /><div class='txSlide' id='txSlide3-3'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_03/kira_04.png' id='c3f4' /><div class='txSlide' id='txSlide3-4'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_03/kira_05.png' id='c3f5' /><div class='txSlide' id='txSlide3-5'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_03/kira_06.png' id='c3f6' /><div class='txSlide' id='txSlide3-6'></div></div> <div class='swiper-slide'> <div id='arrowL'></div> <img src='img/cuento_03/kira_07.png' id='c3f7' /><div class='txSlide' id='txSlide3-7'></div></div>");
+								
+								$('#txSlide3-1').append("El Sol ha vuelto a asomarse en la granja para otro día de verano. <br /><br /> —¡Otro día de verano! ¡Yupi!— grita Kira, mientras corre, saltando, fuera de su casita, como buena cachorrita; sacudiéndose el polvo de la paja. <br /><br /> — ¡Ya amaneció! ¡Quíquiriquí!—, un viejo gallo vuelve a soltar su tonada, por décima vez en la mañana. <br /><br /> Kira tiene cosas que ver en esta hermosa mañana y corre a la casa de papá para que le brinde desayuno. Papá le prepara la comida y le dice: —Kira, quédate jugando cerca de la casa, no te metas en problemas; yo voy a la cuadra y no regreso tarde. <br /><br /> Mamá, desde la cocina, le dice a papá: — Yo la cuido para que no haga destrozos en la casa—. A Kira le gusta morder y sacudir todo lo que pueda. <br /><br /> — ¡Bueno! ¡Me voy!—, dice papá, mientras coge la bolsa con el almuerzo y emprende su viaje.");
+								
+								$('#txSlide3-2').append("Kira corre a la sala y se echa en la alfombra, pero unos golpes en la puerta la sorprenden. Con sus patas delanteras sobre la puerta, ladra a lo que esté golpeando. Mamá llega y hace que Kira regrese a la cocina para ir a abrir. <br /><br /> — ¡Qué aburrido!–, dice Kira. De repente observa que la puerta de la cocina está entreabierta. Sale al patio y, curiosa por saber qué rumbo tomó papá, aprovecha su nariz de buen rastreador y se va a buscarlo; después de todo, debe aprender las labores de la granja y “para luego es tarde”. <br /><br /> Sigue el rastro a través de la finca, alejándose de la granja. Luego de andar un rato, ve un pequeño grillo cantando en la hoja de un helecho. — ¡Qué bicho tan raro y chillón!–, dice Kira. —¿Para qué hace tanta bulla?—. El grillo da un salto y se pierde en el monte. Kira quiere seguirlo, pero el grillo es tan pequeño que no puede ver dónde se metió; así que sigue el rastro de papá. <br /><br /> Unos metros adelante, ve unas lapas armando una fiesta porque encontraron un almendro para disfrutar. Kira, que desconoce lo que las lapas hacen, quiere saber y ladrando pregunta: —¿Qué hacen?, ¿qué juegan?—.");
+								
+								$('#txSlide3-3').append("Pero las lapas no le prestan atención y, sintiéndose apartada de la celebración, prefiere seguir el rastro de papá. <br /><br /> En el monte encuentra unas florecitas violeta que huelen muy rico y, oliendo todas las que puede, descubre una mariposa que agita sus alas. — ¡Qué lindos colores! ¿Qué será?—. Hipnotizada, deja el tiempo correr con aquella mariposa que atrapa sus grandes ojos azules. La mariposa vuela semejando un destello de colores que flota en el aire y Kira corre para alcanzarla, pero la mariposa vuela cada vez más alto y se aleja sin que la pueda atrapar.  Una vez más se da a la tarea de seguir el rastro que por un momento pierde; pero, tras unas vueltas por el potrero, lo vuelve a encontrar y sigue  la ruta buscando a papá. <br /><br /> Kira empieza a sentir que el sol la quema, pero no hay un árbol que le pueda dar sombra; siente el cansancio de tan larga búsqueda. Con la lengua colgándole, sigue, cada vez más cansada, la ruta que la nariz le indica; pero no parece llevar a ninguna parte. En lo alto de la colina corre una brisa fresca que la invita a echarse y decide quedarse un rato más.");
+								
+								$('#txSlide3-4').append("—¡Qué rico!—, dice Kira, pero, refrescada, debe seguir; está lejos de casa y no ha encontrado aún a papá. <br /><br /> A lo lejos corren unos caballos y Kira cree que también pueden ir por donde él va; así que decide correr tras la manada y averiguar, pero al llegar a la siguiente colina descubre que los caballos ya no están y sólo puede ver una nube tratando alzar vuelo. <br /><br /> Kira descubre que ha perdido el rastro, ya no sabe cómo volver a encontrarlo. Comprende que una cachorrita no es sabuesa y tiene mucho que aprender, pero ¿cómo saber qué hacer, si poco aprendió el tiempo que pudo estar en la granja? Es ahora cuando más necesita la habilidad de un sabueso, pero ya es tarde y lamentarse nada traerá, así que continúa el camino, triste, perdida, cansada y con sed. <br /><br /> Siente que el sol le pega en el lomo y se echa a llorar. Pero la brisa vuelve a aparecer con un detalle especial: parece llamarla “Kiiiiiiiira” una y otra vez, con una voz que a veces suena a mamá y otras veces suena a papá; así que Kira sigue la voz de la brisa.");
+								
+								$('#txSlide3-5').append("Corre y ladra, ladra cada vez más, mientras corre tras la brisa que poco a poco se aleja, dejándola atrás. Aunque el hambre y el cansancio ya no le dan fuerzas para seguir, paso a paso va, entre la hierba de una colina desde donde puede ubicar algunos árboles cerca de un arroyo. <br /><br /> —¡Qué alegría! ¡Agua! La puedo oler y escuchar–, dice Kira. Tomando nuevas fuerzas, corre el trecho que necesita para llegar. <br /><br /> Bajo la frescura de la sombra, se detiene un largo rato a beber en el arroyo y a descansar; deja de tener la lengua como un yoyo y se duerme. Poco después, la misma brisa parece volverla a llamar; Kira abre los ojos y ve algo raro que la está mirando fijamente mientras se acerca callada. <br /><br /> Kira se levanta y ve que es una culebra que se prepara para atacar.   Pero Kira  no sabe qué es una pitón y la mira con asombro porque es muy larga y con una cabeza grande. Siente que la pitón le clava los ojos sobre los suyos, algo le dice que la cosa va mal, siente miedo, pero no sabe qué hacer.");
+								
+								$('#txSlide3-6').append("¿Debe correr?, ¿debe ladrar? Mientras a Kira le entra la duda, la pitón se arrolla como un resorte; sabe que Kira no comprende el problema en que está. Kira no sabe si correr o quedarse, mientras la pitón abre su gran boca para tragársela de un bocado. <br /><br /> Sin embargo, al momento en que la pitón va a tragarse a Kira, un trueno, algo como un rayo, golpea la cabeza de la culebra. Kira, aterrada, corre lejos del arroyo. <br /><br /> —¿Qué era eso? ¿Un rayo sin lluvia?—, no creo que sea eso.  Pero escucha la voz de papá que, alegre y asustado, enojado y angustiado, le dice: — ¡Kira, tonta! ¿Qué haces aquí?, ¿cómo te saliste de casa?, ¿cómo llegaste a la quebrada? <br /><br /> Pero Kira sólo sabe ladrar de alegría, meneando la cola, jugando con la mano de papá que acaricia sus largas orejas. Papá alza a Kira y le dice: —Zaguata majadera, de ahora en adelante te voy a tener amarrada, aunque me llores y me ladres, porque de esta no te salvas.");
+								
+								$('#txSlide3-7').append("Kira oye a papá con voz de enojo, pero poco le importa la regañada y le chupa la cara con la lengua. Colina arriba hay un caballo esperando a los dos para reanudar el viaje.  Como la alegría de Kira no se puede contener, papá, incómodo con una perra que no para de moverse, llega a la cuadra; después de ponerle una carreta al caballo, mete a Kira y se la lleva. <br /><br /> Mientras los hermanos de papá continúan las tareas de la cuadra, Kira tiene un viaje directo a casa en el viejo carretón de carga. Aunque papá va molesto, al mismo tiempo va satisfecho porque el único cachorro que le quedó no se lo ha llevado el arroyo, como a los hermanos de Kira.  Esta vez el amo y el animal quedan juntos y alegres con una gran historia para contar.");
+							break;
+							
+							case '04'://Mis amigos los dragones
+								$('#tituloCuento').append("Mis amigos los dragones");
+								
+								$('#creditoCuento').append("<span>Autor:</span> Marcela Menjívar Sánchez • <span>Escuela:</span> Saint Anthony (Moravia, San José) <br /> <span>Docente:</span> Esteban Ibarra Vargas • <span>Bibliotecólogo:</span> Marta Elena Rubí Carballo");
+								
+								$("#swipers").append("<div class='swiper-slide'> <div id='arrowR'></div> <img src='img/cuento_04/dragones_03.png' id='c4f3' /><div class='txSlide' id='txSlide4-1'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_04/dragones_04.png' id='c4f4' /><div class='txSlide' id='txSlide4-2'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_04/dragones_01.png' id='c4f1' /><div class='txSlide' id='txSlide4-3'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_04/dragones_02.png' id='c4f2' /><div class='txSlide' id='txSlide4-4'></div></div> <div class='swiper-slide'> <div id='arrowL'></div> <img src='img/cuento_04/dragones_05.png' id='c4f5' /><div class='txSlide' id='txSlide4-5'></div></div>");
+								
+								$('#txSlide4-1').append("¡Hola! Me llamo Marcela, tengo el pelo lacio y negro, uso lentes y soy la guardiana de los dragones. Lo sé, suena increíble, pero es verdad. Esto pasó unos tres años atrás, cuando yo tenía siete. Para ese entonces yo no creía en dragones, pensaba que eran mitos. Pero pasó algo que cambió mi vida, ¡les contaré mi historia! Antes, ¡casi se me olvida contarles de mis padres! Mi mamá se llama Claudia, también usa lentes y tiene el pelo negro y lacio como yo, tiene talento para hacer manualidades; mi papá se llama William, el solía tener el pelo negro pero ahora se le está tornando un poco gris y le gusta mucho dibujar y pintar. <br /><br /> Bueno, sin más preámbulos, ahora sí, les contaré mi historia…. La casa de mis padres está cercana al bosque y un día ellos me pidieron que fuera a juntar leña, yo muy obedientemente fui a buscarla. Me adentré en el bosque que me parecía muy profundo, el follaje de los árboles era tan espeso que realmente se tornaba oscuro como la noche y tan silencioso como el andar de las nubes. Vi una mariposa muy hermosa y la perseguí para tomarle una foto, me dejé llevar y, cuando ya no la vi más, observé algo mucho más que increíble e interesante entre un grupo de rocas al pie de lo que parecía una colina… ¡Un nido de dragones!");
+								
+								$('#txSlide4-2').append("Me asusté mucho y sentí el impulso de salir corriendo pero no pude, estaba fría. En ese momento, uno de ellos me tomó por la espalda, tenía mucho miedo de que me comiera, cerré los ojos por unos instantes pero no sentí nada, así que los volví a abrir sumamente temerosa y entonces me percaté de que no quería lastimarme. Luego, mirando detenidamente, distinguí que no era uno, sino que había cientos de ellos. Uno era color azul como el cielo, con espinas en la cabeza y me miraba fijamente con sus ojos color esmeralda, yo lo llamé Azulejo; otro era rojo con naranja, un naranja como el atardecer y a ese lo llamé Fuego; en fin, había muchos con distintos colores que inspiraban igual cantidad de nombres en mi cabeza. Pero hubo uno que me llamó más la atención, era de color rojo intenso como las rosas, con detalles verde claro, a él yo lo llamé Tormenta de Fuego. Resulta que ese es el rey de los dragones, era mi preferido. <br /><br /> — Yo me llamo Marcela y no les haré daño–, les dije. Ellos confiaron en mí y me invitaron a participar de los juegos que hacían, pero en eso aparecieron otros dragones y todos los demás retrocedieron.");
+								
+								$('#txSlide4-3').append("Esos otros dragones eran feroces y parecía que eran malos, es muy difícil describirlos, yo los llamo Dragones Malignos. Empezaron a atacarnos sin razón alguna, así que corrí a esconderme detrás de una roca para observar lo que ocurría: los dragones adultos se unieron a la batalla y los más pequeños fueron a refugiarse en sus nidos; los Dragones Malignos eran muy ágiles y rápidos, pero mis dragones no se quedaban atrás y lograron ahuyentarlos porque eran más. Me puse feliz porque los Dragones Malignos se habían ido, pero todos los dragones se veían preocupados y entonces entendí que posiblemente regresarían. Se me ocurrió una idea: uniría fuerzas con los dragones. <br /><br /> Les conté mi idea y, aunque no pensé que me fueran a entender, sí lo hicieron y parecían contentos con ello, entonces emprendimos la planificación de nuestra estrategia de defensa. Nos dividimos en grupos, el primero protegería al rey, el segundo atacaría con fuego desde el aire y el tercero defendería los nidos. Estábamos entrenando, cuando escuché a los otros dragones acercarse y grité: — ¡Ahí vienen, todos a sus puestos!");
+								
+								$('#txSlide4-4').append("Todos nos escondimos y esperamos, yo me monté en el rey y esperé a que aparecieran y cuando aterrizaron grité: ¡¡¡Al ataqueeee…!!! Esa fue la señal para que alzaran vuelo e iniciaran el ataque desde el aire. <br /><br /> Algunos Dragones Malignos huyeron desconcertados, pero otros comenzaron su contraataque lanzando bolas de fuego desde el suelo. Tratamos de esquivar el ataque y entonces miré un dragón que había sido derribado, cuando volví a ver al frente divisé una bola de fuego que no pudimos esquivar y caímos… perdí el conocimiento por unos instantes y, cuando desperté, solo tenía unos rasguños y el rey ya no estaba conmigo. <br /><br /> Me levanté y corrí a buscarlo pero entré a un lugar que no tenía salida y un Dragón Maligno me acorraló.  No sabía qué hacer y entonces, justo cuando pensé que moriría, mi amigo el Tormenta de Fuego apareció y atacó al Dragón Maligno, venciéndolo. Me monté de nuevo en él y volamos de regreso al campo donde se libraba la batalla y nos dimos cuenta de que habíamos ganado.");
+								
+								$('#txSlide4-5').append("Todos estaban felices y festejamos. Gracias a que les ayudé a planificar una estrategia me nombraron su guardiana y, desde entonces, paso las tardes con mis amigos los dragones.");
+							break;
+							
+							case '05'://El conejito que recuperó su alegría
+								$('#tituloCuento').append("El conejito que recuperó su alegría");
+								
+								$('#creditoCuento').append("<span>Autor:</span> Valeria Zúñiga Méndez • <span>Escuela:</span> Aquiares (Turrialba, Cartago) • <span>Docente:</span> Xenia Barquero Quesada");
+								
+								$("#swipers").append("<div class='swiper-slide'> <div id='arrowR'></div> <img src='img/cuento_05/conejo_06.png' id='c5f6' /><div class='txSlide' id='txSlide5-1'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_05/conejo_01.png' id='c5f1' /><div class='txSlide' id='txSlide5-2'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_05/conejo_02.png' id='c5f2' /><div class='txSlide' id='txSlide5-3'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_05/conejo_03.png' id='c5f3' /><div class='txSlide' id='txSlide5-4'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_05/conejo_05.png' id='c5f5' /><div class='txSlide' id='txSlide5-5'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_05/conejo_04.png' id='c5f4' /><div class='txSlide' id='txSlide5-6'></div></div> <div class='swiper-slide'> <div id='arrowL'></div> <img src='img/cuento_05/conejo_07.png' id='c5f7' /><div class='txSlide' id='txSlide5-7'></div></div>");
+								
+								$('#txSlide5-1').append("En un lugarcito escondido en el bosque, cobijado por el cielo azul y el calor del sol, vivían Doña Coneja y sus hijitos. Parecían motitas de algodón, tenían los ojos de rubí, la naricita rosada y pequeñita como un botón. Relucían en ellos sus inmensos  dientes de leche, cuidados con esmero por su mamita. Todos eran igualitos, pero muy diferentes en su manera de ser. Algunos obedientes, juguetones y cariñosos; otros muy serios. <br /><br /> Entre todos destacaba Tipi. Era el más inquieto y desobediente de todos y, lo que es peor, maltrataba a sus hermanitos. La pobre mamá escuchaba quejas todo el día. <br /><br /> Por fin llegó el día esperado, los conejitos iniciarían su primer grado. Una bella coneja chocolate sería la maestra y los esperaba con gran ilusión. Todos perfumados, llenos de besitos y cargados de abrazos, ingresaron a la escuelita; aunque pequeñita, era un paraíso soñado. Flores y mariposas danzaban con el viento y un perfume suave inundaba el salón de clases. <br /><br /> Ese día, la maestra les enseñó muchos juegos y canciones, también les explicó las normas de la convivencia diaria, con el fin de que todos fueran felices y las sonrisas  fueran el mejor adorno de la escuela por siempre.");
+								
+								$('#txSlide5-2').append("Tipi decidió no hacer caso. Durante las lecciones cogía sin permiso los materiales de los compañeritos, rompía las hojitas que le daba la niña y saltaba por todos los rincones interrumpiendo. Lo peor se daba en los recreos, hacía zancadillas, se burlaba de todos y los golpeaba con intención. De nada valían las llamadas de atención de la maestra y de Doña Coneja. <br /><br /> Así fueron pasando los días, hasta que Tipi se quedó sin amigos. Observaba reír a los demás, pero su corazón estaba triste y endurecido; no podía sonreír. Siempre solo, a veces lloraba bajo su camita. <br /><br /> Un día como tantos, murió la tarde, y la luna de plata brilló en lo más alto. Era noche de fiesta, de compartir como amigos. Bailes y cantos provocaban los violines de los alegres grillos. Tipi estaba de mal humor, como siempre, le molestaba la bulla y las risas de los demás. <br /><br /> Con musgo seco tapó sus orejotas y trataba de dormir. Como no pudo, salió furioso y gritó: “¡Odio que estén tan felices!” Esa noche, los habitantes de ese bosque lo vieron por última vez. <br /><br /> Caminando y caminando, asustado con los ruidos de la noche y escondiéndose de los animales hambrientos, Tipi llegó a otro bosque.");
+								
+								$('#txSlide5-3').append("Cansado y triste, se acomodó en una cueva abandonada en el tronco de un enorme árbol de ceiba. Pensaba que él había nacido sin risas. O quizás, algún duendecillo travieso había robado su felicidad. Agotado, suspiró y se durmió profundamente por dos días. <br /><br /> Por fin despertó con el ruido de una bandada de pájaros que visitó el árbol y que había decidido quedarse a vivir ahí. Al día siguiente, su agujero se vistió de luz y él se fue asomando a conocer el nuevo bosque. <br /><br /> Una comadreja jugaba con sus hijitos, le recordó su hogar y lloró. Al poco rato observó cómo miles de ratones subían y bajaban de los árboles, se perseguían y cantaban. <br /><br /> Pudo ver mariposas parecidas a las de su escuela, conversando con las flores. Todos los animalitos gozaban de la vida y Tipi se preguntaba una vez más, “¿dónde estará mi sonrisa?” <br /><br /> Uno de los pájaros resbaló y cayó al suelo, descubrió dos ojitos brillantes que lo miraban desde un agujero en el tronco del árbol y preguntó: <br /><br /> —Oye, ¿quién eres?");
+								
+								$('#txSlide5-4').append("—Soy un conejo que no sabe sonreír. <br /><br /> —¿Por qué dices eso? <br /><br /> —No sabes nada, sigue tu camino. <br /><br /> —Vamos, sal de ahí.  No te niegues tu propia felicidad. Prepárate para la noche de la Luna llena, hoy todos compartiremos y danzaremos sin cesar. <br /><br /> —No. Eso no se hizo para mí. No pierdas tu tiempo. <br /><br /> El pájaro volvió a su rama, preocupado. En la tarde, el bosque se llenó de movimiento. El cielo se vistió de fuego y fue dando paso a la luz plateada, y el claro del bosque se iluminó. Los grillos con sus canciones hacían palpitar los corazones enamorados, las miradas se cruzaban y se sentía la felicidad del nacimiento del amor. De pronto aparecieron ardillas bailarinas que hacían reír a todos, menos a Tipi, que se sentía furioso con la dicha de los demás. Nuevamente lloró e inundó su cueva con agua salada. <br /> De nuevo, la luz del sol hizo que Tipi abriera sus vidriosos ojitos tristes, aún más rojos de tanto llorar.");
+								
+								$('#txSlide5-5').append("El viejo pájaro no había dormido bien, pensó todo el tiempo en ese amiguito encerrado en su dolor. Luego de realizar los quehaceres en su nido, se vistió de sonrisa y se acercó al viejo árbol: <br /><br /> — Oye, amigo, me gustaría conversar contigo. <br /><br /> — No molestes, déjame en paz, no me interesas para nada. Sigue tu camino. <br /><br /> —Déjame contarte lo bien que la pasamos ayer los habitantes de este bosque maravilloso. Nos divertimos, cantamos y bailamos; te lo perdiste, todos nos reíamos en coro. ¿Nos escuchaste? <br /><br /> — ¡Risas, risas, risas, eso es perder el tiempo! Mi boca no las conoce; nací sin ellas. No quiero conversar con nadie. No pierdas tu tiempo. <br /><br /> —Decídete a salir, podemos ser amigos. Ser feliz es una decisión que puedes tomar en cualquier momento. <br /><br /> —Yo no tengo corazón; por eso, no tengo risas. Aquí tengo lo que ocupo para vivir, aquí no puedo molestar a nadie. Es la mejor decisión.");
+								
+								$('#txSlide5-6').append("Y así, cinco, seis, siete……cien veces pasó el pajarito y más veces lloró el conejito su desdicha. Lo peor era que el pájaro ya tampoco sonreía, y sus amigos, preocupados, lo llamaron para preguntarle el motivo. Las risas de muchos estaban desapareciendo. <br /><br /> Un búho muy blanco, al que todos respetaban por su sabiduría, le preguntó: <br /><br /> —¿Qué te pasa amigo pájaro?, ¿a qué se debe tu tristeza? Nos estás contagiando. <br /><br /> —Es cierto, estoy preocupado por el conejito que vive en la cueva del viejo árbol. No conoce su sonrisa, afirma que nació sin ella. No se deja ayudar. Ya he empleado una lluvia de consejos. No puedo ayudarlo yo solo. <br /><br /> —Eso es mi amigo, tú no puedes solo. ¡Esa es la clave! “La unión hace la fuerza”. <br /><br /> Y ese día, en el claro del bosque, el búho propuso un plan para sacar al animalito de su encierro y ayudarle entre todos a despertar su alma, enseñarle lo lindo de compartir con los demás y conquistar la sonrisa perdida. <br /><br /> La fiesta del bosque cambió de lugar, todos caminaron hasta el frente de la cueva de Tipi.");
+								
+								$('#txSlide5-7').append("Parecía que había abandonado el lugar, no se escuchaba ningún ruido en su cueva. Una valiente arañita se deslizó por las paredes hasta llegar a ver el conejito, casi ahogado en una laguna de lágrimas. <br /><br /> Entre todos lo sacaron y le brindaron mil atenciones para salvarle la vida, hasta que se abrieron sus ojitos y cada uno de los habitantes del bosque le manifestó su cariño. Lo invitaron a disfrutar con ellos, pero él les dijo: —No sé hacerlo, nací sin risas. Eso no es para mí—. Medio muerto, se lo llevaron a descansar a la cueva de Pinta la comadreja. <br /><br /> Al día siguiente, el viejo pájaro lo invitó a recorrer el bosque, que estaba radiante y más verde que nunca. ¡Qué alegría sintió el emplumado! Tipi aceptó la invitación y, sin dejar de conversar y saludar, caminaron por mucho rato. En ese momento, el conejito descubrió los colores, la luz y el calor, se maravilló del color del cielo, del concierto y de la gracia de las ardillitas. “Hoy ha nacido mi sonrisa”, expresaba el conejito, quien por todo se reía ruidosamente. <br /><br /> En ese instante se acordó de su escuelita y de su hogar, de su forma de ser tan equivocada, de tantas sonrisas que se robó. Aprovechó la fiesta nocturna para ofrecer a todos un hermoso discurso de amor y amistad, pero a la vez, se despidió de todos. En otro bosque no lo habían olvidado y esperaban con ansias su regreso.");
+							break;
+							
+							case '06'://El niño que soñaba con la paz
+								$('#tituloCuento').append("El niño que soñaba con la paz");
+								
+								$('#creditoCuento').append("<span>Autor:</span> María Monserrat Elizondo Fallas • <span>Escuela:</span> Eloy Morúa Carrillo (Puriscal, San José) <br /> <span>Docente:</span> Paola Regidor Barboza");
+								
+								$("#swipers").append("<div class='swiper-slide'> <div id='arrowR'></div> <img src='img/cuento_06/nino_paz_04.png' id='c6f1' /><div class='txSlide' id='txSlide6-1'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_06/nino_paz_01.png' id='c6f2' /><div class='txSlide' id='txSlide6-2'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_06/nino_paz_05.png' id='c6f3' /><div class='txSlide' id='txSlide6-3'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_06/nino_paz_02.png' id='c6f4' /><div class='txSlide' id='txSlide6-4'></div></div> <div class='swiper-slide'> <div id='arrowL'></div> <img src='img/cuento_06/nino_paz_03.png' id='c6f5' /><div class='txSlide' id='txSlide6-5'></div></div>");
+								
+								$('#txSlide6-1').append("En un lejano país de Medio Oriente, de esos que siempre están en guerra, vivía un niño llamado Yasir; tenía 10 años, vivía en compañía de sus padres y sus dos hermanos. En sus ojos se reflejaba el miedo y la tristeza. A su alrededor solo podía ver el cielo negro, tanques de guerra, armas, soldados, injusticia y destrucción. Constantemente él y su familia tenían que huir y esconderse para no ser alcanzados por la muerte. Veía cómo niños entre los 12 y 15 años eran obligados a usar armas y ser soldados. Él no quería eso para él y sus hermanitos menores. <br /><br /> Un día, en uno de esos viajes, Yasir y su familia se fueron a un lugar lejano, donde no los pudieran encontrar. Cuando llegaron a un sitio seguro, él y sus hermanos se fueron a jugar y encontraron un ave herida, la llevaron adonde estaban sus padres para curarla y alimentarla. <br /><br /> Al día siguiente estaba Yasir cuidando la golondrina, cuando esta despertó y le preguntó: — ¿Niño, quién eres tú?, ¿por qué me atrapaste?, ¿qué te he hecho yo, para que me encerraras en esta prisión?—");
+								
+								$('#txSlide6-2').append("Yasir muy asustado le dijo — ¡Yo no te quiero hacer daño! Te encontramos mal herida y quisimos ayudarte. Espérame para traerte algo de comer—. <br /><br /> Cuando la golondrina estaba recuperada, el niño le dijo: —¿Quién eres? Nunca había visto un ave como tú por aquí. <br /><br /> — Soy una golondrina, vengo de un país lejano—, le contestó. <br /><br /> —¿Qué haces por aquí?, ¿tú también estas huyendo de la guerra?—, le dijo Yasir. <br /><br /> La golondrina le contestó —¡No! Yo soy de un lugar donde no hay guerra, ni soldados, ni ejército—. <br /><br /> Yasir no podía creer que había un lugar así y le pidió a la golondrina que le siguiera contando sobre ese sitio, que por su imaginación nunca hubiera pensado que existiera.");
+								
+								$('#txSlide6-3').append("La golondrina, emocionada de poder contarle al niño de donde venía, siguió relatando su historia: —Donde yo vivo el cielo es tan grande y azul que no tiene fin, su paisaje es tan bello, lleno de montañas y flores de muchos colores que parecen un arco iris, los animales corren y vuelan libres, su mar es tan azul como el mismo cielo que parecen uno solo. Las personas son buenas, se ayudan entre ellas. Los niños corren felices porque van para la escuela, al salir juegan en el parque y se divierten—. <br /><br /> Yasir escuchaba atento a la golondrina, se imaginaba cada lugar que ella le mencionaba. La golondrina siguió contando sobre ese lugar tan especial… <br /><br /> — En el país de donde vengo hay personas valientes y trabajadoras. Se respira un aire limpio de paz y tranquilidad. En el campo solo se escucha el cantar del río que recorre grandes distancias, mis hermanos los pajaritos cantan alegremente y anuncian la venida de la lluvia que llegará para refrescar y bañar los cultivos. Al caer la tarde, el Sol nos da un bello espectáculo, despidiéndose, anunciando que pronto llegará la noche y esta trae consigo un destello de estrellas y una Luna hermosa.");
+								
+								$('#txSlide6-4').append("Las luciérnagas iluminan el paisaje como lucecitas de navidad, los grillos entonan y dan vida a la noche. Un paraíso único del que nunca debí salir. <br /><br /> Yasir, muy emocionado y convencido de lo que la golondrina le había contado, se fue a dormir. En sus sueños solo podía ver a su familia y a su gente en ese lugar tan maravilloso, siendo libres, viviendo en  paz y libres del maltrato. Se veía a él y a sus hermanitos corriendo rápidamente porque se les hacía tarde para ir a la escuela, donde pronto aprenderían a leer y escribir, jugando, saltando y corriendo con sus amiguitos. Donde las bombas eran hermosos globos de muchos colores que bajaban del cielo, las balas eran mariposas de colores, los tanques de guerra eran el carrito de los helados, los soldados eran maestros y maestras que día a día les enseñarían cosas nuevas. Los rifles eran los lápices y cuadernos que llevarían a la escuela. <br /><br /> También veía a su padre salir a trabajar sin miedo y seguro de que su familia estaría bien. Esa noche Yasir soñó el más bello de los sueños. Donde por primera vez sus ojitos se iluminaron y se llenaron de brillo. En el que su familia estaba segura. Un sueño del que no quería despertarse jamás.");
+								
+								$('#txSlide6-5').append("Al día siguiente Yasir despertó feliz y corrió a buscar la golondrina, pero ya se había marchado. Se entristeció al no encontrarla, pero agradeció por todo lo que le había dicho, porque en su corazón tenía la firme esperanza de que algún día su familia y él vivirían en un lugar así. Desde ese momento, Yasir soñó cada noche con la paz para su país y con ese lugar tan especial que su amiga la golondrina le había contado.");
+							break;
+							
+							case '07'://De nuevo Manchas y yo
+								$('#tituloCuento').append("De nuevo Manchas y yo");
+								
+								$('#creditoCuento').append("<span>Autor:</span> Pablo José Morales Ceciliano • <span>Escuela:</span> Salvador Villar Muñoz (La Cruz, Guanacaste) • <span>Docente:</span> Edith Cortés Júnez • <span>Bibliotecólogo:</span> Miguel García Umaña");
+								
+								$("#swipers").append("<div class='swiper-slide'> <div id='arrowR'></div> <img src='img/cuento_07/manchas_01.png' id='c7f1' /><div class='txSlide' id='txSlide7-1'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_07/manchas_02.png' id='c7f2' /><div class='txSlide' id='txSlide7-2'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_07/manchas_03.png' id='c7f3' /><div class='txSlide' id='txSlide7-3'></div></div> <div class='swiper-slide'> <div id='arrowL'></div> <img src='img/cuento_07/manchas_04.png' id='c7f4' /><div class='txSlide' id='txSlide7-4'></div></div>");
+								
+								$('#txSlide7-1').append("Mi amigo y yo conocemos hasta el último rincón de las calles, y es que, de no ser así, no seríamos lo que somos ni tendríamos lo que tenemos. El barrio se ha vuelto cada día más hostil, pero nada en esta vida es más que un reflejo de nuestros corazones. Algunos piensan que tengo mucho que aprender en la escuela, y es cierto, no he ido últimamente. Manchas, mi amigo, sabe que lo intento, pero siempre hay algo que lo impide. <br /><br /> Siempre he sido un poco inquieto, pero no es mi intención hacer daño. Si Manchas ha tenido que defenderme, es cuando los vecinos no comprenden que solo busco la comida que les haya sobrado, no pretendo robar… a veces me pregunto por qué terminamos juntos, si es poco lo que yo puedo ofrecerle, pero mi imagen en el reflejo de sus ojos agradecidos me responde esas curiosidades del destino. Lo que hago en las calles no me queda claro, imagino que tampoco a Manchas, pero vagamos juntos mientras nuestros pies aguantan el calor del asfalto, luego nos resguardamos.");
+								
+								$('#txSlide7-2').append("Doña Matilde nos ayuda cuando puede, es muy dulce la señora y creo que es de esos ángeles que se quedaron perdidos aquí en la Tierra, que además no debieran irse, porque cuando no encontramos nada, aparece doña Matilde, como enviada del cielo. Está un poco enferma la viejita, quisiera tener la forma de ayudarla. <br /><br /> Hoy nos hemos encontrado con un circo que pasaba por la ciudad, ¡son tan graciosos!, tiene colores brillantes y los trapecios son lo mejor que haya visto. Esperamos a que llegue la tarde y nos escabullimos por las carpas. Pero en ese momento termina mi emoción, al ver un grupo de animales encadenados, esperando a que inicie la función. <br /><br /> — ¡Mira, Manchas! —le dije—. Esta gente tiene a los pobres animales trabajando sin parar y se ven enfermos. <br /><br /> En ese instante no supe qué hacer, me acerqué para acariciar a un elefante que yacía tristemente en una esquina, qué dolor, tan grande puede ser la crueldad humana.");
+								
+								$('#txSlide7-3').append("Al ver los ojos suplicantes de los animales, no pude evitarlo: empecé a abrir las puertas y a sacar todos los que pudiera. Manchas ladraba sin parar, mientras los trabajadores del circo corrían de un lugar a otro. – ¡Corrrrre! —dije a Manchas—, no te dejes atrapar. <br /><br /> En ese momento me toman del brazo y una sombra cubre mi cara. —Muévete, niño,  debes acompañarnos—. Ahora sí que estoy en problemas. De nuevo solamente quería hacer algo bueno, es que no puedo pensar las cosas. Me lastima ver otros seres sufrir, pero ahora las víctimas serán los dueños de ese circo, la misma historia que con los dueños de la basura. Y podríamos tratar de escurrirnos por un rincón de las oficinas, mientras se descuidan, pero sería peor aún, puedo ver que Manchas se encuentra muy preocupado, no quiero provocar otro problema. <br /><br /> Cierro los ojos y pido ayuda, todo da vuelta y encuentro frente a mí a doña Matilde. Siempre sonriente, me tiende la mano y me acurruca entre sus brazos. —¿Qué me ha pasado?—, le pregunto. Me contesta con otra sonrisa.");
+								
+								$('#txSlide7-4').append("Miro hacia los lados buscando el lugar donde está Manchas, quien me mueve la cola feliz. Sin dudarlo me dispongo a caminar junto a ellos, andamos por todo el lugar y tengo una sensación extraña. Una persona se acerca y, mientras habla con doña Matilde, observo sus ojos, escucho unas voces en su interior y la historia de su vida pasa frente a mí, veo sus tristezas, sus alegrías, todos los momentos felices y dificultades. <br /><br /> Observo a doña Matilde y un mundo de bondad se aparece en su interior. Camino unos pasos y una señora trabaja presurosa en su oficina, cuando veo sus ojos descubro mucho sufrimiento, tanto como el mío, pero luego un gran esfuerzo y cambio en su vida, ¿qué hizo para superar sus problemas? Una vez más la receta: estudiar, estudiar, estudiar…. <br /><br /> Doña Matilde y Manchas me esperan en la puerta. Salimos y le pido ayuda a doña Matilde para entrar a la escuela, se muestra muy contenta por mi actitud, sé que esto cambiará la vida de todos. Espero que estudiando mi suerte mejore, Manchas también está muy feliz con mi decisión. Él y yo saldremos de las calles, me he dado cuenta de que no se necesita tener una infancia perfecta para ser un adulto de bien.");
+							break;
+							
+							case '08'://La niña y el mar
+								$('#tituloCuento').append("La niña y el mar");
+								
+								$('#creditoCuento').append("<span>Autor:</span> Crystel Victoria Valerio Ramos • <span>Escuela:</span> José Rafael Araya Rojas (Tibás, San José) • <span>Docente:</span> Jacqueline Soto Sandoval • <span>Bibliotecólogo:</span> Mauricio Ruble Morales");
+								
+								$("#swipers").append("<div class='swiper-slide'> <div id='arrowR'></div> <img src='img/cuento_08/mar_01.png' id='c8f1' /><div class='txSlide' id='txSlide8-1'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_08/mar_02.png' id='c8f2' /><div class='txSlide' id='txSlide8-2'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_08/mar_03.png' id='c8f3' /><div class='txSlide' id='txSlide8-3'></div></div> <div class='swiper-slide'> <div id='arrowL'></div><div id='arrowR'></div> <img src='img/cuento_08/mar_04.png' id='c8f4' /><div class='txSlide' id='txSlide8-4'></div></div> <div class='swiper-slide'> <div id='arrowL'></div> <img src='img/cuento_08/mar_05.png' id='c8f5' /><div class='txSlide' id='txSlide8-5'></div></div>");
+								
+								$('#txSlide8-1').append("Había una vez una niña, llamada Ambar, que vivía con sus abuelitos en una casita muy humilde ubicada en la playa. Todos los días despertaba con el sonar de las olas y los rayos del sol que pegaban en su cara. Se levantaba muy temprano, desayunaba con sus abuelitos y se iba a la playa. Le gustaba sentarse a escuchar el sonido de las olas y de las aves y contemplar el inmenso mar; podía pasar horas y horas, como si el tiempo se detuviera y sólo existieran ella y el mar. <br /><br /> De repente se escuchó a lo lejos una voz que decía: — Ambar, Ambar, ya está el almuerzo—. Pero Ambar seguía observando al mar. De pronto sintió en su hombro una mano…era su abuelita Luz. —¿Todavía sigues triste? —le preguntó— ¡Algún día regresarán! Tomó a la niña de la mano y se dirigieron a la casa. <br /><br /> Su abuelito Francisco, a quien Ambar le decía “Coco”, esperaba ansioso la hora de almorzar con su nieta. Él había sufrido un accidente, usaba muletas, porque en el mar un tiburón le había arrancado una pierna.");
+								
+								$('#txSlide8-2').append("Como había sido capitán de un barco y ya no podía salir a navegar, se entretenía contándole a su nieta las historias de cuando viajaba por los mares. <br /><br /> Así pasaban las horas entre risas y nostalgias de su abuelo por un viaje en altamar. <br /><br /> Ambar y sus abuelos se dedicaban a reciclar latas y botellas que la gente dejaba tiradas sobre la arena cuando visitaban la playa. A la niña le gustaba ese trabajo, ya que le encantaba caminar descalza por la playa. Cierto día, se encontró a unos niños que andaban con unas camisetas que decían: “Ayudamos al medio ambiente reciclando”. Se emocionó tanto que se acercó a ellos para preguntarles de dónde eran y qué hacían. <br /><br /> Los niños, muy amablemente, le contaron que ellos iban a las playas a recolectar basura y a enseñarle a la gente que vive cerca, la importancia de mantener las playas limpias. También le explicaron que las playas más bonitas ganaban un premio de color azul. Al escuchar esto, Ambar salió corriendo a contarles a sus abuelos.");
+								
+								$('#txSlide8-3').append("Entró a su casa tan rápido que su abuelo gritó: —Niña ¿qué te pasa? <br /><br /> —¡Abuelito!, ¡abuelita! Vengan que les tengo que contar algo. <br /><br /> Los abuelos llegaron hasta donde estaba la niña y la escucharon con atención. Ella les habló de los niños que conoció, lo que le dijeron sobre reciclar y que, si seguían manteniendo la playa limpia, un día llegaría alguien y pondría una bandera azul cerca de su casa… tal vez eso ayudaría a que sus padres regresaran. <br /><br /> Los padres de Ambar habían salido a un viaje en altamar, hacía ya mucho tiempo, y no habían regresado. Por eso ella se sentaba todos los días mirando hacia el mar. Pensaba que, como el mar era tan grande, sus padres se habían perdido y que, tal vez, con la bandera podrían ubicarse y llegar a tierra firme. <br /><br /> Todos los días salía a la playa a recoger latas y botellas. Para motivar a las personas a no botar basura, Ambar les contaba el motivo por el que quería que la playa estuviera limpia.");
+								
+								$('#txSlide8-4').append("La gente, al escuchar su historia, poco a poco se fue concientizando, hasta que llegó el día en que la playa estuvo totalmente limpia. Muy contenta Ambar se fue a descansar. <br /><br /> A la mañana siguiente, al salir de su casa, vio una gran bandera azul muy cerca. Estaba tan emocionada que llamó a sus abuelitos para que la vieran; todos estaban muy felices. Todos los días Ambar esperaba que regresaran sus padres. Pasaron varias semanas. Un día, mientras miraba al mar, vio a lo lejos un barco y corrió a decírselo a sus abuelos. <br /><br /> Todos alzaron sus brazos y gritaron: —¡Por aquí!, ¡por aquí!— El barco se acercó lentamente y se escuchó una dulce voz: —¡Ambar! Somos papá y mamá—. La niña, Coco y Luz corrieron a la playa y todos se abrazaron. Sus padres les contaron porqué tardaron tanto en volver. <br /><br /> Resulta que la gente no sólo tira basura en la arena, sino también en los mares; había tanta basura que el barco se había quedado atrapado en una montaña de basura. Ellos la recogieron, la echaron en bolsas y así pudieron escapar. La familia continuó unida cuidando la playa y fueron muy felices.");
+								
+								$('#txSlide8-5').append("Moraleja: no hay que botar basura; tenemos que reciclar para que nuestro ambiente esté limpio y podamos disfrutar de todas las cosas que nos ofrece la naturaleza. Además, todo lo que nos proponemos se puede cumplir si nos esforzamos por conseguirlo.");
+							break;
+							
+						}//fin switch
+					</script>
+                    
+				</div><!-- fin swiper-wrapper -->
+			</div><!-- fin swiper-container -->
+			
+		</div><!-- /#pantalla01 -->
+		
+	</div><!--/fin general-->
+	
+	<div id="boxes"><!-- modal -->
+    	
+        <div id="dialog6" class="window borRadius10"><!--autor-->
+			<script type="text/javascript" language="javascript">
+				
+				switch(cuento) {
+					
+					case '01'://La montaña encantada
+						$("#dialog6").append('<div class="disInlineblock autBlock"><img src="img/autorbig1.jpg" />Cuento:<div class="titleCuento">La montaña encantada</div></div>');
+					break;
+					
+					case '02'://La nueva escuela
+						$("#dialog6").append('<div class="disInlineblock autBlock"><img src="img/autorbig2.jpg" />Cuento:<div class="titleCuento">La nueva escuela</div></div>');
+					break;
+					
+					case '03'://Kira
+						$("#dialog6").append('<div class="disInlineblock autBlock"><img src="img/autorbig3.jpg" />Cuento:<div class="titleCuento">Kira</div></div>');
+					break;
+					
+					case '04'://Mis amigos los dragones
+						$("#dialog6").append('<div class="disInlineblock autBlock"><img src="img/autorbig4.jpg" />Cuento:<div class="titleCuento">Mis amigos los dragones</div></div>');
+					break;
+					
+					case '05'://El conejito que recuperó su alegría
+						$("#dialog6").append('<div class="disInlineblock autBlock"><img src="img/autorbig5.jpg" />Cuento:<div class="titleCuento">El conejito que recuperó su alegría</div></div>');
+					break;
+					
+					case '06'://El niño que soñaba con la paz
+						$("#dialog6").append('<div class="disInlineblock autBlock"><img src="img/autorbig6.jpg" />Cuento:<div class="titleCuento">El niño que soñaba con la paz</div></div>');
+					break;
+					
+					case '07'://De nuevo Manchas y yo
+						$("#dialog6").append('<div class="disInlineblock autBlock"><img src="img/autorbig7.jpg" />Cuento:<div class="titleCuento">De nuevo Manchas y yo</div></div>');
+					break;
+					
+					case '08'://La niña y el mar
+						$("#dialog6").append('<div class="disInlineblock autBlock"><img src="img/autorbig8.jpg" />Cuento:<div class="titleCuento">La niña y el mar</div></div>');
+					break;
+					
+				}//fin switch
+				
+			</script>
+            
+			<a href="javascript:void(0)" class="close btCloseCredits"></a>
+            
+        </div><!--/#dialog6-->
+		
+		<div id="dialog7" class="window borRadius10"><!--audio-->
+			
+			<audio preload="auto" controls style="width:400px; margin:20px auto 0px auto;" id="playerCuento">
+				
+				<script type="text/javascript" language="javascript">
+					
+					var audioCuento = '';
+					
+					switch(cuento) {
+						
+						case '01'://La montaña encantada
+							audioCuento = 'cuento_laMontana';
+						break;
+							
+						case '02'://La nueva escuela
+							audioCuento = 'cuento_laNuevaEscuela';
+						break;
+							
+						case '03'://Kira
+							audioCuento = 'cuento_kira';
+						break;
+						
+						case '04'://Mis amigos los dragones
+							audioCuento = 'cuento_misAmigoslosDragones';
+						break;
+						
+						case '05'://El conejito que recuperó su alegría
+							audioCuento = 'cuento_elConejito';
+						break;
+						
+						case '06'://El niño que soñaba con la paz
+							audioCuento = 'cuento_elninoQueSonaba';
+						break;
+						
+						case '07'://De nuevo Manchas y yo
+							audioCuento = 'cuento_deNuevoManchas';
+						break;
+						
+						case '08'://La niña y el mar
+							audioCuento = 'cuento_laNinayelMar';
+						break;
+						
+					}//fin switch
+					
+					if (android > -1) {//android webView necesita absolute url
+						//alert('audioFormato: ' + audioFormato);
+						//alert('android 16');
+						//alert( urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato );
+						//alert('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.ogg' + ' " type="audio/ogg" />');
+						//alert('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato +' " type="audio/' + audioFormato + '" />');
+						//$("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato +' " type="audio/' + audioFormato + '" />');
+						$("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.ogg' + ' " type="audio/ogg" />');
+						$("#dialog7").append('<div align="center" style="line-height:14px !important;">Este audio requiere conexión a internet.</div>');
+					} else {
+						//alert('no android');
+						$("#playerCuento").append('<source src="audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
+					}
+					
+					//alert( urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato );
+				</script>
+                    
+            	<!--Su navegador no soporta audio HTML5.-->
+                EL formato de audio no es soportado por este dispositivo.
+			</audio>
+			
+            <a href="javascript:void(0)" class="close btCloseCredits" onclick="javascript:stopAudio()"></a>
+			
+		</div><!--/#dialog7-->
+		
+		<div id="dialog8" class="window borRadius10"><!--zoom-->
+        	<a href="javascript:void()" class="close disblock posAbsolute" id="zoomOutBtn"></a>
+        </div><!--/#dialog8-->
+        
+        <div id="dialog9" class="window"><!--zoom-->
+        	<img src="img/turn_screen.png" />
+        	<a href="javascript:void(0)" class="close btCloseCredits"></a>
+        </div><!--/#dialog8-->
+		
+		<!-- Mask to cover the whole screen -->
+		<div id="mask"></div>
+        
+	</div><!-- fin boxes -->
+
+</div><!--/#contenido-->
+
+<div id="zoomContainer"></div>
+
+<a onclick="javascript:interStitial()" id="interStitialBtn" class="disNone" href="#dialog9" name="modal"></a>
+
+<script language="Javascript">
+	document.oncontextmenu = function(){return false};
+	document.onselectstart = function(){return false};
+	//document.onkeydown = function(){return false};
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57001030-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

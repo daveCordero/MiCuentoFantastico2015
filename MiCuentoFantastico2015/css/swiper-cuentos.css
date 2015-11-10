@@ -1,0 +1,41 @@
+/* Swiper carousel 1 */
+.swiper-slide {
+	/*background:#FC0;*/
+	-webkit-transition: all 100ms ease-in-out;
+	-moz-transition: all 100ms ease-in-out;
+	-ms-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+}
+
+/* Specify Swiper's Size: */
+.swiper-container, .swiper-slide {
+	/*background:#666;*/
+	width:960px;
+	height:600px;
+}
+/*.swiper-slide {
+	background:#CCC;
+}*/
+.pagination-car {
+	width:126px;
+	margin:0px 0px 0px -63px;
+	
+	left:50%;
+	top:570px;
+	position:absolute;
+	z-index:20;
+}
+.pagination-car .swiper-pagination-switch {
+	background: none repeat scroll 0 0 #333;
+    border-radius: 8px 8px 8px 8px;
+    display: block;
+    height: 8px;
+    margin: 0 5px;
+    opacity: 0.8;
+	width: 8px;
+	float: left;
+}
+.pagination-car .swiper-active-switch {
+    background: none repeat scroll 0 0 #FFF;
+}
+

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-image:url(../img/cuento_05/bg_pag-18-19.jpg);
+}
+
+.pagination-car {
+	/*background:#999;*/
+	width:165px;
+}
+
+.txSlide {
+	width:650px;
+	margin:160px 0px 0px 260px;
+}
+
+#txSlide5-4 {
+	margin:160px 0px 0px 10px;
+}
+
+#c5f1 {
+	display:block;
+	position:absolute;
+	
+	top:180px;
+	left:30px;
+	
+	width:205px;
+	height:356px;
+}
+#c5f2 {
+	display:block;
+	position:absolute;
+	
+	top:160px;
+	left:0px;
+	
+	width:506px;
+	height:388px;
+	
+	z-index:-1;
+}
+#c5f3 {
+	display:block;
+	position:absolute;
+	
+	top:420px;
+	right:0px;
+	
+	width:306px;
+	height:174px;
+}
+#c5f4 {
+	display:block;
+	position:absolute;
+	
+	top:190px;
+	left:5px;
+	
+	width:302px;
+	height:320px;
+	
+	z-index:-1;
+}
+#c5f5 {
+	display:block;
+	position:absolute;
+	
+	top:210px;
+	left:20px;
+	
+	width:205px;
+	height:356px;
+}
+#c5f6 {
+	display:block;
+	position:absolute;
+	
+	top:222px;
+	left:0px;
+	
+	width:315px;
+	height:322px;
+}
+#c5f7 {
+	display:block;
+	position:absolute;
+	
+	top:130px;
+	left:0px;
+	
+	width:297px;
+	height:289px;
+}

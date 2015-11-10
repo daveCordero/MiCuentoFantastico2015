@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-image:url(../img/cuento_07/bg_pag-26-27.jpg);
+}
+
+.pagination-car {
+	/*background:#999;*/
+	width:75px;
+}
+
+#txSlide7-2 {
+	margin:160px 0px 0px 10px;
+}
+
+#txSlide7-3 {
+	margin:160px 0px 0px 10px;
+}
+
+#c7f1 {
+	display:block;
+	position:absolute;
+	
+	top:250px;
+	left:0px;
+	
+	width:424px;
+	height:347px;
+}
+
+#c7f2 {
+	display:block;
+	position:absolute;
+	
+	bottom:0px;
+	right:20px;
+	
+	width:380px;
+	height:545px;
+}
+
+#c7f3 {
+	display:block;
+	position:absolute;
+	
+	bottom:0px;
+	right:20px;
+	
+	width:497px;
+	height:329px;
+}
+
+#c7f4 {
+	display:block;
+	position:absolute;
+	
+	top:230px;
+	left:0px;
+	
+	width:426px;
+	height:370px;
+}
