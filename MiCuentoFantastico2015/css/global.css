@@ -57,18 +57,6 @@
 	src: local('Muli'), url(../fonts/muli/minRpKQdEvXRRS8oAbAtWvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
 }
 
-@font-face{
-	font-family: 'storybookregular';
-    src: url('../fonts/storyboo/storyboo_2-webfont.eot');
-    src: url('../fonts/storyboo/storyboo_2-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/storyboo/storyboo_2-webfont.woff2') format('woff2'),
-         url('../fonts/storyboo/storyboo_2-webfont.woff') format('woff'),
-         url('../fonts/storyboo/storyboo_2-webfont.ttf') format('truetype'),
-         url('../fonts/storyboo/storyboo_2-webfont.svg#storybookregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 html {
 	/*background-color: #473221;*/
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);/*remove highlight completely*/
@@ -84,7 +72,6 @@ body {
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;*/
-
 	background-size: 100% 100%;
 	
 	margin: 0px; /* for IE6 / IE7 */

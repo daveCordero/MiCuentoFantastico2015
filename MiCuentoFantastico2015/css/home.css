@@ -218,6 +218,35 @@ section {
 		width:100%;
 	}
 }
+@media all and (max-width: 940px) {
+	body {
+		overflow-y: scroll !important;
+	}
+	#titlehomePeq {
+		/*background-color: #CCC;*/
+		
+		top:auto;
+		left:auto;
+		position:relative;
+
+		display:block;
+		float:none;
+		clear:both;
+		
+		margin:40px auto 0px auto;
+	}
+	#menuHome {
+		/*background-color: #CCC;*/
+		float: none;
+		clear: both !important;
+		margin: 20px auto 0px auto !important;
+	}
+	.bthome {
+		/*background-color: #CCC;*/
+		display:inline-block !important;
+		float: none !important;
+	}
+}
 @media all and (max-width: 900px) {
 	body {
 		/*background-image:url(../img/home/bg_home.jpg);*/
