@@ -64,7 +64,11 @@ html {
 
 body {
 	/*background-color:#F3F0E5;*/
+
 	background-repeat:no-repeat;
+	background-position: center center;
+	background-attachment:fixed;
+
 	/*background-attachment:fixed;
 	background-position:bottom;*/
 	
