@@ -138,8 +138,8 @@ var audioFormato = '';
 if(isiPhone > -1 || isiPod > -1 || isiPad > -1 || isSafari > -1 ) {
 	audioFormato = 'mp3';
 } else {
-	// audioFormato = 'ogg';
-	audioFormato = 'mp3';
+	audioFormato = 'ogg';
+	// audioFormato = 'mp3';
 }//fin if iOS or MacOS
 
 var urlAbsoluta = 'http://librosparatodoscr.com/miCuentoFantastico/2015/';
@@ -662,16 +662,15 @@ $(document).ready(function() {
 						
 					}//fin switch
 					
-					// if (android > -1) {//android webView necesita absolute url
-					// 	alert('android 17');
-					// 	$("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
-					// 	$("#dialog7").append('<div align="center" style="line-height:14px !important;">Este audio requiere conexión a internet.</div>');
-					// } else {
-					// 	$("#playerCuento").append('<source src="audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
-					// }
-					alert('audioCuento audioFormato: ' + audioCuento + '.' + audioFormato );
+					if (android > -1) {//android webView necesita absolute url
+						alert('audioCuento audioFormato: ' + audioCuento + '.' + audioFormato );
+						$("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
+						$("#dialog7").append('<div align="center" style="line-height:14px !important;">Este audio requiere conexión a internet.</div>');
+					} else {
+						$("#playerCuento").append('<source src="audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
+					}
 					// $("#playerCuento").append('<source src="audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
-					$("#playerCuento").append('<source src="' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
+					// $("#playerCuento").append('<source src="' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
 				</script>
                     
             	<!--Su navegador no soporta audio HTML5.-->
