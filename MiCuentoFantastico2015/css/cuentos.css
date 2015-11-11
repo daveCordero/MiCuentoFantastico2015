@@ -9,14 +9,17 @@
 fin bg rotator */
 
 body {
-	/*background-attachment:fixed;
-	background-position:bottom;*/
+	background-attachment:fixed;
+	background-position:bottom;
 	
-	/*-webkit-background-size:cover;
+	/* android: solo cubre ancho 
+	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;*/
-	background-size: 100% 100%;
+
+	/* no funciona en android
+	background-size: 100% 100%;*/
 }
 
 .pagination-car {
