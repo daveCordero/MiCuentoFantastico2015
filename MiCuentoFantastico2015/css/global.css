@@ -64,20 +64,7 @@ html {
 
 body {
 	/*background-color:#F3F0E5;*/
-
 	background-repeat:no-repeat;
-
-	/*
-	background-position: center center;
-	background-position:bottom center;
-	background-attachment:fixed;*/
-	
-	/*
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover;*/
-	/*background-size: 100% 100%;*/
 	
 	margin: 0px; /* for IE6 / IE7 */
 	padding:0px;
@@ -465,10 +452,6 @@ a {
 }*/
 
 @media all and (max-width: 900px) {/*pantalla moviles*/
-	body {
-		/*overflow-y:scroll !important;*/
-	}
-	
 	#general { /* contiene objetos evita scroll */
 		/*background:#FFF;*/
 		display:block;
