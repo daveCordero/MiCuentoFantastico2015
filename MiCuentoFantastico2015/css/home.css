@@ -226,10 +226,11 @@ section {
 		-o-background-size:cover !important;
 		background-size:cover !important;*/
 
+		/*
 		background-position:center top;
 		background-repeat:no-repeat;
-		background-attachment:fixed;
-		
+		background-attachment:fixed;*/
+
 		overflow-y: scroll !important;
 	}
 	#titlehomePeq {
@@ -259,11 +260,11 @@ section {
 }
 @media all and (max-width: 900px) {
 	body {
-		/*background-image:url(../img/home/bg_home.jpg);*/
+		/*
 		background-position:center top;
 		background-repeat:no-repeat;
 		background-attachment:fixed;
-		background-size:cover;/*funciona para iOS*/
+		background-size:cover;*/ /*funciona para iOS*/
 		
 		/*overflow-y:scroll !important;*/
 	}
