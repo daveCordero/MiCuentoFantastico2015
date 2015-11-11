@@ -664,9 +664,11 @@ $(document).ready(function() {
 					}//fin switch
 					
 					if (android > -1) {//android webView necesita absolute url
-						alert('audioCuento audioFormato: ' + audioCuento + '.' + audioFormato );
-						$("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
-						$("#dialog7").append('<div align="center" style="line-height:14px !important;">Este audio requiere conexión a internet.</div>');
+						// alert('audioCuento audioFormato: ' + audioCuento + '.' + audioFormato );
+						alert('audioCuento audioFormato: ' + audioCuento + '.ogg' );
+						$("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.ogg type="audio/' + audioFormato + '" />');
+						// $("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
+						// $("#dialog7").append('<div align="center" style="line-height:14px !important;">Este audio requiere conexión a internet.</div>');
 					} else {
 						$("#playerCuento").append('<source src="audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
 					}
