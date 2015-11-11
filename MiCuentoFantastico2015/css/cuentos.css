@@ -8,6 +8,17 @@
 #background_cycler img.active{z-index:3}
 fin bg rotator */
 
+body {
+	/*background-attachment:fixed;
+	background-position:bottom;*/
+	
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	/*background-size: 100% 100%;*/
+}
+
 .pagination-car {
 	margin:0px 0px 0px -65px;
 }

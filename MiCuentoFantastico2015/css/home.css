@@ -3,6 +3,16 @@
 
 body {
 	background-image:url(../img/home/bg_home.jpg);
+	/*
+	-webkit-background-size:cover !important;
+	-moz-background-size:cover !important;
+	-o-background-size:cover !important;
+	background-size:cover !important;*/
+
+	/*
+	background-position:center top;
+	background-repeat:no-repeat;
+	background-attachment:fixed;*/
 }
 
 #titlehomePeq {
@@ -220,17 +230,6 @@ section {
 }
 @media all and (max-width: 940px) {
 	body {
-		/*
-		-webkit-background-size:cover !important;
-		-moz-background-size:cover !important;
-		-o-background-size:cover !important;
-		background-size:cover !important;*/
-
-		/*
-		background-position:center top;
-		background-repeat:no-repeat;
-		background-attachment:fixed;*/
-
 		overflow-y: scroll !important;
 	}
 	#titlehomePeq {
@@ -259,15 +258,6 @@ section {
 	}
 }
 @media all and (max-width: 900px) {
-	body {
-		/*
-		background-position:center top;
-		background-repeat:no-repeat;
-		background-attachment:fixed;
-		background-size:cover;*/ /*funciona para iOS*/
-		
-		/*overflow-y:scroll !important;*/
-	}
 	#general {
 		background-image:none;
 		/*overflow-y:scroll !important;*/
