@@ -57,6 +57,10 @@
 	src: local('Muli'), url(../fonts/muli/minRpKQdEvXRRS8oAbAtWvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
 }
 
+html, body {
+	height:100%;
+}
+
 html {
 	/*background-color: #473221;*/
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);/*remove highlight completely*/
@@ -65,6 +69,7 @@ html {
 body {
 	/*background-color:#F3F0E5;*/
 	background-repeat:no-repeat;
+	background-size: auto 100%;
 	
 	margin: 0px; /* for IE6 / IE7 */
 	padding:0px;

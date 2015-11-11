@@ -9,11 +9,11 @@
 fin bg rotator */
 
 body {
-	/* android: solo cubre ancho
+	/* android: solo cubre ancho 
 	-webkit-background-size:cover;
 	   -moz-background-size:cover;
 	     -o-background-size:cover;
-	        background-size:cover; */
+	        background-size:cover;*/
 }
 
 .pagination-car {
