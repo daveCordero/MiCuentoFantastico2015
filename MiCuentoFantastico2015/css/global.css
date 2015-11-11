@@ -66,11 +66,14 @@ body {
 	/*background-color:#F3F0E5;*/
 
 	background-repeat:no-repeat;
-	/*background-position: center center;*/
-	background-position:bottom center;
-	/*background-attachment:fixed;*/
+	background-position: center;
 	
-	/*-webkit-background-size:cover;
+	/*background-position: center center;
+	background-position:bottom center;
+	background-attachment:fixed;*/
+	
+	/*
+	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;*/
