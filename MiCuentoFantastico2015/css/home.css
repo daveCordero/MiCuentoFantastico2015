@@ -248,6 +248,15 @@ section {
 	}
 }
 @media all and (max-width: 900px) {
+	body {
+		/*background-image:url(../img/home/bg_home.jpg);*/
+		background-position:center top;
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-size:cover;/*funciona para iOS*/
+		
+		/*overflow-y:scroll !important;*/
+	}
 	#general {
 		background-image:none;
 		/*overflow-y:scroll !important;*/
