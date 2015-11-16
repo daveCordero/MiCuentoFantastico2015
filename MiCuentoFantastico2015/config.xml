@@ -5,7 +5,8 @@
     version   = "1.0.0">
 	
 <name>Mi Cuento Fantástico 2015</name>
-<icon src="phoneGap/Icon@2x.png" gap:platform="android" gap:density="ldpi" />
+<!-- <icon src="phoneGap/Icon@2x.png" gap:platform="android" gap:density="ldpi" /> -->
+<icon src="phoneGap/Icon@2x.png" gap:platform="android" />
 
 <gap:splash src="phoneGap/LDPI_landscape.png"  gap:platform="android" gap:density="ldpi"  />
 <gap:splash src="phoneGap/MDPI_landscape.png"  gap:platform="android" gap:density="mdpi"  />
