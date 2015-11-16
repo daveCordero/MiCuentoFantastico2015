@@ -5,17 +5,19 @@
     version   = "1.0.0">
 	
 <name>Mi Cuento Fantástico 2015</name>
-<!-- <icon src="phoneGap/Icon@2x.png" gap:platform="android" gap:density="ldpi" /> -->
-<icon src="phoneGap/Icon@2x.png" gap:platform="android" />
+<icon src="phoneGap/Icon@2x.png" gap:platform="android" gap:density="ldpi" />
+<icon src="phoneGap/Icon@2x.png" gap:platform="android" gap:density="mdpi" />
+<icon src="phoneGap/Icon@2x.png" gap:platform="android" gap:density="hdpi" />
+<icon src="phoneGap/Icon@2x.png" gap:platform="android" gap:density="xhdpi" />
 
 <gap:splash src="phoneGap/LDPI_landscape.png"  gap:platform="android" gap:density="ldpi"  />
 <gap:splash src="phoneGap/MDPI_landscape.png"  gap:platform="android" gap:density="mdpi"  />
 <gap:splash src="phoneGap/HDPI_landscape.png"  gap:platform="android" gap:density="hdpi"  />
 <gap:splash src="phoneGap/XHDPI_landscape.png" gap:platform="android" gap:density="xhdpi" />
 
-<gap:splash src="phoneGap/portrait-HDPI.png"  gap:platform="android" gap:density="xhdpi" />
-<gap:splash src="phoneGap/portrait-LDPI.png"  gap:platform="android" gap:density="xhdpi" />
-<gap:splash src="phoneGap/portrait-MDPI.png"  gap:platform="android" gap:density="xhdpi" />
+<gap:splash src="phoneGap/portrait-HDPI.png"  gap:platform="android" gap:density="hdpi" />
+<gap:splash src="phoneGap/portrait-LDPI.png"  gap:platform="android" gap:density="ldpi" />
+<gap:splash src="phoneGap/portrait-MDPI.png"  gap:platform="android" gap:density="mdpi" />
 <gap:splash src="phoneGap/portrait-XHDPI.png" gap:platform="android" gap:density="xhdpi" />
 
 <gap:platform name="android" />
