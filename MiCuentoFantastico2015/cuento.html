@@ -382,7 +382,7 @@ $(document).ready(function() {
 		<div id="pantalla01" class="disblock pantallas floatNoneClearBoth marginAuto">
 			
 			<div class="disblock posAbsolute btnsTop">
-				<a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorHome"  href="index.html"></a>
+				<a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorHome"  href="javascript:var proxPantalla = 'index.html'" onclick="transPage();"></a>
 				<a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorAutor" href="#dialog6" name="modal"></a>
 				<a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorAudio" href="#dialog7" name="modal"></a>
                 <script type="text/javascript" language="javascript">
@@ -658,20 +658,22 @@ $(document).ready(function() {
 						
 					}//fin switch
 					
-					// if (android > -1) {//android webView necesita absolute url
+					if (android > -1) {//android webView necesita absolute url
+						//alert('audioFormato: ' + audioFormato);
 						//alert('android 16');
-						// $("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
-						// $("#playerCuento").append('<source src="audio/' + audioCuento + '.mp3" type="audio/mpeg" >');
-						// $("#dialog7").append('<div align="center" style="line-height:14px !important;">Este audio requiere conexión a internet.</div>');
-						// var vid = document.getElementById("playerCuento");
-						// vid.play();
-						// document.getElementById('playerCuento').play();
-					// } else {
-						// $("#playerCuento").append('<source src="audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
-					// }
+						//alert( urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato );
+						//alert('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.ogg' + ' " type="audio/ogg" />');
+						//alert('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato +' " type="audio/' + audioFormato + '" />');
+						//$("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato +' " type="audio/' + audioFormato + '" />');
+						$("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.ogg' + ' " type="audio/ogg" />');
+						$("#dialog7").append('<div align="center" style="line-height:14px !important;">Este audio requiere conexión a internet.</div>');
+					} else {
+						//alert('no android');
+						$("#playerCuento").append('<source src="audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
+					}
 					// $("#playerCuento").append('<source src="audio/' + audioCuento + '.mp3" type="audio/mpeg">');
 					// alert('<source src="audio/' + audioCuento + '.ogg" type="audio/ogg">');
-					$("#playerCuento").append('<source src="audio/' + audioCuento + '.ogg" type="audio/ogg">');
+					// $("#playerCuento").append('<source src="audio/' + audioCuento + '.ogg" type="audio/ogg">');
 					// $("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.mp3" type="audio/mpeg">');
 				</script>
                     
@@ -701,8 +703,7 @@ $(document).ready(function() {
 
 <div id="zoomContainer"></div>
 
-<!-- 
-<a onclick="javascript:interStitial()" id="interStitialBtn" class="disNone" href="#dialog9" name="modal"></a> -->
+<a onclick="javascript:interStitial()" id="interStitialBtn" class="disNone" href="#dialog9" name="modal"></a>
 
 <script language="Javascript">
 	document.oncontextmenu = function(){return false};
