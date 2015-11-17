@@ -205,7 +205,7 @@ $(document).ready(function() {
 		
 		//$("head").append('<meta name="viewport" content="width=1200px, target-densitydpi=device-dpi" />');
 		if ( screen.width > 1100 ) {
-			//alert('> 1100');//device deborah
+			alert('> 1100');//device deborah
 			$("head").append('<meta name="viewport" content="initial-scale=1.2, maximum-scale=1.2, minimum-scale=1.2, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 1100) && (screen.width >= 1000) ) {
 			//alert('< 1100 >= 1000');
@@ -394,7 +394,7 @@ $(document).ready(function() {
 			<div class="disblock posAbsolute btnsTop">
 				<a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorHome"  href="index.html"></a>
 				<a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorAutor" href="#dialog6" name="modal"></a>
-				<a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorAudio" href="#dialog7" name="modal"></a>
+				<a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorAudio" href="javascript:void()" onclick="playAudio();"></a>
 				<!-- <a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorAudio" href="./intro.mp3"></a> -->
                 <script type="text/javascript" language="javascript">
 					if( isiPhone > -1 || isiPod > -1 || isiPad > -1 || android > -1 ) {
