@@ -306,7 +306,7 @@ body {
 		background-image:url(../img/home/bg_home.jpg);
 		background-position:center top;
 		background-repeat:no-repeat;
-		background-attachment:fixed;
+		/*background-attachment:fixed;*/
 		background-size:cover;
 		
 		/*overflow-y:scroll !important;*/
