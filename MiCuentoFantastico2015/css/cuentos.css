@@ -16,6 +16,8 @@ body {
 	   -moz-background-size: auto;
 	     -o-background-size: auto;
 	        background-size: auto; */
+
+	zoom: 50%;
 }
 
 .pagination-car {
