@@ -303,11 +303,11 @@ body {
 
 @media all and (max-width: 900px) {/*pantalla moviles*/
 	body {
-		/*background-image:url(../img/home/bg_home.jpg);
+		background-image:url(../img/home/bg_home.jpg);
 		background-position:center top;
 		background-repeat:no-repeat;
 		background-attachment:fixed;
-		background-size:cover;*/
+		background-size:cover;
 		
 		/*overflow-y:scroll !important;*/
 	}

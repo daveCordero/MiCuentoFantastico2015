@@ -69,16 +69,14 @@ html {
 body {
 	/*background-color:#F3F0E5;*/
 	background-repeat:no-repeat;
-	/*background-attachment:fixed;*/
+	/* crea error en android
+	background-attachment:fixed;*/
 	background-position:bottom;
 	
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
-	
-	/*background-repeat:no-repeat;
-	background-size: auto 100%;*/
 	
 	margin: 0px; /* for IE6 / IE7 */
 	padding:0px;
