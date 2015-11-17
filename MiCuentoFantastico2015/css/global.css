@@ -72,10 +72,11 @@ body {
 	background-attachment:fixed;
 	background-position:bottom;
 	
+	/*
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
-	background-size:cover;
+	background-size:cover;*/
 	
 	/*background-repeat:no-repeat;
 	background-size: auto 100%;*/

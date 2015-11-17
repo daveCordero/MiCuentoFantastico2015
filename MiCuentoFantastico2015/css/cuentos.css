@@ -1,23 +1,19 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*html, body {
-	zoom: 50% !important;
-}*/
-
 body {
 	/*
 	background-position:center top;
 	background-repeat:no-repeat;
 	background-attachment:fixed;*/
 
-	/* android: solo cubre ancho */
+	/* android: solo cubre ancho
 	-webkit-background-size: auto;
 	   -moz-background-size: auto;
 	     -o-background-size: auto;
-	        background-size: auto;
+	        background-size: auto; */
 
-	zoom: 50% !important;
+	/*zoom: 50% !important;*/
 }
 
 .pagination-car {
@@ -307,11 +303,11 @@ body {
 
 @media all and (max-width: 900px) {/*pantalla moviles*/
 	body {
-		/*background-image:url(../img/home/bg_home.jpg);*/
+		/*background-image:url(../img/home/bg_home.jpg);
 		background-position:center top;
 		background-repeat:no-repeat;
 		background-attachment:fixed;
-		background-size:cover;/*funciona para iOS*/
+		background-size:cover;*/
 		
 		/*overflow-y:scroll !important;*/
 	}
