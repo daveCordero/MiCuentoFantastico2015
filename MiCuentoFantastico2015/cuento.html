@@ -69,10 +69,6 @@ $(window).load(function(){
 // 	}, 200);
 // }
 
-// function playAudio() {
-// 	document.getElementById('playerCuento').play();
-// }
-
 // function interStitialMobile() {
 	
 // 	if( isiPhone > -1 || isiPod > -1 || isiPad > -1 || android > -1 ) {
@@ -172,18 +168,18 @@ function fadeInInstru(){
 
 $(document).ready(function() {
 	
-	// precarga
-	//eliminamos el scroll de la pagina
-	$("body").css({"overflow-y":"hidden"});
-	//guardamos en una variable el alto del que tiene tu browser que no es lo mismo que del DOM
-	var alto=$(document).height();//var alto=$(window).height();
-	//agregamos en el body un div que sera que ocupe toda la pantalla y se muestra encima de todo
-	$("body").append("<div id='pre-load-web'><div id='imagen-load'><img src='img/preload35.gif' /></div>");
-	//le damos el alto
-	$("#pre-load-web").css({height:alto+"px"});
-	//esta sera la capa que esta dento de la capa que muestra un gif
-	$("#imagen-load").css({"margin-top":(alto/2)-30+"px"});
-	// fin precarga
+	// // precarga
+	// //eliminamos el scroll de la pagina
+	// $("body").css({"overflow-y":"hidden"});
+	// //guardamos en una variable el alto del que tiene tu browser que no es lo mismo que del DOM
+	// var alto=$(document).height();//var alto=$(window).height();
+	// //agregamos en el body un div que sera que ocupe toda la pantalla y se muestra encima de todo
+	// $("body").append("<div id='pre-load-web'><div id='imagen-load'><img src='img/preload35.gif' /></div>");
+	// //le damos el alto
+	// $("#pre-load-web").css({height:alto+"px"});
+	// //esta sera la capa que esta dento de la capa que muestra un gif
+	// $("#imagen-load").css({"margin-top":(alto/2)-30+"px"});
+	// // fin precarga
 	
 	//alert('hola');
 	
@@ -716,7 +712,8 @@ $(document).ready(function() {
 
 <div id="zoomContainer"></div>
 
-<!-- <a onclick="javascript:interStitial()" id="interStitialBtn" class="disNone" href="#dialog9" name="modal"></a> -->
+<!-- 
+<a onclick="javascript:interStitial()" id="interStitialBtn" class="disNone" href="#dialog9" name="modal"></a> -->
 
 <script language="Javascript">
 	document.oncontextmenu = function(){return false};
