@@ -69,8 +69,10 @@ html {
 body {
 	/*background-color:#F3F0E5;*/
 	background-repeat:no-repeat;
+	
 	/* crea error en android
 	background-attachment:fixed;*/
+
 	background-position:bottom;
 	
 	-webkit-background-size:cover;

@@ -27,11 +27,9 @@ var android  = navigator.userAgent.toLowerCase().indexOf("android");
 
 <!-- Swiper -->
 <link rel="stylesheet" href="css/idangerous.swiper.css">
-<!-- <link rel="stylesheet" href="css/swiper-cuentos.css?v=1.8"> -->
 <link rel="stylesheet" href="css/swiper-cuentos.css">
 <script type="text/javascript" src="js/swiper/idangerous.swiper-1.8.min.js"></script>
 <script type="text/javascript" src="js/swiper/idangerous.swiper.scrollbar-1.0.js"></script>
-<!-- <script type="text/javascript" src="js/swiper/swiper-cuentos.js?v=1.8"></script> -->
 <script type="text/javascript" src="js/swiper/swiper-cuentos.js"></script>
 <!-- fin Swiper -->
 
@@ -659,8 +657,9 @@ $(document).ready(function() {
 					
 					if (android > -1) {//android webView necesita absolute url
 						//alert('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato +' " type="audio/' + audioFormato + '" />');
-						$("#playerCuento").append('<source src="' + 'audio/' + audioCuento + '.ogg" type="audio/ogg" />');
+						// $("#playerCuento").append('<source src="' + 'audio/' + audioCuento + '.ogg" type="audio/ogg" />');
 						// $("#playerCuento").append('<source src="' + 'audio/' + audioCuento + '.mp3" type="audio/mpeg" />');
+						$("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.mp3" type="audio/mpeg" />');
 					} else {
 						//alert('no android');
 						$("#playerCuento").append('<source src="audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
