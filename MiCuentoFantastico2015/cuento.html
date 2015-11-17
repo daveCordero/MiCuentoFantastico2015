@@ -35,7 +35,9 @@ if ( screen.width > 1100 ) {
 	// $("head").append('<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densityDpi=device-dpi" />');
 	// $("head").append('<meta name="viewport" content="width=device-width, user-scalable=yes, target-densityDpi=device-dpi" />');
 	// $("head").append('<meta name="viewport" content="initial-scale=.65, maximum-scale=.65, minimum-scale=.65, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
-	$("head").append('<meta name="viewport" content="width=device-width, initial-scale=1">');
+	// $("head").append('<meta name="viewport" content="width=device-width, initial-scale=1">');
+	$("head").append('<style> @viewport { zoom: 0.8; width: auto; height: extend-to-zoom 100%; } </style>');
+
 
 } else if ( (screen.width < 700) && (screen.width >= 600) ) {
 	// alert('< 700 >= 600');
