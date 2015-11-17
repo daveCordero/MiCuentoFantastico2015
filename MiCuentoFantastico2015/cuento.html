@@ -69,17 +69,17 @@ $(window).load(function(){
 // 	}, 200);
 // }
 
-function playAudio() {
-	document.getElementById('playerCuento').play();
-}
+// function playAudio() {
+// 	document.getElementById('playerCuento').play();
+// }
 
-function interStitialMobile() {
+// function interStitialMobile() {
 	
-	if( isiPhone > -1 || isiPod > -1 || isiPad > -1 || android > -1 ) {
-		$('#interStitialBtn').click();
-	}//fin if( isiPhone
+// 	if( isiPhone > -1 || isiPod > -1 || isiPad > -1 || android > -1 ) {
+// 		$('#interStitialBtn').click();
+// 	}//fin if( isiPhone
 	
-}//fin function interStitialMobile
+// }//fin function interStitialMobile
 
 var cuento = location.search.substr(1);//alert(cuento);
 
@@ -388,7 +388,8 @@ $(document).ready(function() {
 
 
 </head>
-<body onload="javascript:interStitialMobile()">
+<!-- <body onload="javascript:interStitialMobile()"> -->
+<body>
 
 <div id="contenido">
 	
@@ -715,7 +716,7 @@ $(document).ready(function() {
 
 <div id="zoomContainer"></div>
 
-<a onclick="javascript:interStitial()" id="interStitialBtn" class="disNone" href="#dialog9" name="modal"></a>
+<!-- <a onclick="javascript:interStitial()" id="interStitialBtn" class="disNone" href="#dialog9" name="modal"></a> -->
 
 <script language="Javascript">
 	document.oncontextmenu = function(){return false};
