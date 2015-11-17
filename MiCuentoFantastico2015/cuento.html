@@ -218,7 +218,8 @@ $(document).ready(function() {
 		} else if ( (screen.width < 800) && (screen.width >= 700) ) {
 			// alert('< 800 >= 700');
 			// $("head").append('<meta name="viewport" content="height=device-height, width=device-width, user-scalable=yes, initial-scale=.5, maximum-scale=.5, minimum-scale=.5, target-densityDpi=device-dpi" />');
-			$("head").append('<meta name="viewport" content="height=device-height, width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densityDpi=device-dpi" />');
+			// $("head").append('<meta name="viewport" content="height=device-height, width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densityDpi=device-dpi" />');
+			// $("head").append('<meta name="viewport" content="height=device-height, width=device-width, user-scalable=yes, initial-scale=.90, maximum-scale=.90, minimum-scale=.90, target-densityDpi=device-dpi" />');
 
 		} else if ( (screen.width < 700) && (screen.width >= 600) ) {
 			// alert('< 700 >= 600');
@@ -669,7 +670,7 @@ $(document).ready(function() {
 						
 					}//fin switch
 					
-					if (android > -1) {//android webView necesita absolute url
+					// if (android > -1) {//android webView necesita absolute url
 						//alert('android 16');
 						// $("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
 						// $("#playerCuento").append('<source src="audio/' + audioCuento + '.mp3" type="audio/mpeg" >');
@@ -677,9 +678,9 @@ $(document).ready(function() {
 						// var vid = document.getElementById("playerCuento");
 						// vid.play();
 						// document.getElementById('playerCuento').play();
-					} else {
+					// } else {
 						// $("#playerCuento").append('<source src="audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
-					}
+					// }
 					// $("#playerCuento").append('<source src="audio/' + audioCuento + '.mp3" type="audio/mpeg">');
 					// alert('<source src="audio/' + audioCuento + '.ogg" type="audio/ogg">');
 					$("#playerCuento").append('<source src="audio/' + audioCuento + '.ogg" type="audio/ogg">');
