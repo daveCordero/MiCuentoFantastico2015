@@ -190,7 +190,7 @@ $(document).ready(function() {
 		$("head").append('<style type="text/css" media="screen"> #general { height:666px; margin:-380px 0px 0px 0px; padding:80px 0px 0px 0px; } .pantallas { height:630px; } <style/>');
 	}
 	else if (android > -1) {
-		alert('android 16');
+		// alert('android 16');
 		
 		//$("head").append('<meta name="viewport" content="width=1200px, target-densitydpi=device-dpi" />');
 		if ( screen.width > 1100 ) {
@@ -221,7 +221,7 @@ $(document).ready(function() {
 			//alert('< 400 >= 300');
 			$("head").append('<meta name="viewport" content="initial-scale=.8, maximum-scale=.8, minimum-scale=.8, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		}//if screen.width
-		alert('screen width' + screen.width);
+		// alert('screen width' + screen.width);
 		
 	}
 	else {
@@ -664,8 +664,10 @@ $(document).ready(function() {
 						//alert('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.ogg' + ' " type="audio/ogg" />');
 						//alert('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato +' " type="audio/' + audioFormato + '" />');
 						//$("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato +' " type="audio/' + audioFormato + '" />');
+						$("#playerCuento").append('<source src="' + 'audio/' + audioCuento + '.ogg " type="audio/ogg" />');
+						/*
 						$("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.ogg' + ' " type="audio/ogg" />');
-						$("#dialog7").append('<div align="center" style="line-height:14px !important;">Este audio requiere conexión a internet.</div>');
+						$("#dialog7").append('<div align="center" style="line-height:14px !important;">Este audio requiere conexión a internet.</div>');*/
 					} else {
 						//alert('no android');
 						$("#playerCuento").append('<source src="audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
