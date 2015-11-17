@@ -11,10 +11,10 @@ body {
 	background-attachment:fixed;
 
 	/* android: solo cubre ancho */
-	-webkit-background-size:cover;
-	   -moz-background-size:cover;
-	     -o-background-size:cover;
-	        background-size:cover;/*funciona para iOS*/
+	-webkit-background-size: initial;
+	   -moz-background-size: initial;
+	     -o-background-size: initial;
+	        background-size: initial;
 }
 
 .pagination-car {
