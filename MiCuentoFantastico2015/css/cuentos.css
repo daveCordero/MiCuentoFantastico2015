@@ -2,7 +2,7 @@
 /* CSS Document */
 
 html, body {
-	height:100%;
+	zoom: 50% !important;
 }
 
 body {
@@ -16,7 +16,6 @@ body {
 	   -moz-background-size: auto;
 	     -o-background-size: auto;
 	        background-size: auto; */
-	zoom: 50%;
 }
 
 .pagination-car {
