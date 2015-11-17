@@ -11,13 +11,13 @@ body {
 	background-repeat:no-repeat;
 	background-attachment:fixed;*/
 
-	/* android: solo cubre ancho
+	/* android: solo cubre ancho */
 	-webkit-background-size: auto;
 	   -moz-background-size: auto;
 	     -o-background-size: auto;
-	        background-size: auto; */
+	        background-size: auto;
 
-	zoom: 50%;
+	zoom: 50% !important;
 }
 
 .pagination-car {
