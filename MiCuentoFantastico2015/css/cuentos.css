@@ -11,11 +11,11 @@ body {
 	background-repeat:no-repeat;
 	background-attachment:fixed;*/
 
-	/* android: solo cubre ancho */
-	-webkit-background-size: contain;
-	   -moz-background-size: contain;
-	     -o-background-size: contain;
-	        background-size: contain;
+	/* android: solo cubre ancho
+	-webkit-background-size: auto;
+	   -moz-background-size: auto;
+	     -o-background-size: auto;
+	        background-size: auto; */
 }
 
 .pagination-car {
