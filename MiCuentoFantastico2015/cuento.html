@@ -24,7 +24,8 @@ var android 	   = navigator.userAgent.toLowerCase().indexOf("android");
 <link href="css/cuentos.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript" src="js/googleapis/jquery.min.js"></script>
-<script type="text/javascript" src='js/jquery.transit.min.js'></script>
+<!-- se elimina para android
+<script type="text/javascript" src='js/jquery.transit.min.js'></script> -->
 
 
 <script src="fonts/cufon-yui.js" type="text/javascript"></script>
@@ -55,12 +56,16 @@ $(window).load(function(){
 	});
 });
 
-function transPage(){
-	$('#contenido').transition( { y: 700 }, 300, 'out' );
-	var timertransPage = setTimeout(function() {
-		window.location.href = proxPantalla;
-		clearTimeout(timertransPage);
-	}, 200);
+// function transPage(){
+// 	$('#contenido').transition( { y: 700 }, 300, 'out' );
+// 	var timertransPage = setTimeout(function() {
+// 		window.location.href = proxPantalla;
+// 		clearTimeout(timertransPage);
+// 	}, 200);
+// }
+
+function playAudio() {
+	document.getElementById('playerCuento').play();
 }
 
 function interStitialMobile() {
@@ -387,7 +392,7 @@ $(document).ready(function() {
 		<div id="pantalla01" class="disblock pantallas floatNoneClearBoth marginAuto">
 			
 			<div class="disblock posAbsolute btnsTop">
-				<a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorHome"  href="javascript:var proxPantalla = 'index.html'" onclick="transPage();"></a>
+				<a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorHome"  href="index.html"></a>
 				<a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorAutor" href="#dialog6" name="modal"></a>
 				<a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorAudio" href="#dialog7" name="modal"></a>
 				<!-- <a class="disblock floatL alpha60hover bgNoRepTL tran100" id="btTopMorAudio" href="./intro.mp3"></a> -->
@@ -667,16 +672,17 @@ $(document).ready(function() {
 					if (android > -1) {//android webView necesita absolute url
 						//alert('android 16');
 						// $("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
-						$("#playerCuento").append('<source src="audio/' + audioCuento + '.mp3" type="audio/mpeg" >');
+						// $("#playerCuento").append('<source src="audio/' + audioCuento + '.mp3" type="audio/mpeg" >');
 						// $("#dialog7").append('<div align="center" style="line-height:14px !important;">Este audio requiere conexión a internet.</div>');
 						// var vid = document.getElementById("playerCuento");
 						// vid.play();
-						document.getElementById('playerCuento').play();
+						// document.getElementById('playerCuento').play();
 					} else {
-						$("#playerCuento").append('<source src="audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
+						// $("#playerCuento").append('<source src="audio/' + audioCuento + '.' + audioFormato + '" type="audio/' + audioFormato + '" />');
 					}
 					// $("#playerCuento").append('<source src="audio/' + audioCuento + '.mp3" type="audio/mpeg">');
-					// $("#playerCuento").append('<source src="audio/' + audioCuento + '.ogg" type="audio/ogg">');
+					alert('<source src="audio/' + audioCuento + '.ogg" type="audio/ogg">');
+					$("#playerCuento").append('<source src="audio/' + audioCuento + '.ogg" type="audio/ogg">');
 					// $("#playerCuento").append('<source src="' + urlAbsoluta + 'audio/' + audioCuento + '.mp3" type="audio/mpeg">');
 				</script>
                     
