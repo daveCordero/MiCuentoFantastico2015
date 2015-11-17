@@ -12,46 +12,8 @@ var isiPad   = navigator.userAgent.toLowerCase().indexOf("ipad");
 var isiPod   = navigator.userAgent.toLowerCase().indexOf("ipod");
 var isSafari = navigator.userAgent.toLowerCase().indexOf('safari');
 var android  = navigator.userAgent.toLowerCase().indexOf("android");
-//fin vars user agent para meta viewport scale
-if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
-	//activar cuando se publique en el App Store de Apple
-	// var answerAppiOS = confirm ("¿Desea descargar la aplicación desde la tienda de Apple?");
-	// if (answerAppiOS){
-	// 	window.location.href = 'https://itunes.apple.com/es/app/mi-cuento-fantastico-2013/id771829886?mt=8';//alert(navigator.userAgent);
-	// }
-	// else{
-	// 	//usuario se mantiene en el sitio
-	// }
-}
-if( /android/i.test(navigator.userAgent) ) {
-	// activar cuando exista el apk para Android
-	var answerAppAndroid = confirm ("¿Desea descargar la aplicación para su dispositivo?");
-	if (answerAppAndroid){
-		window.location.href = 'https://build.phonegap.com/apps/1760645/share';//alert(navigator.userAgent);
-	}
-	else{
-		//usuario se mantiene en el sitio
-	}
-}
 </script>
 
-<!-- apple -->
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<link rel="apple-touch-icon" sizes="57×57"   href="img/touch-icon-iphone-114.png" />
-<link rel="apple-touch-icon" sizes="114×114" href="img/touch-icon-iphone-114.png" />
-<link rel="apple-touch-icon" sizes="72×72"   href="img/touch-icon-ipad-144.png" />
-<link rel="apple-touch-icon" sizes="144×144" href="img/touch-icon-ipad-144.png" />
-<!-- /apple -->
-
-<!-- facebook -->
-<meta property="fb:app_id"       content="1234567890" />
-<meta property="og:type"         content="website" />
-<meta property="og:url"          content="http://samples.ogp.me/136756249803614" />
-<meta property="og:title"        content="Mi cuento fantástico 2014" />
-<meta property="og:image"        content="http://librosparatodoscr.com/miCuentoFantastico/2015/img/fb_preview.png" />
-<meta property="cookbook:author" content="https://itunes.apple.com/es/artist/grupo-nacion-gn-s.a./id388776953" />
-<!-- /facebook -->
 
 <title>Mi cuento fantástico 2015 | Libros para Todos | Inicio</title>
 <link rel="shortcut icon" href="favicon.ico">
@@ -161,31 +123,31 @@ $(document).ready(function() {
 		
 		//$("head").append('<meta name="viewport" content="width=1200px, target-densitydpi=device-dpi" />');
 		if ( screen.width > 1100 ) {
-			//alert('> 1100');//device deborah
+			// alert('> 1100');//device deborah
 			$("head").append('<meta name="viewport" content="initial-scale=1.2, maximum-scale=1.2, minimum-scale=1.2, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 1100) && (screen.width >= 1000) ) {
-			//alert('< 1100 >= 1000');
+			// alert('< 1100 >= 1000');
 			$("head").append('<meta name="viewport" content="initial-scale=1.15, maximum-scale=1.15, minimum-scale=1.15, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 1000) && (screen.width >= 900) ) {
-			//alert('< 1000 >= 900');
+			// alert('< 1000 >= 900');
 			$("head").append('<meta name="viewport" content="initial-scale=1.1, maximum-scale=1.1, minimum-scale=1.1, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 900) && (screen.width >= 800) ) {
-			//alert('< 900 >= 800');
+			// alert('< 900 >= 800');
 			$("head").append('<meta name="viewport" content="initial-scale=1.05, maximum-scale=1.05, minimum-scale=1.05, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 800) && (screen.width >= 700) ) {
-			//alert('< 800 >= 700');
+			// alert('< 800 >= 700');
 			$("head").append('<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 700) && (screen.width >= 600) ) {
-			//alert('< 700 >= 600');
+			// alert('< 700 >= 600');
 			$("head").append('<meta name="viewport" content="initial-scale=.95, maximum-scale=.95, minimum-scale=.95, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 600) && (screen.width >= 500) ) {
-			//alert('< 600 >= 500');//device lolita
+			// alert('< 600 >= 500');//device lolita
 			$("head").append('<meta name="viewport" content="initial-scale=.9, maximum-scale=.9, minimum-scale=.9, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 500) && (screen.width >= 400) ) {
-			//alert('< 500 >= 400');
+			// alert('< 500 >= 400');
 			$("head").append('<meta name="viewport" content="initial-scale=.8, maximum-scale=.8, minimum-scale=.8, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		} else if ( (screen.width < 400) && (screen.width >= 300) ) {
-			//alert('< 400 >= 300');
+			// alert('< 400 >= 300');
 			$("head").append('<meta name="viewport" content="initial-scale=.6, maximum-scale=.6, minimum-scale=.6, user-scalable=yes, height=device-height, width=device-width, target-densityDpi=device-dpi" />');
 		}//if screen.width
 		//alert('screen width' + screen.width);
@@ -309,7 +271,7 @@ $(document).ready(function() {
 			
 			<div class="disblock floatR" id="menuHome">
                 <a href="#dialog5" name="modal" class="disblock floatL">Créditos</a>
-                <a href="#dialog4" name="modal" class="disblock floatL">Guía para docentes</a>
+                <a href="#dialog4" name="modal" class="disblock floatL">Guía</a>
 				<a href="#dialog3" name="modal" class="disblock floatL">Jurado</a>
 				<a href="#dialog2" name="modal" class="disblock floatL">Reconocimientos</a>
 				<a href="#dialog1" name="modal" class="disblock floatL">Autores</a>
@@ -318,14 +280,14 @@ $(document).ready(function() {
             
 			<div class="finCols"></div>
 			
-			<a class="disblock floatL bthome tran100" id="bthome1" href="javascript:var proxPantalla = 'cuento.html?01'" onClick="transPage();"></a>
-			<a class="disblock floatL bthome tran100" id="bthome2" href="javascript:var proxPantalla = 'cuento.html?02'" onClick="transPage();"></a>
-			<a class="disblock floatL bthome tran100" id="bthome3" href="javascript:var proxPantalla = 'cuento.html?03'" onClick="transPage();"></a>
-			<a class="disblock floatL bthome tran100" id="bthome4" href="javascript:var proxPantalla = 'cuento.html?04'" onClick="transPage();"></a>
-			<a class="disblock floatL bthome tran100" id="bthome5" href="javascript:var proxPantalla = 'cuento.html?05'" onClick="transPage();"></a>
-			<a class="disblock floatL bthome tran100" id="bthome6" href="javascript:var proxPantalla = 'cuento.html?06'" onClick="transPage();"></a>
-			<a class="disblock floatL bthome tran100" id="bthome7" href="javascript:var proxPantalla = 'cuento.html?07'" onClick="transPage();"></a>
-			<a class="disblock floatL bthome tran100" id="bthome8" href="javascript:var proxPantalla = 'cuento.html?08'" onClick="transPage();"></a>
+			<a class="disInlineblock bthome tran100" id="bthome1" href="javascript:var proxPantalla = 'cuento.html?01'" onClick="transPage();"></a>
+			<a class="disInlineblock bthome tran100" id="bthome2" href="javascript:var proxPantalla = 'cuento.html?02'" onClick="transPage();"></a>
+			<a class="disInlineblock bthome tran100" id="bthome3" href="javascript:var proxPantalla = 'cuento.html?03'" onClick="transPage();"></a>
+			<a class="disInlineblock bthome tran100" id="bthome4" href="javascript:var proxPantalla = 'cuento.html?04'" onClick="transPage();"></a>
+			<a class="disInlineblock bthome tran100" id="bthome5" href="javascript:var proxPantalla = 'cuento.html?05'" onClick="transPage();"></a>
+			<a class="disInlineblock bthome tran100" id="bthome6" href="javascript:var proxPantalla = 'cuento.html?06'" onClick="transPage();"></a>
+			<a class="disInlineblock bthome tran100" id="bthome7" href="javascript:var proxPantalla = 'cuento.html?07'" onClick="transPage();"></a>
+			<a class="disInlineblock bthome tran100" id="bthome8" href="javascript:var proxPantalla = 'cuento.html?08'" onClick="transPage();"></a>
 			
 		</div><!-- /#pantalla01 -->
 		
@@ -336,58 +298,50 @@ $(document).ready(function() {
 			
             <div class="disInlineblock autBlock">
 				<img src="img/autor1.jpg" />
-				<div class="titleCuento">Rachell Daniela Leiva Abarca</div>
-				Primer lugar - Tercer grado
-				<br><span class="titleCuento">El poder interior </span>
+				Cuento:
+				<div class="titleCuento">El poder interior <br>&nbsp;</div>
 			</div><!--/.autBlock1-->
             
             <div class="disInlineblock autBlock">
 				<img src="img/autor2.jpg" />
-				<div class="titleCuento">Aneth Cuadra Carvajal</div>
-				Segundo lugar - Tercer grado
-				<br><span class="titleCuento">El amor de mi tía y la tamaleada</span>
+				Cuento:
+				<div class="titleCuento">El amor de mi tía <br>y la tamaleada</div>
 			</div><!--/.autBlock2-->
-
+                
             <div class="disInlineblock autBlock">
 				<img src="img/autor3.jpg" />
-				<div class="titleCuento">Albert Leonardo Sibaja Campos</div>
-				Primer lugar - Cuarto grado
-				<br><span class="titleCuento">La fábrica de sueños, de cuentos e historias</span>
+				Cuento:
+				<div class="titleCuento">La fábrica de sueños, <br>de cuentos e historias</div>
             </div><!--/.autBlock3-->
-
+                
             <div class="disInlineblock autBlock">
 				<img src="img/autor4.jpg" />
-				<div class="titleCuento">Esaú de Jesús Bolaños Ugalde</div>
-				Segundo lugar - Cuarto grado
-				<br><span class="titleCuento">Cuando las letras no tenían sonido</span>
+				Cuento:
+				<div class="titleCuento">Cuando las letras no tenían <br>sonido</div>
             </div><!--/.autBlock4-->
-
+                
             <div class="disInlineblock autBlock">
 				<img src="img/autor5.jpg" />
-				<div class="titleCuento">Fanny Mariana Solís Gonzáles</div>
-				Primer lugar - Quinto grado
-                <br><span class="titleCuento">Un extraterrestre en Costa Rica</span>
+				Cuento:
+                <div class="titleCuento">Un extraterrestre <br>en Costa Rica</div>
             </div><!--/.autBlock5-->
-
+                
             <div class="disInlineblock autBlock">
 				<img src="img/autor6.jpg" />
-				<div class="titleCuento">Ana Ruth López Calderón</div>
-				Segundo lugar - Quinto grado
-				<br><span class="titleCuento">La niña que soñaba con volar</span>
+				Cuento:
+				<div class="titleCuento">La niña que soñaba <br>con volar</div>
             </div><!--/.autBlock6-->
-
+                
             <div class="disInlineblock autBlock">
 				<img src="img/autor7.jpg" />
-				<div class="titleCuento">Fiorella Arroyo Quesada</div>
-				Primer lugar - Sexto grado
-				<br><span class="titleCuento">El genio del celular y el secreto de la felicidad</span>
+				Cuento:
+				<div class="titleCuento">El genio del celular <br>y el secreto de la felicidad</div>
             </div><!--/.autBlock7-->
-
+                
             <div class="disInlineblock autBlock">
 				<img src="img/autor8.jpg" />
-				<div class="titleCuento">Karolina Herrera Martínez</div>
-				Segundo lugar - Sexto grado
-				<br><span class="titleCuento">Surá, el cazador chorotega</span>
+				Cuento:
+				<div class="titleCuento">Surá, el cazador chorotega <br>&nbsp;</div>
             </div><!--/.autBlock8-->
 			
 			<a href="javascript:void(0)" class="close btCloseCredits"></a>
@@ -397,7 +351,7 @@ $(document).ready(function() {
 		<div id="dialog2" class="window borRadius10"><!--menciones-->
             
             <br />
-            <div class="colorCredito"> Reconocimientos </div><!-- Menciones de honor -->
+            <div class="colorCredito"> Reconocimientos </div>
             
             <section>
                 <div class="container">
@@ -422,42 +376,6 @@ $(document).ready(function() {
                                 <td></td>
                                 <td></td>
                             </tr> -->
-
-                            <tr>
-                                <td colspan="3"><strong>Ganador del tercer lugar en tercer grado</strong></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td> ()</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3"><strong>Ganador del tercer lugar en cuarto grado</strong></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td> ()</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3"><strong>Ganador del tercer lugar en quinto grado</strong></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td> ()</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3"><strong>Ganador del tercer lugar en sexto grado</strong></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td> ()</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3"><strong>Menciones de Honor</strong></td>
-                            </tr>
 
                             <tr>
                                 <td>1. Arianna Ledezma Acevedo</td>
@@ -608,7 +526,7 @@ $(document).ready(function() {
             <div class="colorCredito"> Guía para docentes </div>
 			
 			<div id="txLdoc" class="disblock floatNoneClearBoth">
-				Material de apoyo para que los docentes desarrollen el proceso de escritura creativa con sus estudiantes.
+				Un material especialmente diseñado para ayudar al docente en la elaboración de historias o cuentos por parte de los estudiantes.
 				<br /><br />
                 <script type="text/javascript">
 					if(isiPhone > -1) {
@@ -680,16 +598,6 @@ $(document).ready(function() {
 	//document.onkeydown = function(){return false};
 </script>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-69812432-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 </body>
 </html>
