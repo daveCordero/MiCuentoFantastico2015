@@ -2,11 +2,15 @@
 /* CSS Document */
 
 body {
-	/* android: solo cubre ancho 
+	background-position:center top;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+
+	/* android: solo cubre ancho */
 	-webkit-background-size:cover;
 	   -moz-background-size:cover;
 	     -o-background-size:cover;
-	        background-size:cover;*/
+	        background-size:cover;/*funciona para iOS*/
 }
 
 .pagination-car {
