@@ -1,13 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
-/* bg rotator
-#background_cycler{padding:0;margin:0;width:100%;position:absolute;top:0;left:0;z-index:-1}
-#background_cycler img{position:absolute;left:0;top:0;width:100%;z-index:1}
-#background_cycler img.active{z-index:3}
-fin bg rotator */
-
 body {
 	/* android: solo cubre ancho 
 	-webkit-background-size:cover;
@@ -302,6 +295,15 @@ body {
 /*fin se repite en home.css con distintas medidas*/
 
 @media all and (max-width: 900px) {/*pantalla moviles*/
+	body {
+		/*background-image:url(../img/home/bg_home.jpg);*/
+		background-position:center top;
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-size:cover;/*funciona para iOS*/
+		
+		/*overflow-y:scroll !important;*/
+	}
 	.containerZoomtx {
 		height:700px;
 	}
